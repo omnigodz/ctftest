@@ -1,0 +1,15 @@
+salesforce.CompactLayout Contact_Contact_Compact_Layout {
+  fullName = "Contact.Contact_Compact_Layout"
+  fields = [
+    "Name",
+    "AccountId",
+    "Title",
+    "Phone",
+    "Email",
+  ]
+  label = "Contact Compact Layout"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact Compact Layout"
+}

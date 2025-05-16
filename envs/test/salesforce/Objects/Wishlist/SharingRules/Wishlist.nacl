@@ -1,0 +1,7 @@
+salesforce.SharingRules Wishlist {
+  fullName = "Wishlist"
+  _parent = [
+    salesforce.Wishlist,
+  ]
+  _alias = "Wishlist"
+}

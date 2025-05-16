@@ -1,0 +1,7 @@
+salesforce.SharingRules CommerceConfigRelatedRecord {
+  fullName = "CommerceConfigRelatedRecord"
+  _parent = [
+    salesforce.CommerceConfigRelatedRecord,
+  ]
+  _alias = "CommerceConfigRelatedRecord"
+}

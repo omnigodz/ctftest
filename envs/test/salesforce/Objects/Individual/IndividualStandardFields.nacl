@@ -1,0 +1,143 @@
+type salesforce.Individual {
+  salesforce.Unknown BirthDate {
+    apiName = "Individual.BirthDate"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown CanStorePiiElsewhere {
+    apiName = "Individual.CanStorePiiElsewhere"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown ChildrenCount {
+    apiName = "Individual.ChildrenCount"
+    _hidden_value = true
+  }
+  salesforce.Unknown ConsumerCreditScore {
+    apiName = "Individual.ConsumerCreditScore"
+    _hidden_value = true
+  }
+  salesforce.Unknown ConsumerCreditScoreProviderName {
+    apiName = "Individual.ConsumerCreditScoreProviderName"
+    _hidden_value = true
+  }
+  salesforce.Unknown ConvictionsCount {
+    apiName = "Individual.ConvictionsCount"
+    _hidden_value = true
+  }
+  salesforce.Unknown DeathDate {
+    apiName = "Individual.DeathDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown HasOptedOutGeoTracking {
+    apiName = "Individual.HasOptedOutGeoTracking"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown HasOptedOutProcessing {
+    apiName = "Individual.HasOptedOutProcessing"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown HasOptedOutProfiling {
+    apiName = "Individual.HasOptedOutProfiling"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown HasOptedOutSolicit {
+    apiName = "Individual.HasOptedOutSolicit"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown HasOptedOutTracking {
+    apiName = "Individual.HasOptedOutTracking"
+    _hidden_value = true
+  }
+  salesforce.Picklist IndividualsAge {
+    apiName = "Individual.IndividualsAge"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown InfluencerRating {
+    apiName = "Individual.InfluencerRating"
+    _hidden_value = true
+  }
+  salesforce.Unknown IsHomeOwner {
+    apiName = "Individual.IsHomeOwner"
+    _hidden_value = true
+  }
+  salesforce.Picklist MilitaryService {
+    apiName = "Individual.MilitaryService"
+    _hidden_value = true
+  }
+  salesforce.Name Name {
+    apiName = "Individual.Name"
+    label = "Name"
+    _required = true
+    _hidden_value = true
+  }
+  salesforce.Unknown Occupation {
+    apiName = "Individual.Occupation"
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Individual.OwnerId"
+    securityClassification = "Confidential"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Unknown SendIndividualData {
+    apiName = "Individual.SendIndividualData"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown ShouldForget {
+    apiName = "Individual.ShouldForget"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Unknown Website {
+    apiName = "Individual.Website"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "Individual.Id"
+    label = "Individual ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Individual.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Individual.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Individual.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Individual.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Individual.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Individual.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

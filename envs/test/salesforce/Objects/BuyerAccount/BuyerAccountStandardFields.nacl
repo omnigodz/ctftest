@@ -1,0 +1,120 @@
+type salesforce.BuyerAccount {
+  salesforce.Summary AvailableCredit {
+    apiName = "BuyerAccount.AvailableCredit"
+    label = "Available Balance"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail BuyerId {
+    apiName = "BuyerAccount.BuyerId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "Buyer"
+  }
+  salesforce.Picklist BuyerStatus {
+    apiName = "BuyerAccount.BuyerStatus"
+    label = "Buyer Status"
+    restricted = false
+  }
+  salesforce.Picklist CommerceType {
+    apiName = "BuyerAccount.CommerceType"
+    label = "Commerce Type"
+    restricted = false
+  }
+  salesforce.Currency CreditLimit {
+    apiName = "BuyerAccount.CreditLimit"
+    label = "Credit Balance"
+    scale = 2
+    precision = 18
+  }
+  salesforce.Picklist CreditStatus {
+    apiName = "BuyerAccount.CreditStatus"
+    label = "Credit Rating/Status"
+    restricted = false
+  }
+  salesforce.Currency CurrentBalance {
+    apiName = "BuyerAccount.CurrentBalance"
+    label = "Current Balance"
+    scale = 2
+    precision = 18
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "BuyerAccount.IsActive"
+    label = "Is Active"
+    defaultValue = false
+  }
+  salesforce.Currency MaximumOrderLimit {
+    apiName = "BuyerAccount.MaximumOrderLimit"
+    label = "Maximum Order Limit"
+    scale = 2
+    precision = 18
+  }
+  salesforce.Currency MinimumOrderLimit {
+    apiName = "BuyerAccount.MinimumOrderLimit"
+    label = "Minimum Order Limit"
+    scale = 2
+    precision = 18
+  }
+  salesforce.Text Name {
+    apiName = "BuyerAccount.Name"
+    label = "Buyer Account Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "BuyerAccount.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Lookup PayerId {
+    apiName = "BuyerAccount.PayerId"
+    label = "Account ID"
+    relationshipName = "Payer"
+  }
+  salesforce.Lookup SendToId {
+    apiName = "BuyerAccount.SendToId"
+    label = "Account ID"
+    relationshipName = "SendTo"
+  }
+  serviceid Id {
+    apiName = "BuyerAccount.Id"
+    label = "Buyer Account ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BuyerAccount.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BuyerAccount.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BuyerAccount.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BuyerAccount.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BuyerAccount.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BuyerAccount.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

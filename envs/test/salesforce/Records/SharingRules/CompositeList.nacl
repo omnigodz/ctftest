@@ -1,0 +1,4 @@
+salesforce.SharingRules CompositeList {
+  fullName = "CompositeList"
+  _alias = "CompositeList"
+}

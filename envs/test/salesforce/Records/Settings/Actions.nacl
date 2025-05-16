@@ -1,0 +1,7 @@
+salesforce.ActionsSettings {
+  enableDefaultQuickActionsOn = true
+  enableOfflineWebLinks = false
+  enableThirdPartyActions = false
+  fullName = "Actions"
+  _alias = "Actions"
+}

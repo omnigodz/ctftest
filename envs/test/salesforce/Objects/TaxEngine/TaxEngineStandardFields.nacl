@@ -1,0 +1,93 @@
+type salesforce.TaxEngine {
+  salesforce.LongTextArea Description {
+    apiName = "TaxEngine.Description"
+    label = "Description"
+    length = 1000
+  }
+  salesforce.Text ExternalReference {
+    apiName = "TaxEngine.ExternalReference"
+    label = "External Reference"
+    length = 255
+    unique = true
+    caseSensitive = false
+  }
+  salesforce.Lookup MerchantCredentialId {
+    apiName = "TaxEngine.MerchantCredentialId"
+    label = "Named Credential ID"
+    relationshipName = "MerchantCredential"
+  }
+  salesforce.Text SellerCode {
+    apiName = "TaxEngine.SellerCode"
+    label = "Seller Code"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist Status {
+    apiName = "TaxEngine.Status"
+    label = "Tax Engine Status"
+    _required = true
+    restricted = true
+  }
+  salesforce.Text TaxEngineName {
+    apiName = "TaxEngine.TaxEngineName"
+    label = "Tax Engine Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Unknown TaxPrvdAccountIdentifier {
+    apiName = "TaxEngine.TaxPrvdAccountIdentifier"
+    _hidden_value = true
+  }
+  salesforce.Unknown Type {
+    apiName = "TaxEngine.Type"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "TaxEngine.Id"
+    label = "Tax Engine ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TaxEngine.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TaxEngine.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TaxEngine.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "TaxEngine.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "TaxEngine.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TaxEngine.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Address TaxEngineAddress {
+    apiName = "TaxEngine.TaxEngineAddress"
+    label = "Tax Engine Address"
+    _required = true
+    _hidden_value = true
+  }
+}

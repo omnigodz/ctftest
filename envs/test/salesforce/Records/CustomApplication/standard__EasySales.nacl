@@ -1,0 +1,31 @@
+salesforce.CustomApplication standard__EasySales {
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Sales"
+  navType = "Standard"
+  tabs = [
+    "standard-Lead",
+    "standard-Contact",
+    "standard-Account",
+    "standard-Opportunity",
+    "standard-Product2",
+    "standard-Pricebook2",
+    "standard-Event",
+    "standard-WaveHomeLightning",
+  ]
+  uiType = "Lightning"
+  utilityBar = "EasySales_UtilityBar"
+  fullName = "standard__EasySales"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.EasySales_UtilityBar
+    },
+  ]
+  _alias = "Sales (standard)"
+}

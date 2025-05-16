@@ -1,0 +1,278 @@
+salesforce.Layout Case_Case_Layout@bs {
+  emailDefault = false
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Case Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Case.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Priority
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Origin
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Contact Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.ContactId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.SuppliedEmail
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.AccountId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Case.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Case.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 0
+      },
+      {
+        actionName = salesforce.QuickAction.instance.Case_Close_Case@vu
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = "MergeCase"
+        actionType = "StandardButton"
+        sortOrder = 2
+      },
+      {
+        actionName = "Case._LightningUpdateCase"
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 4
+      },
+      {
+        actionName = "Clone"
+        actionType = "StandardButton"
+        sortOrder = 5
+      },
+      {
+        actionName = salesforce.QuickAction.instance.Case_SendEmail@v
+        actionType = "QuickAction"
+        sortOrder = 6
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 7
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 8
+      },
+    ]
+  }
+  quickActionList = {
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Case.field.ContactId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Case.field.AccountId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "TITLE",
+        "LAST_UPDATE",
+        "CREATEDBY_USER",
+      ]
+      relatedList = "RelatedArticleList"
+    },
+    {
+      relatedList = "RelatedCommentsList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedEntityHistoryList"
+    },
+  ]
+  relatedObjects = [
+    "ContactId",
+    "AccountId",
+  ]
+  showEmailCheckbox = true
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showKnowledgeComponent = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "null"
+    sizeX = 3
+    sizeY = 4
+    summaryLayoutItems = [
+      {
+        field = salesforce.Case.field.ContactId
+        posX = 0
+        posY = 0
+      },
+      {
+        field = salesforce.Case.field.AccountId
+        posX = 0
+        posY = 1
+      },
+      {
+        field = salesforce.Case.field.CaseNumber
+        posX = 1
+        posY = 0
+      },
+      {
+        field = salesforce.Case.field.CreatedDate
+        posX = 1
+        posY = 1
+      },
+      {
+        field = salesforce.Case.field.Subject
+        posX = 1
+        posY = 2
+      },
+      {
+        field = salesforce.Case.field.Description
+        posX = 1
+        posY = 3
+      },
+      {
+        field = salesforce.Case.field.Status
+        posX = 2
+        posY = 0
+      },
+      {
+        field = salesforce.Case.field.Priority
+        posX = 2
+        posY = 1
+      },
+      {
+        field = salesforce.Case.field.OwnerId
+        posX = 2
+        posY = 2
+      },
+    ]
+    summaryLayoutStyle = "CaseInteraction"
+  }
+  fullName = "Case-Case Layout"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case-Case Layout"
+}

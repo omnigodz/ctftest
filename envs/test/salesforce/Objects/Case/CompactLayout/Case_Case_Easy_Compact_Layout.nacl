@@ -1,0 +1,15 @@
+salesforce.CompactLayout Case_Case_Easy_Compact_Layout {
+  fullName = "Case.Case_Easy_Compact_Layout"
+  fields = [
+    "CaseNumber",
+    "OwnerId",
+    "Status",
+    "Priority",
+    "Subject",
+  ]
+  label = "Case Easy Compact Layout"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Case Easy Compact Layout"
+}

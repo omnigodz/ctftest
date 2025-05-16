@@ -1,0 +1,119 @@
+type salesforce.OrderItemAdjustmentLineSummary {
+  salesforce.Lookup AdjustmentBasisReferenceId {
+    apiName = "OrderItemAdjustmentLineSummary.AdjustmentBasisReferenceId"
+    label = "Adjustment Basis Reference ID"
+    relationshipName = "AdjustmentBasisReference"
+  }
+  salesforce.Lookup AdjustmentCauseId {
+    apiName = "OrderItemAdjustmentLineSummary.AdjustmentCauseId"
+    label = "Adjustment Cause ID"
+    relationshipName = "AdjustmentCause"
+  }
+  salesforce.Currency Amount {
+    apiName = "OrderItemAdjustmentLineSummary.Amount"
+    label = "Adjustment"
+    _required = true
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "OrderItemAdjustmentLineSummary.Description"
+    label = "Description"
+    length = 2000
+  }
+  salesforce.Text Name {
+    apiName = "OrderItemAdjustmentLineSummary.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OrderAdjustmentGroupSummaryId {
+    apiName = "OrderItemAdjustmentLineSummary.OrderAdjustmentGroupSummaryId"
+    label = "Order Adjustment Group Summary ID"
+    relationshipName = "OrderAdjustmentGroupSummary"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail OrderItemSummaryId {
+    apiName = "OrderItemAdjustmentLineSummary.OrderItemSummaryId"
+    label = "Order Product Summary ID"
+    _required = true
+    relationshipName = "OrderItemSummary"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderSummaryId {
+    apiName = "OrderItemAdjustmentLineSummary.OrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "OrderSummary"
+    _hidden_value = true
+  }
+  salesforce.Lookup OriginalOrderItemAdjustmentLineItemId {
+    apiName = "OrderItemAdjustmentLineSummary.OriginalOrderItemAdjustmentLineItemId"
+    label = "Order Product Adjustment Line Item ID"
+    relationshipName = "OriginalOrderItemAdjustmentLineItem"
+    _hidden_value = true
+  }
+  salesforce.Number Priority {
+    apiName = "OrderItemAdjustmentLineSummary.Priority"
+    label = "Priority"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  salesforce.Currency TotalAmtWithTax {
+    apiName = "OrderItemAdjustmentLineSummary.TotalAmtWithTax"
+    label = "Adjustment with Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalTaxAmount {
+    apiName = "OrderItemAdjustmentLineSummary.TotalTaxAmount"
+    label = "Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "OrderItemAdjustmentLineSummary.Id"
+    label = "Order Product Adjustment Line Item Summary ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItemAdjustmentLineSummary.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItemAdjustmentLineSummary.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItemAdjustmentLineSummary.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItemAdjustmentLineSummary.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItemAdjustmentLineSummary.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItemAdjustmentLineSummary.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

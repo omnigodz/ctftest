@@ -1,0 +1,60 @@
+salesforce.Profile Chatter_Free_User@s {
+  userPermissions = {
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    BypassMFAForUiLogins = {
+      enabled = true
+      name = "BypassMFAForUiLogins"
+    }
+    ChatterFileLink = {
+      enabled = true
+      name = "ChatterFileLink"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    DistributeFromPersWksp = {
+      enabled = true
+      name = "DistributeFromPersWksp"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    PasswordNeverExpires = {
+      enabled = true
+      name = "PasswordNeverExpires"
+    }
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+    ShareFilesWithNetworks = {
+      enabled = true
+      name = "ShareFilesWithNetworks"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    ViewHelpLink = {
+      enabled = true
+      name = "ViewHelpLink"
+    }
+  }
+}

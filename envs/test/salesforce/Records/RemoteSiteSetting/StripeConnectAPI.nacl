@@ -1,0 +1,7 @@
+salesforce.RemoteSiteSetting StripeConnectAPI {
+  fullName = "StripeConnectAPI"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://connect.stripe.com"
+  _alias = "StripeConnectAPI"
+}

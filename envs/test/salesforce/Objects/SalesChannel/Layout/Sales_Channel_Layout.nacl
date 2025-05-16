@@ -1,0 +1,59 @@
+salesforce.Layout SalesChannel_Sales_Channel_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "SalesChannelInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.SalesChannel.field.SalesChannelName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SalesChannel.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SalesChannel.field.ExternalChannelNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.SalesChannel.field.Type
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "ORDERS.ORDER_NUMBER",
+      ]
+      relatedList = "Orders"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "SalesChannel-Sales Channel Layout"
+  _parent = [
+    salesforce.SalesChannel,
+  ]
+  _alias = "SalesChannel-Sales Channel Layout"
+}

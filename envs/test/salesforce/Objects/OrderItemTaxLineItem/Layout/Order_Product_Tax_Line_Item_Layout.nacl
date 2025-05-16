@@ -1,0 +1,104 @@
+salesforce.Layout OrderItemTaxLineItem_Order_Product_Tax_Line_Item_Layout@bsssss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Order Product Tax Line Item Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItem.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItem.field.OrderItemId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemTaxLineItem.field.Description
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItem.field.TaxEffectiveDate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItem.field.Amount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemTaxLineItem.field.OrderItemAdjustmentLineItemId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItem.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemTaxLineItem.field.Rate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemTaxLineItem.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemTaxLineItem.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemTaxLineItem.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemTaxLineItem.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderItemTaxLineItem-Order Product Tax Line Item Layout"
+  _parent = [
+    salesforce.OrderItemTaxLineItem,
+  ]
+  _alias = "OrderItemTaxLineItem-Order Product Tax Line Item Layout"
+}

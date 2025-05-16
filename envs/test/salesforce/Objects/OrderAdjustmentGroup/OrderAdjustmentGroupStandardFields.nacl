@@ -1,0 +1,127 @@
+type salesforce.OrderAdjustmentGroup {
+  salesforce.Lookup AdjustmentBasisReferenceId {
+    apiName = "OrderAdjustmentGroup.AdjustmentBasisReferenceId"
+    label = "Adjustment Basis Reference ID"
+    relationshipName = "AdjustmentBasisReference"
+  }
+  salesforce.Lookup AdjustmentCauseId {
+    apiName = "OrderAdjustmentGroup.AdjustmentCauseId"
+    label = "Adjustment Cause ID"
+    relationshipName = "AdjustmentCause"
+  }
+  salesforce.Picklist AdjustmentSource {
+    apiName = "OrderAdjustmentGroup.AdjustmentSource"
+    label = "Adjustment Source"
+    restricted = true
+  }
+  salesforce.Picklist AdjustmentType {
+    apiName = "OrderAdjustmentGroup.AdjustmentType"
+    label = "Adjustment Type"
+    restricted = true
+  }
+  salesforce.Number AdjustmentValue {
+    apiName = "OrderAdjustmentGroup.AdjustmentValue"
+    label = "Adjustment Value"
+    scale = 0
+    precision = 18
+    unique = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "OrderAdjustmentGroup.Description"
+    label = "Description"
+    length = 2000
+  }
+  salesforce.Currency GrandTotalAmount {
+    apiName = "OrderAdjustmentGroup.GrandTotalAmount"
+    label = "Total with Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "OrderAdjustmentGroup.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.MasterDetail OrderId {
+    apiName = "OrderAdjustmentGroup.OrderId"
+    label = "Order ID"
+    _required = true
+    relationshipName = "Order"
+  }
+  salesforce.Number Priority {
+    apiName = "OrderAdjustmentGroup.Priority"
+    label = "Priority"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  salesforce.Lookup RelatedAdjustmentGroupId {
+    apiName = "OrderAdjustmentGroup.RelatedAdjustmentGroupId"
+    label = "Order Adjustment Group ID"
+    relationshipName = "RelatedAdjustmentGroup"
+    _hidden_value = true
+  }
+  salesforce.Currency TotalAmount {
+    apiName = "OrderAdjustmentGroup.TotalAmount"
+    label = "Pretax Total"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalTaxAmount {
+    apiName = "OrderAdjustmentGroup.TotalTaxAmount"
+    label = "Total Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "OrderAdjustmentGroup.Type"
+    label = "Type"
+    _required = true
+    restricted = true
+  }
+  serviceid Id {
+    apiName = "OrderAdjustmentGroup.Id"
+    label = "Order Adjustment Group ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderAdjustmentGroup.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderAdjustmentGroup.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderAdjustmentGroup.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderAdjustmentGroup.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderAdjustmentGroup.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderAdjustmentGroup.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

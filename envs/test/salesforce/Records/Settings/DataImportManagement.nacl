@@ -1,0 +1,4 @@
+salesforce.DataImportManagementSettings {
+  fullName = "DataImportManagement"
+  _alias = "DataImportManagement"
+}

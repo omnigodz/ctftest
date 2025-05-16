@@ -1,0 +1,7 @@
+salesforce.SharingRules PriceAdjustmentSchedule {
+  fullName = "PriceAdjustmentSchedule"
+  _parent = [
+    salesforce.PriceAdjustmentSchedule,
+  ]
+  _alias = "PriceAdjustmentSchedule"
+}

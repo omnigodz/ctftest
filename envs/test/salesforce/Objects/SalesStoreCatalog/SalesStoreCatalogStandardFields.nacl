@@ -1,0 +1,30 @@
+type salesforce.SalesStoreCatalog {
+  salesforce.MasterDetail ProductCatalogId {
+    apiName = "SalesStoreCatalog.ProductCatalogId"
+    label = "Catalog ID"
+    _required = true
+    relationshipName = "ProductCatalog"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail SalesStoreId {
+    apiName = "SalesStoreCatalog.SalesStoreId"
+    label = "Sales Store ID"
+    _required = true
+    relationshipName = "SalesStore"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "SalesStoreCatalog.Id"
+    label = "Sales Store Catalog ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ImplementorType {
+    apiName = "SalesStoreCatalog.ImplementorType"
+    label = "Implementor Type"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,177 @@
+salesforce.LightningPage Lead_Record_Page {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "actionNames"
+                valueList = {
+                  valueListItems = [
+                    {
+                      value = "Convert"
+                    },
+                    {
+                      value = "ChangeOwnerOne"
+                    },
+                    {
+                      value = "Edit"
+                    },
+                    {
+                      value = "Global.NewEvent"
+                    },
+                    {
+                      value = "Global.LogACall"
+                    },
+                    {
+                      value = "Global.NewTask"
+                    },
+                    {
+                      value = "ChangeTargetAssignee"
+                    },
+                    {
+                      value = "FindDup"
+                    },
+                    {
+                      value = "XClean"
+                    },
+                    {
+                      value = "CreateSurveyInvitation"
+                    },
+                    {
+                      value = "Delete"
+                    },
+                    {
+                      value = "ChangeRecordType"
+                    },
+                    {
+                      value = "StartOutboundConversation"
+                    },
+                    {
+                      value = "CallHighlightAction"
+                    },
+                    {
+                      value = "SmsHighlightAction"
+                    },
+                    {
+                      value = "EmailHighlightAction"
+                    },
+                  ]
+                }
+              },
+              {
+                name = "collapsed"
+                value = "true"
+              },
+              {
+                name = "enableActionsConfiguration"
+                value = "true"
+              },
+              {
+                name = "enableActionsInNative"
+                value = "false"
+              },
+              {
+                name = "hideChatterActions"
+                value = "false"
+              },
+              {
+                name = "numVisibleActions"
+                value = "3"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+            identifier = "force_highlightsPanel"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "hideUpdateButton"
+                value = "false"
+              },
+              {
+                name = "variant"
+                value = "linear"
+              },
+            ]
+            componentName = "runtime_sales_lead:pathAssistant"
+            identifier = "runtime_sales_lead_pathAssistant"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+            identifier = "force_detailPanel"
+          }
+        },
+      ]
+      name = "leftsidebar"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:activityPanel"
+            identifier = "runtime_sales_activities_activityPanel"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "displayOption"
+                value = "BOTH"
+              },
+            ]
+            componentName = "runtime_sales_merge:mergeCandidatesPreviewCard"
+            identifier = "runtime_sales_merge_mergeCandidatesPreviewCard"
+          }
+        },
+      ]
+      name = "rightsidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Lead Record Page"
+  sobjectType = "Lead"
+  template = {
+    name = "flexipage:recordHomeThreeColHeaderTemplateDesktop"
+    properties = {
+      name = "enablePageActionConfig"
+      value = "false"
+    }
+  }
+  type = "RecordPage"
+  fullName = "Lead_Record_Page"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.QuickAction.instance.LogACall
+    },
+    {
+      reference = salesforce.QuickAction.instance.NewEvent
+    },
+    {
+      reference = salesforce.QuickAction.instance.NewTask
+    },
+  ]
+  _alias = "Lead_Record_Page"
+}

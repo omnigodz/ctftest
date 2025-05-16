@@ -1,0 +1,37 @@
+salesforce.StandardValueSet CaseStatus {
+  fullName = "CaseStatus"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "New"
+      default = true
+      label = "New"
+      closed = false
+    },
+    {
+      fullName = "Working"
+      default = false
+      label = "Working"
+      closed = false
+    },
+    {
+      fullName = "Waiting on Customer"
+      default = false
+      label = "Waiting on Customer"
+      closed = false
+    },
+    {
+      fullName = "Escalated"
+      default = false
+      label = "Escalated"
+      closed = false
+    },
+    {
+      fullName = "Closed"
+      default = false
+      label = "Closed"
+      closed = true
+    },
+  ]
+  _alias = "CaseStatus"
+}

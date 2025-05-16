@@ -1,0 +1,87 @@
+type salesforce.TaxRate {
+  salesforce.Lookup GeoCountryId {
+    apiName = "TaxRate.GeoCountryId"
+    label = "Geo Country ID"
+    relationshipName = "GeoCountry"
+  }
+  salesforce.Lookup GeoStateId {
+    apiName = "TaxRate.GeoStateId"
+    label = "Geo State ID"
+    relationshipName = "GeoState"
+  }
+  salesforce.Number Priority {
+    apiName = "TaxRate.Priority"
+    label = "Priority"
+    _required = true
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  salesforce.Number Rate {
+    apiName = "TaxRate.Rate"
+    label = "Tax Rate %"
+    _required = true
+    scale = 2
+    precision = 5
+    unique = false
+  }
+  salesforce.Text TaxCode {
+    apiName = "TaxRate.TaxCode"
+    inlineHelpText = "Tax Code maps products to tax rates. Use the same Tax Code for multiple Tax Rates to apply those rates to the same products in a Tax Treatment."
+    label = "Tax Code"
+    _required = true
+    length = 80
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "TaxRate.Id"
+    label = "Tax Rate ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "TaxRate.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TaxRate.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "TaxRate.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TaxRate.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TaxRate.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "TaxRate.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "TaxRate.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TaxRate.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,100 @@
+type salesforce.OrderSummaryAdditionalInfo {
+  salesforce.Text InventoryReservationExtRef {
+    apiName = "OrderSummaryAdditionalInfo.InventoryReservationExtRef"
+    label = "Inventory Reservation External Reference"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text InventoryReservationIdentifier {
+    apiName = "OrderSummaryAdditionalInfo.InventoryReservationIdentifier"
+    label = "Inventory Reservation Identifier"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text InventoryReservationMessage {
+    apiName = "OrderSummaryAdditionalInfo.InventoryReservationMessage"
+    label = "Inventory Reservation Message"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist InventoryReservationState {
+    apiName = "OrderSummaryAdditionalInfo.InventoryReservationState"
+    label = "Inventory Reservation State"
+    restricted = true
+  }
+  salesforce.Text Name {
+    apiName = "OrderSummaryAdditionalInfo.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OrderId {
+    apiName = "OrderSummaryAdditionalInfo.OrderId"
+    label = "Order ID"
+    relationshipName = "Order"
+  }
+  salesforce.Lookup OrderSummaryId {
+    apiName = "OrderSummaryAdditionalInfo.OrderSummaryId"
+    label = "Order Summary ID"
+    relationshipName = "OrderSummary"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "OrderSummaryAdditionalInfo.Id"
+    label = "Order Summary Additional Id"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "OrderSummaryAdditionalInfo.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderSummaryAdditionalInfo.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderSummaryAdditionalInfo.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderSummaryAdditionalInfo.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderSummaryAdditionalInfo.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderSummaryAdditionalInfo.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderSummaryAdditionalInfo.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Text AdjustmentsVersion {
+    apiName = "OrderSummaryAdditionalInfo.AdjustmentsVersion"
+    label = "Adjustments Version"
+    length = 80
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+}

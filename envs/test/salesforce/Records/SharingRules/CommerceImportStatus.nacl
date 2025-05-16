@@ -1,0 +1,4 @@
+salesforce.SharingRules CommerceImportStatus {
+  fullName = "CommerceImportStatus"
+  _alias = "CommerceImportStatus"
+}

@@ -1,0 +1,7 @@
+salesforce.SharingRules SalesChannel {
+  fullName = "SalesChannel"
+  _parent = [
+    salesforce.SalesChannel,
+  ]
+  _alias = "SalesChannel"
+}

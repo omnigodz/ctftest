@@ -1,0 +1,7 @@
+salesforce.SharingRules Knowledge__kav {
+  fullName = "Knowledge__kav"
+  _parent = [
+    salesforce.Knowledge__kav,
+  ]
+  _alias = "Knowledge__kav"
+}

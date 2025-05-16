@@ -1,0 +1,94 @@
+salesforce.Profile Sales_Insights_Integration_User@s {
+  applicationVisibilities = {
+    standard__AllTabSet = {
+      application = "standard__AllTabSet"
+      default = true
+      visible = true
+    }
+    standard__AppLauncher = {
+      application = "standard__AppLauncher"
+      default = false
+      visible = true
+    }
+    standard__CommerceStarter = {
+      application = "standard__CommerceStarter"
+      default = false
+      visible = true
+    }
+    standard__Content = {
+      application = "standard__Content"
+      default = false
+      visible = true
+    }
+    standard__EasyAccounts = {
+      application = "standard__EasyAccounts"
+      default = false
+      visible = true
+    }
+    standard__EasyContacts = {
+      application = "standard__EasyContacts"
+      default = false
+      visible = true
+    }
+    standard__EasyHome = {
+      application = "standard__EasyHome"
+      default = false
+      visible = true
+    }
+    standard__EasySales = {
+      application = "standard__EasySales"
+      default = false
+      visible = false
+    }
+    standard__EasyService = {
+      application = "standard__EasyService"
+      default = false
+      visible = false
+    }
+    standard__FlowsApp = {
+      application = "standard__FlowsApp"
+      default = false
+      visible = true
+    }
+    standard__GenerativeCanvas = {
+      application = "standard__GenerativeCanvas"
+      default = false
+      visible = true
+    }
+    standard__Marketing = {
+      application = "standard__Marketing"
+      default = false
+      visible = true
+    }
+    standard__MarketingOverview = {
+      application = "standard__MarketingOverview"
+      default = false
+      visible = false
+    }
+    standard__OnlineSales = {
+      application = "standard__OnlineSales"
+      default = false
+      visible = true
+    }
+    standard__Platform = {
+      application = "standard__Platform"
+      default = false
+      visible = false
+    }
+    standard__Sales = {
+      application = "standard__Sales"
+      default = false
+      visible = true
+    }
+    standard__Service = {
+      application = "standard__Service"
+      default = false
+      visible = true
+    }
+    standard__Sites = {
+      application = "standard__Sites"
+      default = false
+      visible = true
+    }
+  }
+}

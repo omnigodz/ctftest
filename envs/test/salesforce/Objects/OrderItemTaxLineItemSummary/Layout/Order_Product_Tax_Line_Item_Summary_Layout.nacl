@@ -1,0 +1,71 @@
+salesforce.Layout OrderItemTaxLineItemSummary_Order_Product_Tax_Line_Item_Summary_Layout@bssssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderItemTaxLineItemSummaryInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItemSummary.field.OrderItemSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItemSummary.field.OriginalOrderItemTaxLineItemId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemTaxLineItemSummary.field.OrderItemAdjustmentLineSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItemSummary.field.OrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItemSummary.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItemSummary.field.Amount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemTaxLineItemSummary.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemTaxLineItemSummary.field.Rate
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemTaxLineItemSummary.field.TaxEffectiveDate
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderItemTaxLineItemSummary-Order Product Tax Line Item Summary Layout"
+  _parent = [
+    salesforce.OrderItemTaxLineItemSummary,
+  ]
+  _alias = "OrderItemTaxLineItemSummary-Order Product Tax Line Item Summary Layout"
+}

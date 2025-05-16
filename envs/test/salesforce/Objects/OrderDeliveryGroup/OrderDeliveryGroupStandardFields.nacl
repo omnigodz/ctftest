@@ -1,0 +1,190 @@
+type salesforce.OrderDeliveryGroup {
+  salesforce.Address DeliverToAddress {
+    apiName = "OrderDeliveryGroup.DeliverToAddress"
+    label = "Deliver to Address"
+    _hidden_value = true
+  }
+  salesforce.Text DeliverToCompanyName {
+    apiName = "OrderDeliveryGroup.DeliverToCompanyName"
+    label = " Deliver to Company Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text DeliverToFullName {
+    apiName = "OrderDeliveryGroup.DeliverToFullName"
+    label = "Deliver to Full Name"
+    length = 121
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Text DeliverToName {
+    apiName = "OrderDeliveryGroup.DeliverToName"
+    label = "Deliver to Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.LongTextArea DeliveryInstructions {
+    apiName = "OrderDeliveryGroup.DeliveryInstructions"
+    label = "Delivery Instructions"
+    length = 2000
+  }
+  salesforce.LongTextArea Description {
+    apiName = "OrderDeliveryGroup.Description"
+    label = "Description"
+    length = 2000
+  }
+  salesforce.Date DesiredDeliveryDate {
+    apiName = "OrderDeliveryGroup.DesiredDeliveryDate"
+    label = "Desired Delivery Date"
+  }
+  salesforce.Email EmailAddress {
+    apiName = "OrderDeliveryGroup.EmailAddress"
+    label = "Email Address"
+    unique = false
+  }
+  salesforce.LongTextArea GiftMessage {
+    apiName = "OrderDeliveryGroup.GiftMessage"
+    label = "Gift Message"
+    length = 2000
+  }
+  salesforce.Currency GrandTotalAmount {
+    apiName = "OrderDeliveryGroup.GrandTotalAmount"
+    label = "Total with Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsGift {
+    apiName = "OrderDeliveryGroup.IsGift"
+    label = "Is Gift"
+    defaultValue = false
+  }
+  salesforce.AutoNumber OrderDeliveryGroupNumber {
+    apiName = "OrderDeliveryGroup.OrderDeliveryGroupNumber"
+    label = "Order Delivery Group Number"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderDeliveryMethodId {
+    apiName = "OrderDeliveryGroup.OrderDeliveryMethodId"
+    label = "Order Delivery Method ID"
+    relationshipName = "OrderDeliveryMethod"
+  }
+  salesforce.MasterDetail OrderId {
+    apiName = "OrderDeliveryGroup.OrderId"
+    label = "Order ID"
+    _required = true
+    relationshipName = "Order"
+  }
+  salesforce.Phone PhoneNumber {
+    apiName = "OrderDeliveryGroup.PhoneNumber"
+    label = "Phone Number"
+  }
+  salesforce.Date PromisedDeliveryDate {
+    apiName = "OrderDeliveryGroup.PromisedDeliveryDate"
+    label = "Promised Delivery Date"
+  }
+  salesforce.Lookup RelatedDeliveryGroupId {
+    apiName = "OrderDeliveryGroup.RelatedDeliveryGroupId"
+    label = "Order Delivery Group ID"
+    relationshipName = "RelatedDeliveryGroup"
+    _hidden_value = true
+  }
+  salesforce.Currency TotalAdjustmentAmount {
+    apiName = "OrderDeliveryGroup.TotalAdjustmentAmount"
+    label = "Total Adjustment"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalAdjustmentAmtWithTax {
+    apiName = "OrderDeliveryGroup.TotalAdjustmentAmtWithTax"
+    label = "Total Adjustment with Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalAdjustmentTaxAmount {
+    apiName = "OrderDeliveryGroup.TotalAdjustmentTaxAmount"
+    label = "Total Adjustments Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalAmount {
+    apiName = "OrderDeliveryGroup.TotalAmount"
+    label = "Pretax Total"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalLineAmount {
+    apiName = "OrderDeliveryGroup.TotalLineAmount"
+    label = "Delivery Subtotal"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalLineAmtWithTax {
+    apiName = "OrderDeliveryGroup.TotalLineAmtWithTax"
+    label = "Delivery Subtotal with Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalLineTaxAmount {
+    apiName = "OrderDeliveryGroup.TotalLineTaxAmount"
+    label = "Delivery Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalTaxAmount {
+    apiName = "OrderDeliveryGroup.TotalTaxAmount"
+    label = "Total Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "OrderDeliveryGroup.Id"
+    label = "Order Delivery Group ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderDeliveryGroup.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderDeliveryGroup.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderDeliveryGroup.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderDeliveryGroup.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderDeliveryGroup.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderDeliveryGroup.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

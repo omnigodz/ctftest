@@ -1,0 +1,71 @@
+type salesforce.ProductCategoryMedia {
+  salesforce.Lookup ElectronicMediaGroupId {
+    apiName = "ProductCategoryMedia.ElectronicMediaGroupId"
+    label = "Electronic Media Group ID"
+    _required = true
+    relationshipName = "ElectronicMediaGroup"
+  }
+  salesforce.Lookup ElectronicMediaId {
+    apiName = "ProductCategoryMedia.ElectronicMediaId"
+    label = "ElectronicMedia ID"
+    _required = true
+    relationshipName = "ElectronicMedia"
+  }
+  salesforce.MasterDetail ProductCategoryId {
+    apiName = "ProductCategoryMedia.ProductCategoryId"
+    label = "Category ID"
+    _required = true
+    relationshipName = "ProductCategory"
+  }
+  salesforce.Number SortOrder {
+    apiName = "ProductCategoryMedia.SortOrder"
+    label = "Sort Order"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  serviceid Id {
+    apiName = "ProductCategoryMedia.Id"
+    label = "Category Media ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductCategoryMedia.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ProductCategoryMedia.Name"
+    label = "Category Media Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductCategoryMedia.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductCategoryMedia.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductCategoryMedia.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductCategoryMedia.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductCategoryMedia.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

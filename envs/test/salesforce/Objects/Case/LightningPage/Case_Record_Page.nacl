@@ -1,0 +1,150 @@
+salesforce.LightningPage Case_Record_Page {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "true"
+              },
+              {
+                name = "enableActionsConfiguration"
+                value = "false"
+              },
+              {
+                name = "enableActionsInNative"
+                value = "false"
+              },
+              {
+                name = "hideChatterActions"
+                value = "false"
+              },
+              {
+                name = "numVisibleActions"
+                value = "3"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+            identifier = "force_highlightsPanel"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "hideUpdateButton"
+                value = "false"
+              },
+              {
+                name = "variant"
+                value = "linear"
+              },
+            ]
+            componentName = "runtime_sales_pathassistant:pathAssistant"
+            identifier = "runtime_sales_pathassistant_pathAssistant"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "createQuickActionName"
+                value = "NewContact"
+              },
+              {
+                name = "lookupFieldName"
+                value = "Case.ContactId"
+              },
+              {
+                name = "updateQuickActionName"
+                value = "Contact._LightningRelatedContact"
+              },
+            ]
+            componentName = "console:relatedRecord"
+            identifier = "console_relatedRecord"
+          }
+        },
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+            identifier = "force_detailPanel"
+          }
+        },
+      ]
+      name = "leftsidebar"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:activityPanel"
+            identifier = "runtime_sales_activities_activityPanel"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "forceKnowledge:articleSearchDesktop"
+            identifier = "forceKnowledge_articleSearchDesktop"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+              {
+                name = "rowsToDisplay"
+                value = "10"
+              },
+              {
+                name = "showActionBar"
+                value = "true"
+              },
+            ]
+            componentName = "force:relatedListContainer"
+            identifier = "force_relatedListContainer"
+          }
+        },
+      ]
+      name = "rightsidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Case Record Page"
+  sobjectType = "Case"
+  template = {
+    name = "flexipage:recordHomeThreeColHeaderTemplateDesktop"
+    properties = {
+      name = "enablePageActionConfig"
+      value = "false"
+    }
+  }
+  type = "RecordPage"
+  fullName = "Case_Record_Page"
+  _parent = [
+    salesforce.Case,
+  ]
+  _generated_dependencies = [
+    {
+      reference = salesforce.QuickAction.instance.NewContact
+    },
+  ]
+  _alias = "Case_Record_Page"
+}

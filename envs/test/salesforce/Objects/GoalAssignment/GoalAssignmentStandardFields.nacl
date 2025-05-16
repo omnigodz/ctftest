@@ -1,0 +1,125 @@
+type salesforce.GoalAssignment {
+  salesforce.Unknown CompletionDate {
+    apiName = "GoalAssignment.CompletionDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown CompletionPercentage {
+    apiName = "GoalAssignment.CompletionPercentage"
+    _hidden_value = true
+  }
+  salesforce.Unknown CustomGoalName {
+    apiName = "GoalAssignment.CustomGoalName"
+    inlineHelpText = "When creating personalized goals, this will be used instead of the Goal Definition name which will be something more generic like Custom Financial Goal."
+    _hidden_value = true
+  }
+  salesforce.Unknown Description {
+    apiName = "GoalAssignment.Description"
+    _hidden_value = true
+  }
+  salesforce.Lookup GoalAssigneeId {
+    apiName = "GoalAssignment.GoalAssigneeId"
+    _hidden_value = true
+  }
+  salesforce.Lookup GoalDefinitionId {
+    apiName = "GoalAssignment.GoalDefinitionId"
+    label = "Goal Definition ID"
+    relationshipName = "GoalDefinition"
+  }
+  salesforce.Unknown GoalType {
+    apiName = "GoalAssignment.GoalType"
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentRecordId {
+    apiName = "GoalAssignment.ParentRecordId"
+    label = "Parent Record ID"
+    _required = true
+    relationshipName = "ParentRecord"
+  }
+  salesforce.Unknown Priority {
+    apiName = "GoalAssignment.Priority"
+    _hidden_value = true
+  }
+  salesforce.Unknown StartDate {
+    apiName = "GoalAssignment.StartDate"
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "GoalAssignment.Status"
+    _hidden_value = true
+  }
+  salesforce.Unknown TargetCompletionDate {
+    apiName = "GoalAssignment.TargetCompletionDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown TaskJobStatus {
+    apiName = "GoalAssignment.TaskJobStatus"
+    _hidden_value = true
+  }
+  salesforce.Unknown TaskJobStatusMessage {
+    apiName = "GoalAssignment.TaskJobStatusMessage"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "GoalAssignment.Id"
+    label = "Goal Assignment ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "GoalAssignment.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GoalAssignment.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "GoalAssignment.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GoalAssignment.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GoalAssignment.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GoalAssignment.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GoalAssignment.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GoalAssignment.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Number Target {
+    apiName = "GoalAssignment.Target"
+    label = "Target"
+    scale = 2
+    precision = 12
+    unique = false
+  }
+  salesforce.Percent TargetCompletionPercentage {
+    apiName = "GoalAssignment.TargetCompletionPercentage"
+    label = "Target Completion Percentage"
+    scale = 2
+    precision = 5
+  }
+}

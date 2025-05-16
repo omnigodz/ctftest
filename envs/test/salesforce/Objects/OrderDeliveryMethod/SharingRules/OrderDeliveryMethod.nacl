@@ -1,0 +1,7 @@
+salesforce.SharingRules OrderDeliveryMethod {
+  fullName = "OrderDeliveryMethod"
+  _parent = [
+    salesforce.OrderDeliveryMethod,
+  ]
+  _alias = "OrderDeliveryMethod"
+}

@@ -1,0 +1,288 @@
+salesforce.Layout Event_Event_Layout@bs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Description Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.Subject
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Calendar Event Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.StartDateTime
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.EndDateTime
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Attendees"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.Attendees
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Related Records"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.WhoId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Event.field.OwnerId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.WhatId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Other Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.Phone
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.Email
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Additional Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.Location
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.IsAllDayEvent
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.ShowAs
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Event.field.IsPrivate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Event.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewOpportunity
+        actionType = "QuickAction"
+        sortOrder = 4
+      },
+      {
+        actionName = "PrintableView"
+        actionType = "StandardButton"
+        sortOrder = 5
+      },
+      {
+        actionName = "DeleteFromThisEventOnwards"
+        actionType = "StandardButton"
+        sortOrder = 6
+      },
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 7
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 8
+      },
+      {
+        actionName = "ChangeRecordType"
+        actionType = "StandardButton"
+        sortOrder = 9
+      },
+      {
+        actionName = "DeleteSeries"
+        actionType = "StandardButton"
+        sortOrder = 10
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Event.field.WhoId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Event.field.WhatId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      relatedList = "RelatedEventAttendeeAccept"
+    },
+    {
+      relatedList = "RelatedEventAttendeeNotDecided"
+    },
+    {
+      relatedList = "RelatedEventAttendeeDecline"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+  ]
+  relatedObjects = [
+    "WhoId",
+    "WhatId",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Event-Event Layout"
+  _parent = [
+    salesforce.Event,
+  ]
+  _alias = "Event-Event Layout"
+}

@@ -1,0 +1,26 @@
+salesforce.Layout Outlook_Email_Panel_Layout@bss {
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = salesforce.QuickAction.instance.NewContact
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewEvent
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewLead
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewOpportunity
+      },
+      {
+        quickActionName = salesforce.QuickAction.instance.NewTask
+      },
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Outlook-Email Panel Layout"
+  _alias = "Outlook-Email Panel Layout"
+}

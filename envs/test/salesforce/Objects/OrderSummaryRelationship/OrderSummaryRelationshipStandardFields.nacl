@@ -1,0 +1,81 @@
+type salesforce.OrderSummaryRelationship {
+  salesforce.Lookup AssociatedOrderSummaryId {
+    apiName = "OrderSummaryRelationship.AssociatedOrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "AssociatedOrderSummary"
+  }
+  salesforce.Picklist AssociatedOrderSummaryStatus {
+    apiName = "OrderSummaryRelationship.AssociatedOrderSummaryStatus"
+    label = "Associated Order Summary Status"
+    restricted = false
+    _hidden_value = true
+  }
+  salesforce.Picklist AssociatedRelationshipType {
+    apiName = "OrderSummaryRelationship.AssociatedRelationshipType"
+    label = "Relationship Type"
+    _required = true
+    restricted = true
+  }
+  salesforce.Lookup MainAttachedToId {
+    apiName = "OrderSummaryRelationship.MainAttachedToId"
+    label = "Main Attached To ID"
+    relationshipName = "MainAttachedTo"
+  }
+  salesforce.MasterDetail MainOrderSummaryId {
+    apiName = "OrderSummaryRelationship.MainOrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "MainOrderSummary"
+  }
+  salesforce.Lookup RootOrderSummaryId {
+    apiName = "OrderSummaryRelationship.RootOrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "RootOrderSummary"
+  }
+  serviceid Id {
+    apiName = "OrderSummaryRelationship.Id"
+    label = "Order Summary Relationship Id"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderSummaryRelationship.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "OrderSummaryRelationship.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderSummaryRelationship.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderSummaryRelationship.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderSummaryRelationship.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderSummaryRelationship.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderSummaryRelationship.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,7 @@
+salesforce.RemoteSiteSetting AdyenAccountManagementTestAPI {
+  fullName = "AdyenAccountManagementTestAPI"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://management-test.adyen.com"
+  _alias = "AdyenAccountManagementTestAPI"
+}

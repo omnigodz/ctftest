@@ -1,0 +1,117 @@
+type salesforce.OrderItemSummaryRelationship {
+  salesforce.Picklist AssociatedOrderItemInventory {
+    apiName = "OrderItemSummaryRelationship.AssociatedOrderItemInventory"
+    label = "Associated Order Product Summary Inventory"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AssociatedOrderItemSumPricing {
+    apiName = "OrderItemSummaryRelationship.AssociatedOrderItemSumPricing"
+    label = "Associated Order Product Summary Pricing"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Lookup AssociatedOrderItemSummaryId {
+    apiName = "OrderItemSummaryRelationship.AssociatedOrderItemSummaryId"
+    label = "Order Product Summary ID"
+    _required = true
+    relationshipName = "AssociatedOrderItemSummary"
+    _hidden_value = true
+  }
+  salesforce.Picklist AssociatedOrderItemSummaryRole {
+    apiName = "OrderItemSummaryRelationship.AssociatedOrderItemSummaryRole"
+    label = "Associated Order Product Summary Role"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist AssociatedQuanScaleMethod {
+    apiName = "OrderItemSummaryRelationship.AssociatedQuanScaleMethod"
+    label = "Associated Order Product Summary Quantity Scale Method"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.MasterDetail MainOrderItemSummaryId {
+    apiName = "OrderItemSummaryRelationship.MainOrderItemSummaryId"
+    label = "Order Product Summary ID"
+    _required = true
+    relationshipName = "MainOrderItemSummary"
+    _hidden_value = true
+  }
+  salesforce.Picklist MainOrderItemSummaryRole {
+    apiName = "OrderItemSummaryRelationship.MainOrderItemSummaryRole"
+    label = "Main Order Product Summary Role"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Lookup MainOrderSummaryId {
+    apiName = "OrderItemSummaryRelationship.MainOrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "MainOrderSummary"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderItemRelationshipId {
+    apiName = "OrderItemSummaryRelationship.OrderItemRelationshipId"
+    label = "Order Product Relationship ID"
+    relationshipName = "OrderItemRelationship"
+    _hidden_value = true
+  }
+  salesforce.Lookup ProductRelatedComponentId {
+    apiName = "OrderItemSummaryRelationship.ProductRelatedComponentId"
+    label = "Product Related Component ID"
+    relationshipName = "ProductRelatedComponent"
+    _hidden_value = true
+  }
+  salesforce.Lookup ProductRelationshipTypeId {
+    apiName = "OrderItemSummaryRelationship.ProductRelationshipTypeId"
+    label = "Product Relationship Type ID"
+    relationshipName = "ProductRelationshipType"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "OrderItemSummaryRelationship.Id"
+    label = "Order Product Summary Relationship Id"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItemSummaryRelationship.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "OrderItemSummaryRelationship.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItemSummaryRelationship.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItemSummaryRelationship.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItemSummaryRelationship.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItemSummaryRelationship.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItemSummaryRelationship.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

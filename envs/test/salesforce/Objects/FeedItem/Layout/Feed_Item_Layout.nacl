@@ -1,0 +1,10 @@
+salesforce.Layout FeedItem_Feed_Item_Layout@bss {
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "FeedItem-Feed Item Layout"
+  _parent = [
+    salesforce.FeedItem,
+  ]
+  _alias = "FeedItem-Feed Item Layout"
+}

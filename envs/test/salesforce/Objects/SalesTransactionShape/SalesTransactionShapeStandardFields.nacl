@@ -1,0 +1,22 @@
+type salesforce.SalesTransactionShape {
+  salesforce.Unknown TotalAdjustmentAmount {
+    apiName = "SalesTransactionShape.TotalAdjustmentAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentDistAmount {
+    apiName = "SalesTransactionShape.TotalAdjustmentDistAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAmount {
+    apiName = "SalesTransactionShape.TotalAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalListAmount {
+    apiName = "SalesTransactionShape.TotalListAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalProductAmount {
+    apiName = "SalesTransactionShape.TotalProductAmount"
+    _hidden_value = true
+  }
+}

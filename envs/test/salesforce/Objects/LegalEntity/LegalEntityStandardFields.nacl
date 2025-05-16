@@ -1,0 +1,71 @@
+type salesforce.LegalEntity {
+  salesforce.Unknown CompanyName {
+    apiName = "LegalEntity.CompanyName"
+    _hidden_value = true
+  }
+  salesforce.Unknown Description {
+    apiName = "LegalEntity.Description"
+    _hidden_value = true
+  }
+  salesforce.Unknown LegalEntityAddress {
+    apiName = "LegalEntity.LegalEntityAddress"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "LegalEntity.Name"
+    label = "Legal Entity Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "LegalEntity.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Unknown Status {
+    apiName = "LegalEntity.Status"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "LegalEntity.Id"
+    label = "Legal Entity ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "LegalEntity.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "LegalEntity.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "LegalEntity.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "LegalEntity.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "LegalEntity.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "LegalEntity.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

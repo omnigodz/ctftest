@@ -1,0 +1,7 @@
+salesforce.SharingRules RequestsForAccessSIQ {
+  fullName = "RequestsForAccessSIQ"
+  _parent = [
+    salesforce.RequestsForAccessSIQ,
+  ]
+  _alias = "RequestsForAccessSIQ"
+}

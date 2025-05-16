@@ -1,0 +1,36 @@
+salesforce.Profile Chatter_External_User@s {
+  userPermissions = {
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    AssignTopics = {
+      enabled = true
+      name = "AssignTopics"
+    }
+    BypassMFAForUiLogins = {
+      enabled = true
+      name = "BypassMFAForUiLogins"
+    }
+    CreateTopics = {
+      enabled = true
+      name = "CreateTopics"
+    }
+    EditTopics = {
+      enabled = true
+      name = "EditTopics"
+    }
+    LightningExperienceUser = {
+      enabled = true
+      name = "LightningExperienceUser"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+  }
+}

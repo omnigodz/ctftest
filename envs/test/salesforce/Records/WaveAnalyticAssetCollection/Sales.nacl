@@ -1,0 +1,76 @@
+salesforce.WaveAnalyticAssetCollection Sales {
+  fullName = "Sales"
+  collectionType = "static"
+  color = "#1b96ff"
+  folder = "Sales"
+  items = [
+    {
+      asset = "Sales_Performance"
+      assetType = "Report"
+      sortOrder = 500
+    },
+    {
+      asset = "Top_Accounts"
+      assetType = "Report"
+      sortOrder = 499
+    },
+    {
+      asset = "Forecast"
+      assetType = "Report"
+      sortOrder = 498
+    },
+    {
+      asset = "Opportunities_Won"
+      assetType = "Report"
+      sortOrder = 497
+    },
+    {
+      asset = "Pipeline"
+      assetType = "Report"
+      sortOrder = 496
+    },
+    {
+      asset = "my_sales_dashboard"
+      assetType = "LightningDashboard"
+      sortOrder = 495
+    },
+    {
+      asset = "sales_dashboard"
+      assetType = "LightningDashboard"
+      sortOrder = 494
+    },
+    {
+      asset = "My_Opportunities_Won"
+      assetType = "Report"
+      sortOrder = 493
+    },
+    {
+      asset = "My_Pipeline"
+      assetType = "Report"
+      sortOrder = 492
+    },
+    {
+      asset = "My_Sales_Performance"
+      assetType = "Report"
+      sortOrder = 491
+    },
+    {
+      asset = "My_Top_Accounts"
+      assetType = "Report"
+      sortOrder = 490
+    },
+    {
+      asset = "My_Forecast"
+      assetType = "Report"
+      sortOrder = 489
+    },
+  ]
+  label = "Sales"
+  masterLabel = "Sales"
+  shares = {
+    accessLevel = "Manage"
+    sharedTo = "AllInternalUsers"
+    sharedToType = "Organization"
+  }
+  _alias = "Sales"
+}

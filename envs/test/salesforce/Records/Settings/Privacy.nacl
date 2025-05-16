@@ -1,0 +1,6 @@
+salesforce.PrivacySettings {
+  enableDefaultMetadataValues = true
+  useUmaDefaultConsentRecs = false
+  fullName = "Privacy"
+  _alias = "Privacy"
+}

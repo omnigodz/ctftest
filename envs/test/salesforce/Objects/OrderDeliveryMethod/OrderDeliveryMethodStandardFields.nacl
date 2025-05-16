@@ -1,0 +1,85 @@
+type salesforce.OrderDeliveryMethod {
+  salesforce.Picklist Carrier {
+    apiName = "OrderDeliveryMethod.Carrier"
+    label = "Carrier"
+  }
+  salesforce.Picklist ClassOfService {
+    apiName = "OrderDeliveryMethod.ClassOfService"
+    label = "Class of Service"
+  }
+  salesforce.LongTextArea Description {
+    apiName = "OrderDeliveryMethod.Description"
+    label = "Description"
+    length = 2000
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "OrderDeliveryMethod.IsActive"
+    label = "Is Active"
+    defaultValue = false
+  }
+  salesforce.Text Name {
+    apiName = "OrderDeliveryMethod.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup ProductId {
+    apiName = "OrderDeliveryMethod.ProductId"
+    label = "Product ID"
+    relationshipName = "Product"
+  }
+  salesforce.Text ReferenceNumber {
+    apiName = "OrderDeliveryMethod.ReferenceNumber"
+    label = "Reference Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "OrderDeliveryMethod.Id"
+    label = "Order Delivery Method ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "OrderDeliveryMethod.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderDeliveryMethod.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderDeliveryMethod.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderDeliveryMethod.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderDeliveryMethod.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderDeliveryMethod.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderDeliveryMethod.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

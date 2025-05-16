@@ -1,0 +1,93 @@
+type salesforce.TaxTreatment {
+  salesforce.LongTextArea Description {
+    apiName = "TaxTreatment.Description"
+    label = "Description"
+    length = 1000
+  }
+  salesforce.Lookup LegalEntityId {
+    apiName = "TaxTreatment.LegalEntityId"
+    label = "Legal Entity ID"
+    relationshipName = "LegalEntity"
+  }
+  salesforce.Text Name {
+    apiName = "TaxTreatment.Name"
+    label = "Tax Treatment Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text ProductCode {
+    apiName = "TaxTreatment.ProductCode"
+    label = "Product Code"
+    length = 80
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup ProductId {
+    apiName = "TaxTreatment.ProductId"
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "TaxTreatment.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+  }
+  salesforce.Text TaxCode {
+    apiName = "TaxTreatment.TaxCode"
+    label = "Tax Code"
+    length = 80
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup TaxEngineId {
+    apiName = "TaxTreatment.TaxEngineId"
+    label = "Tax Engine ID"
+    relationshipName = "TaxEngine"
+  }
+  salesforce.Lookup TaxPolicyId {
+    apiName = "TaxTreatment.TaxPolicyId"
+    label = "Tax Policy ID"
+    relationshipName = "TaxPolicy"
+  }
+  serviceid Id {
+    apiName = "TaxTreatment.Id"
+    label = "Tax Treatment ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TaxTreatment.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TaxTreatment.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TaxTreatment.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "TaxTreatment.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "TaxTreatment.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TaxTreatment.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

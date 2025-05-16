@@ -1,0 +1,23 @@
+salesforce.CustomApplication standard__EasyAccounts {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Accounts"
+  navType = "Standard"
+  tabs = [
+    "standard-Account",
+  ]
+  uiType = "Lightning"
+  utilityBar = "EasyAccounts_UtilityBar"
+  fullName = "standard__EasyAccounts"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.EasyAccounts_UtilityBar
+    },
+  ]
+  _alias = "Accounts (standard)"
+}

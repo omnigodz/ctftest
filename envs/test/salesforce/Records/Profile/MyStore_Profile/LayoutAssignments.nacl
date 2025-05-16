@@ -1,0 +1,394 @@
+salesforce.Profile MyStore_Profile@s {
+  layoutAssignments = {
+    Account_Account_Layout@bs = [
+      {
+        layout = "Account-Account Layout"
+      },
+    ]
+    AccountBrand_Account_Brand_Layout@bss = [
+      {
+        layout = "AccountBrand-Account Brand Layout"
+      },
+    ]
+    AlternativePaymentMethod_Alternative_Payment_Method_Layout@bsss = [
+      {
+        layout = "AlternativePaymentMethod-Alternative Payment Method Layout"
+      },
+    ]
+    Asset_Asset_Layout@bs = [
+      {
+        layout = "Asset-Asset Layout"
+      },
+    ]
+    AssetRelationship_Asset_Relationship_Layout@bss = [
+      {
+        layout = "AssetRelationship-Asset Relationship Layout"
+      },
+    ]
+    AuthorizationForm_Authorization_Form_Layout@bss = [
+      {
+        layout = "AuthorizationForm-Authorization Form Layout"
+      },
+    ]
+    AuthorizationFormConsent_Authorization_Form_Consent_Layout@bsss = [
+      {
+        layout = "AuthorizationFormConsent-Authorization Form Consent Layout"
+      },
+    ]
+    AuthorizationFormDataUse_Authorization_Form_Data_Use_Layout@bssss = [
+      {
+        layout = "AuthorizationFormDataUse-Authorization Form Data Use Layout"
+      },
+    ]
+    AuthorizationFormText_Authorization_Form_Text_Layout@bsss = [
+      {
+        layout = "AuthorizationFormText-Authorization Form Text Layout"
+      },
+    ]
+    BuyerAccount_Buyer_Account_Layout@bss = [
+      {
+        layout = "BuyerAccount-Buyer Account Layout"
+      },
+    ]
+    Campaign_Campaign_Layout@bs = [
+      {
+        layout = "Campaign-Campaign Layout"
+      },
+    ]
+    CampaignMember_Campaign_Member_Page_Layout@bsss = [
+      {
+        layout = "CampaignMember-Campaign Member Page Layout"
+      },
+    ]
+    CardPaymentMethod_Card_Payment_Method_Layout@bsss = [
+      {
+        layout = "CardPaymentMethod-Card Payment Method Layout"
+      },
+    ]
+    Case_Case_Layout@bs = [
+      {
+        layout = "Case-Case Layout"
+      },
+    ]
+    CaseClose_Close_Case_Layout@bss = [
+      {
+        layout = "CaseClose-Close Case Layout"
+      },
+    ]
+    Contact_Contact_Layout@bs = [
+      {
+        layout = "Contact-Contact Layout"
+      },
+    ]
+    ContactPointAddress_Contact_Point_Address_Layout@bsss = [
+      {
+        layout = "ContactPointAddress-Contact Point Address Layout"
+      },
+    ]
+    ContactPointEmail_Contact_Point_Email_Layout@bsss = [
+      {
+        layout = "ContactPointEmail-Contact Point Email Layout"
+      },
+    ]
+    ContactPointPhone_Contact_Point_Phone_Layout@bsss = [
+      {
+        layout = "ContactPointPhone-Contact Point Phone Layout"
+      },
+    ]
+    ContactPointTypeConsent_Contact_Point_Type_Consent_Layout@bssss = [
+      {
+        layout = "ContactPointTypeConsent-Contact Point Type Consent Layout"
+      },
+    ]
+    CreditMemo_Credit_Memo_Layout@bss = [
+      {
+        layout = "CreditMemo-Credit Memo Layout"
+      },
+    ]
+    CreditMemoLine_Credit_Memo_Line_Layout@bsss = [
+      {
+        layout = "CreditMemoLine-Credit Memo Line Layout"
+      },
+    ]
+    DataUseLegalBasis_Data_Use_Legal_Basis_Layout@bssss = [
+      {
+        layout = "DataUseLegalBasis-Data Use Legal Basis Layout"
+      },
+    ]
+    DataUsePurpose_Data_Use_Purpose_Layout@bsss = [
+      {
+        layout = "DataUsePurpose-Data Use Purpose Layout"
+      },
+    ]
+    DigitalWallet_Digital_Wallet_Layout@bss = [
+      {
+        layout = "DigitalWallet-Digital Wallet Layout"
+      },
+    ]
+    DuplicateRecordSet_Duplicate_Record_Set_Layout@bsss = [
+      {
+        layout = "DuplicateRecordSet-Duplicate Record Set Layout"
+      },
+    ]
+    EmailMessage_Email_Message_Layout@bss = [
+      {
+        layout = "EmailMessage-Email Message Layout"
+      },
+    ]
+    Event_Event_Layout@bs = [
+      {
+        layout = "Event-Event Layout"
+      },
+    ]
+    FeedItem_Feed_Item_Layout@bss = [
+      {
+        layout = "FeedItem-Feed Item Layout"
+      },
+    ]
+    FulfillmentOrder_Fulfillment_Order_Layout@bss = [
+      {
+        layout = "FulfillmentOrder-Fulfillment Order Layout"
+      },
+    ]
+    FulfillmentOrderItemAdjustment_Fulfillment_Order_Item_Adjustment_Layout@bssss = [
+      {
+        layout = "FulfillmentOrderItemAdjustment-Fulfillment Order Item Adjustment Layout"
+      },
+    ]
+    FulfillmentOrderItemTax_Fulfillment_Order_Item_Tax_Layout@bssss = [
+      {
+        layout = "FulfillmentOrderItemTax-Fulfillment Order Item Tax Layout"
+      },
+    ]
+    Global_Global_Layout@bs = [
+      {
+        layout = "Global-Global Layout"
+      },
+    ]
+    Individual_Individual_Layout@bs = [
+      {
+        layout = "Individual-Individual Layout"
+      },
+    ]
+    Invoice_Invoice_Layout@bs = [
+      {
+        layout = "Invoice-Invoice Layout"
+      },
+    ]
+    InvoiceLine_Invoice_Line_Layout@bss = [
+      {
+        layout = "InvoiceLine-Invoice Line Layout"
+      },
+    ]
+    Knowledge__kav_Knowledge_Layout@uubs = [
+      {
+        layout = "Knowledge__kav-Knowledge Layout"
+      },
+    ]
+    Lead_Lead_Layout@bs = [
+      {
+        layout = "Lead-Lead Layout"
+      },
+    ]
+    Opportunity_Opportunity_Layout@bs = [
+      {
+        layout = "Opportunity-Opportunity Layout"
+      },
+    ]
+    OpportunityLineItem_Opportunity_Product_Layout@bss = [
+      {
+        layout = "OpportunityLineItem-Opportunity Product Layout"
+      },
+    ]
+    Order_Order_Layout@bs = [
+      {
+        layout = "Order-Order Layout"
+      },
+    ]
+    OrderAdjustmentGroup_Order_Adjustment_Group_Layout@bsss = [
+      {
+        layout = "OrderAdjustmentGroup-Order Adjustment Group Layout"
+      },
+    ]
+    OrderAdjustmentGroupSummary_Order_Adjustment_Group_Summary_Layout@bssss = [
+      {
+        layout = "OrderAdjustmentGroupSummary-Order Adjustment Group Summary Layout"
+      },
+    ]
+    OrderDeliveryGroup_Order_Delivery_Group_Layout@bsss = [
+      {
+        layout = "OrderDeliveryGroup-Order Delivery Group Layout"
+      },
+    ]
+    OrderDeliveryGroupSummary_Order_Delivery_Group_Summary_Layout@bssss = [
+      {
+        layout = "OrderDeliveryGroupSummary-Order Delivery Group Summary Layout"
+      },
+    ]
+    OrderDeliveryMethod_Order_Delivery_Method_Layout@bsss = [
+      {
+        layout = "OrderDeliveryMethod-Order Delivery Method Layout"
+      },
+    ]
+    OrderItem_Order_Product_Layout@bss = [
+      {
+        layout = "OrderItem-Order Product Layout"
+      },
+    ]
+    OrderItemAdjustmentLineItem_Order_Product_Adjustment_Line_Item_Layout@bsssss = [
+      {
+        layout = "OrderItemAdjustmentLineItem-Order Product Adjustment Line Item Layout"
+      },
+    ]
+    OrderItemAdjustmentLineSummary_Order_Product_Adjustment_Line_Item_Summary_Layout@bssssss = [
+      {
+        layout = "OrderItemAdjustmentLineSummary-Order Product Adjustment Line Item Summary Layout"
+      },
+    ]
+    OrderItemSummary_Order_Product_Summary_Layout@bsss = [
+      {
+        layout = "OrderItemSummary-Order Product Summary Layout"
+      },
+    ]
+    OrderItemSummaryChange_Order_Product_Summary_Change_Layout@bssss = [
+      {
+        layout = "OrderItemSummaryChange-Order Product Summary Change Layout"
+      },
+    ]
+    OrderItemSummaryRelationship_Order_Product_Summary_Relationship_Layout@bssss = [
+      {
+        layout = "OrderItemSummaryRelationship-Order Product Summary Relationship Layout"
+      },
+    ]
+    OrderItemTaxLineItem_Order_Product_Tax_Line_Item_Layout@bsssss = [
+      {
+        layout = "OrderItemTaxLineItem-Order Product Tax Line Item Layout"
+      },
+    ]
+    OrderItemTaxLineItemSummary_Order_Product_Tax_Line_Item_Summary_Layout@bssssss = [
+      {
+        layout = "OrderItemTaxLineItemSummary-Order Product Tax Line Item Summary Layout"
+      },
+    ]
+    OrderPaymentSummary_Order_Payment_Summary_Layout@bsss = [
+      {
+        layout = "OrderPaymentSummary-Order Payment Summary Layout"
+      },
+    ]
+    OrderPaymentSummaryReference_Order_Payment_Summary_Reference_Layout@bssss = [
+      {
+        layout = "OrderPaymentSummaryReference-Order Payment Summary Reference Layout"
+      },
+    ]
+    OrderSummary_Order_Summary_Layout@bss = [
+      {
+        layout = "OrderSummary-Order Summary Layout"
+      },
+    ]
+    OrderSummaryRelationship_Order_Summary_Relationship_Layout@bsss = [
+      {
+        layout = "OrderSummaryRelationship-Order Summary Relationship Layout"
+      },
+    ]
+    Payment_Payment_Layout@bs = [
+      {
+        layout = "Payment-Payment Layout"
+      },
+    ]
+    PaymentAuthAdjustment_Payment_Authorization_Adjustment_Layout@bsss = [
+      {
+        layout = "PaymentAuthAdjustment-Payment Authorization Adjustment Layout"
+      },
+    ]
+    PaymentAuthorization_Payment_Authorization_Layout@bss = [
+      {
+        layout = "PaymentAuthorization-Payment Authorization Layout"
+      },
+    ]
+    PaymentGateway_Payment_Gateway_Layout@bss = [
+      {
+        layout = "PaymentGateway-Payment Gateway Layout"
+      },
+    ]
+    PaymentGatewayLog_Payment_Gateway_Log_Layout@bsss = [
+      {
+        layout = "PaymentGatewayLog-Payment Gateway Log Layout"
+      },
+    ]
+    PaymentGroup_Payment_Group_Layout@bss = [
+      {
+        layout = "PaymentGroup-Payment Group Layout"
+      },
+    ]
+    PaymentLineInvoice_Payment_Line_Invoice_Layout@bsss = [
+      {
+        layout = "PaymentLineInvoice-Payment Line Invoice Layout"
+      },
+    ]
+    Pricebook2_Price_Book_Layout@bss = [
+      {
+        layout = "Pricebook2-Price Book Layout"
+      },
+    ]
+    PricebookEntry_Price_Book_Entry_Layout@bsss = [
+      {
+        layout = "PricebookEntry-Price Book Entry Layout"
+      },
+    ]
+    Product2_Product_Layout@bs = [
+      {
+        layout = "Product2-Product Layout"
+      },
+    ]
+    QuickText_Quick_Text_Layout@bss = [
+      {
+        layout = "QuickText-Quick Text Layout"
+      },
+    ]
+    Refund_Refund_Layout@bs = [
+      {
+        layout = "Refund-Refund Layout"
+      },
+    ]
+    RefundLinePayment_Refund_Line_Payment_Layout@bsss = [
+      {
+        layout = "RefundLinePayment-Refund Line Payment Layout"
+      },
+    ]
+    SalesChannel_Sales_Channel_Layout@bss = [
+      {
+        layout = "SalesChannel-Sales Channel Layout"
+      },
+    ]
+    Task_Task_Layout@bs = [
+      {
+        layout = "Task-Task Layout"
+      },
+    ]
+    User_User_Layout@bs = [
+      {
+        layout = "User-User Layout"
+      },
+    ]
+    UserAlt_User_Profile_Layout@bss = [
+      {
+        layout = "UserAlt-User Profile Layout"
+      },
+    ]
+    UserProvAccount_User_Provisioning_Account_Layout@bsss = [
+      {
+        layout = "UserProvAccount-User Provisioning Account Layout"
+      },
+    ]
+    UserProvisioningLog_User_Provisioning_Log_Layout@bsss = [
+      {
+        layout = "UserProvisioningLog-User Provisioning Log Layout"
+      },
+    ]
+    UserProvisioningRequest_User_Provisioning_Request_Layout@bsss = [
+      {
+        layout = "UserProvisioningRequest-User Provisioning Request Layout"
+      },
+    ]
+  }
+}

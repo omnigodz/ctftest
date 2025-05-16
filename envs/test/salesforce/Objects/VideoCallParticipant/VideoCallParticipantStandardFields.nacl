@@ -1,0 +1,66 @@
+type salesforce.VideoCallParticipant {
+  salesforce.Text Email {
+    apiName = "VideoCallParticipant.Email"
+    label = "Email"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Name {
+    apiName = "VideoCallParticipant.Name"
+    label = "Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup RelatedPersonId {
+    apiName = "VideoCallParticipant.RelatedPersonId"
+    label = "Related Person ID"
+    relationshipName = "RelatedPerson"
+  }
+  salesforce.MasterDetail VideoCallId {
+    apiName = "VideoCallParticipant.VideoCallId"
+    label = "Video Call ID"
+    _required = true
+    relationshipName = "VideoCall"
+  }
+  serviceid Id {
+    apiName = "VideoCallParticipant.Id"
+    label = "Video Call Participant ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "VideoCallParticipant.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "VideoCallParticipant.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "VideoCallParticipant.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "VideoCallParticipant.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "VideoCallParticipant.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "VideoCallParticipant.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,6 @@
+salesforce.EventSettings {
+  enableEventLogGeneration = false
+  eventLogRetentionDuration = 0
+  fullName = "Event"
+  _alias = "Event"
+}

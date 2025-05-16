@@ -1,0 +1,59 @@
+salesforce.Layout OrderItemSummaryChange_Order_Product_Summary_Change_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderItemSummaryChangeInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryChange.field.OrderItemSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryChange.field.ChangeOrderItemId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryChange.field.Reason
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummaryChange.field.IsPreFulfillment
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryChange.field.ChangeType
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderItemSummaryChange-Order Product Summary Change Layout"
+  _parent = [
+    salesforce.OrderItemSummaryChange,
+  ]
+  _alias = "OrderItemSummaryChange-Order Product Summary Change Layout"
+}

@@ -1,0 +1,56 @@
+type salesforce.GuestBuyerProfile {
+  salesforce.Text Description {
+    apiName = "GuestBuyerProfile.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Name {
+    apiName = "GuestBuyerProfile.Name"
+    label = "Guest Buyer Profile Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "GuestBuyerProfile.Id"
+    label = "Guest Buyer Profile ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GuestBuyerProfile.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GuestBuyerProfile.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GuestBuyerProfile.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GuestBuyerProfile.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GuestBuyerProfile.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GuestBuyerProfile.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

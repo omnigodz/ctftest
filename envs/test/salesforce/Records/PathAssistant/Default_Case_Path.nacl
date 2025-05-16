@@ -1,0 +1,56 @@
+salesforce.PathAssistant Default_Case_Path {
+  fullName = "Default_Case_Path"
+  active = true
+  entityName = "Case"
+  fieldName = "Status"
+  masterLabel = "Default_Case_Path"
+  pathAssistantSteps = [
+    {
+      fieldNames = [
+        "OwnerId",
+        "Priority",
+        "Reason",
+      ]
+      info = "<ul><li>Congratulations! You’re done with this case.</li><li>You&#39;re ready to help solve another customer case.</li></ul>"
+      picklistValueName = "Closed"
+    },
+    {
+      fieldNames = [
+        "OwnerId",
+        "Priority",
+        "Reason",
+      ]
+      info = "<ul><li>Review this case’s Feed to understand its history and escalation.</li><li>If the customer has provided a phone number, call them to resolve the issue. </li></ul>"
+      picklistValueName = "Escalated"
+    },
+    {
+      fieldNames = [
+        "OwnerId",
+        "Priority",
+        "Reason",
+      ]
+      info = "<ul><li>No action has started on this case — the customer needs help. </li><li>To start working on this case, add yourself as the Case Owner. </li></ul>"
+      picklistValueName = "New"
+    },
+    {
+      fieldNames = [
+        "OwnerId",
+        "Priority",
+        "Reason",
+      ]
+      info = "<ul><li>Follow up with the customer in one or two days.</li><li>To help you follow up, create a New Task in the Related tab.</li></ul>"
+      picklistValueName = "Waiting on Customer"
+    },
+    {
+      fieldNames = [
+        "OwnerId",
+        "Priority",
+        "Reason",
+      ]
+      info = "<ul><li>Review the case’s details and update its Priority accordingly. </li><li>Search Knowledge for any existing help, answers, or useful content.</li></ul>"
+      picklistValueName = "Working"
+    },
+  ]
+  recordTypeName = "__MASTER__"
+  _alias = "Default_Case_Path"
+}

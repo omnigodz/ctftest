@@ -1,0 +1,75 @@
+type salesforce.PriceAdjustmentSchedule {
+  salesforce.Picklist AdjustmentMethod {
+    apiName = "PriceAdjustmentSchedule.AdjustmentMethod"
+    label = "Adjustment Method"
+    _required = true
+    restricted = true
+  }
+  salesforce.TextArea Description {
+    apiName = "PriceAdjustmentSchedule.Description"
+    label = "Description"
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "PriceAdjustmentSchedule.IsActive"
+    label = "Active"
+  }
+  salesforce.Text Name {
+    apiName = "PriceAdjustmentSchedule.Name"
+    label = "Price Adjustment Schedule Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist ScheduleType {
+    apiName = "PriceAdjustmentSchedule.ScheduleType"
+    label = "Schedule Type"
+    _required = true
+    restricted = true
+  }
+  serviceid Id {
+    apiName = "PriceAdjustmentSchedule.Id"
+    label = "Price Adjustment Schedule ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "PriceAdjustmentSchedule.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PriceAdjustmentSchedule.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PriceAdjustmentSchedule.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PriceAdjustmentSchedule.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PriceAdjustmentSchedule.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PriceAdjustmentSchedule.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PriceAdjustmentSchedule.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

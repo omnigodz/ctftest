@@ -1,0 +1,60 @@
+type salesforce.ProductRelationshipType {
+  salesforce.Picklist AssociatedProductRoleCat {
+    apiName = "ProductRelationshipType.AssociatedProductRoleCat"
+    label = "Associated Product Role Category"
+    restricted = true
+  }
+  salesforce.Picklist MainProductRoleCat {
+    apiName = "ProductRelationshipType.MainProductRoleCat"
+    label = "Main Product Role Category"
+    _required = true
+    restricted = true
+  }
+  salesforce.Text Name {
+    apiName = "ProductRelationshipType.Name"
+    label = "Product Relationship Type Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "ProductRelationshipType.Id"
+    label = "Product Relationship Type ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductRelationshipType.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductRelationshipType.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductRelationshipType.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductRelationshipType.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductRelationshipType.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductRelationshipType.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

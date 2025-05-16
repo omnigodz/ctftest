@@ -1,0 +1,6 @@
+salesforce.Profile Sales_Insights_Integration_User@s {
+  custom = false
+  userLicense = "Sales Insights Integration User"
+  fullName = "Sales Insights Integration User"
+  _alias = "Sales Insights Integration User"
+}

@@ -1,0 +1,6 @@
+salesforce.Profile MyStore_Profile@s {
+  custom = true
+  userLicense = "Guest User License"
+  fullName = "MyStore Profile"
+  _alias = "MyStore Profile"
+}

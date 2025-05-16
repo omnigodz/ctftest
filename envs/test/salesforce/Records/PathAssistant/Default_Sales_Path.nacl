@@ -1,0 +1,35 @@
+salesforce.PathAssistant Default_Sales_Path {
+  fullName = "Default_Sales_Path"
+  active = true
+  entityName = "Opportunity"
+  fieldName = "StageName"
+  masterLabel = "Default Sales Path"
+  pathAssistantSteps = [
+    {
+      info = "<p><strong>Revise approach to increase future wins.</strong></p><p>- What contributed to losing this opportunity?</p><p>- What do we need to do to improve our chances of winning?</p><p><br></p><p>Schedule a follow-up task or event to gauge the customer’s satisfaction with they&#39;re choice, and to explore any future opportunities.</p>"
+      picklistValueName = "Closed Lost"
+    },
+    {
+      info = "<p><strong>Congratulations on the win!</strong></p><p>- What contributed to the success of this deal?</p><p>- Are there any lessons learned from this win?</p><p>- What are the next steps for this customer?</p><p><br></p><p>Note your successes and apply them to your sales process for future wins. </p>"
+      picklistValueName = "Closed Won"
+    },
+    {
+      info = "<p><strong>Meet with the key stakeholders, present solutions, and quantify return on investment.</strong></p><p><span style=\"font-size: 13px;\">- Are the right stakeholders involved?</span></p><p>- Are you personalizing the value proposition to your audience?</p><p>- Why is our solution the best fit for the customer?</p><p>- Does the customer feel confident that their needs are being met?</p><p><br></p><p>Demonstrate the value and benefits of our solutions, and determine the right solution to propose.</p>"
+      picklistValueName = "Meet & Present"
+    },
+    {
+      info = "<p><strong>Negotiate value and resolve objections.</strong></p><p>- Have you answered all outstanding questions?</p><p>- Have you confirmed all key decision makers are on board?</p><p>- Do you need to offer a discount or other pricing incentive?</p><p><br></p><p>Prepare a negotiation strategy and work to close the deal.</p>"
+      picklistValueName = "Negotiate"
+    },
+    {
+      info = "<p><strong>Make the offer.</strong><span class=\"ql-cursor\">﻿</span></p><p>- Does the quote cover the complete solution discussed with the customer?</p><p>- Have you presented how our solution meets the customer&#39;s needs?</p><p><br></p><p>Send detailed price information and prepare updated quotes if changes are needed.</p>"
+      picklistValueName = "Propose"
+    },
+    {
+      info = "<p><strong>Determine if the opportunity is worth pursuing.</strong></p><p>- What problems do they want to solve and what are they hoping to improve?</p><p>- Why are they looking now and where are they in the buying cycle?</p><p>- What&#39;s their budget?</p><p>- What other solutions are they considering?</p><p>- Can we win this opportunity?</p><p><br></p><p>Identify and add the key decision makers and other information that you gather to the opportunity.</p>"
+      picklistValueName = "Qualify"
+    },
+  ]
+  recordTypeName = "__MASTER__"
+  _alias = "Default_Sales_Path"
+}

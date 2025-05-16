@@ -1,0 +1,52 @@
+salesforce.Layout Global_Global_Layout@bs {
+  platformActionList = {
+    actionListContext = "Global"
+    platformActionListItems = [
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewContact
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewOpportunity
+        actionType = "QuickAction"
+        sortOrder = 4
+      },
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 5
+      },
+    ]
+  }
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.ContentNote"
+      },
+      {
+        quickActionName = "FeedItem.MobileSmartActions"
+      },
+    ]
+  }
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Global-Global Layout"
+  _alias = "Global-Global Layout"
+}

@@ -1,0 +1,162 @@
+salesforce.Layout OrderPaymentSummary_Order_Payment_Summary_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderPaymentSummaryInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.FullName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.LastPaymentGatewayMessage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.PaymentMethodId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.LastPaymentGatewayLogId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.OrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderPaymentSummary.field.Type
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderPaymentSummaryAmounts"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.AuthorizationAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderPaymentSummary.field.AvailableToCaptureAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.BalanceAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.PendingAuthorizationAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.PendingRefundAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.RefundedAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.AuthorizationReversalAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderPaymentSummary.field.AvailableToRefundAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.CapturedAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.PendingCaptureAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummary.field.PendingReverseAuthAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Amount",
+        "Status",
+      ]
+      relatedList = "Authorizations"
+    },
+    {
+      fields = [
+        "Name",
+        "Amount",
+        "Status",
+        "ProcessingMode",
+        "GatewayResultCode",
+      ]
+      relatedList = "Payments"
+    },
+    {
+      fields = [
+        "Name",
+        "Amount",
+        "Status",
+        "ProcessingMode",
+        "GatewayResultCode",
+      ]
+      relatedList = "Refunds"
+    },
+    {
+      fields = [
+        "Name",
+        "GatewayMessage",
+        "InteractionType",
+      ]
+      relatedList = "GatewayLogs"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderPaymentSummary-Order Payment Summary Layout"
+  _parent = [
+    salesforce.OrderPaymentSummary,
+  ]
+  _alias = "OrderPaymentSummary-Order Payment Summary Layout"
+}

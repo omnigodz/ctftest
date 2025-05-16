@@ -1,0 +1,96 @@
+salesforce.Layout OrderItemAdjustmentLineItem_Order_Product_Adjustment_Line_Item_Layout@bsssss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Order Product Adjustment Line Item Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineItem.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineItem.field.OrderItemId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemAdjustmentLineItem.field.Description
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineItem.field.TotalTaxAmount
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineItem.field.Amount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemAdjustmentLineItem.field.OrderAdjustmentGroupId
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineItem.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineItem.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineItem.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineItem.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderItemAdjustmentLineItem-Order Product Adjustment Line Item Layout"
+  _parent = [
+    salesforce.OrderItemAdjustmentLineItem,
+  ]
+  _alias = "OrderItemAdjustmentLineItem-Order Product Adjustment Line Item Layout"
+}

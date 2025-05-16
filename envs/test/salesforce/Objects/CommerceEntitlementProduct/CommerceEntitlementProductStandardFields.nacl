@@ -1,0 +1,58 @@
+type salesforce.CommerceEntitlementProduct {
+  salesforce.MasterDetail PolicyId {
+    apiName = "CommerceEntitlementProduct.PolicyId"
+    label = "Entitlement Policy ID"
+    _required = true
+    relationshipName = "Policy"
+  }
+  salesforce.Lookup ProductId {
+    apiName = "CommerceEntitlementProduct.ProductId"
+    label = "Product ID"
+    _required = true
+    relationshipName = "Product"
+  }
+  serviceid Id {
+    apiName = "CommerceEntitlementProduct.Id"
+    label = "Entitlement Product ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CommerceEntitlementProduct.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "CommerceEntitlementProduct.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CommerceEntitlementProduct.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CommerceEntitlementProduct.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CommerceEntitlementProduct.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CommerceEntitlementProduct.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CommerceEntitlementProduct.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

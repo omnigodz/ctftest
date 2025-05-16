@@ -1,0 +1,8 @@
+type salesforce.Knowledge__kav {
+  salesforce.Html ArticleBody__c {
+    apiName = "Knowledge__kav.ArticleBody__c"
+    label = "Article Body"
+    length = 131072
+    visibleLines = 25
+  }
+}

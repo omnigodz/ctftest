@@ -1,0 +1,9 @@
+salesforce.ListView DataAction_My_DataActions {
+  fullName = "DataAction.My_DataActions"
+  filterScope = "Mine"
+  label = "My Data Actions"
+  _parent = [
+    salesforce.DataAction,
+  ]
+  _alias = "My Data Actions"
+}

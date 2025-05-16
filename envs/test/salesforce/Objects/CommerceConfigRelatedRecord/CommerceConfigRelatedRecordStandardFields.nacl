@@ -1,0 +1,76 @@
+type salesforce.CommerceConfigRelatedRecord {
+  salesforce.Picklist ConfigKey {
+    apiName = "CommerceConfigRelatedRecord.ConfigKey"
+    label = "Configuration Key"
+    _required = true
+    restricted = true
+  }
+  salesforce.Lookup ConfigReferenceId {
+    apiName = "CommerceConfigRelatedRecord.ConfigReferenceId"
+    label = "Configuration Reference ID"
+    _required = true
+    relationshipName = "ConfigReference"
+  }
+  salesforce.Picklist ConfigUseCase {
+    apiName = "CommerceConfigRelatedRecord.ConfigUseCase"
+    label = "Configuration Use Case"
+    _required = true
+    restricted = true
+  }
+  salesforce.Lookup ContextId {
+    apiName = "CommerceConfigRelatedRecord.ContextId"
+    label = "Context ID"
+    _required = true
+    relationshipName = "Context"
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CommerceConfigRelatedRecord.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "CommerceConfigRelatedRecord.Id"
+    label = "Commerce Configuration Related Record ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CommerceConfigRelatedRecord.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "CommerceConfigRelatedRecord.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CommerceConfigRelatedRecord.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CommerceConfigRelatedRecord.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CommerceConfigRelatedRecord.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CommerceConfigRelatedRecord.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CommerceConfigRelatedRecord.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

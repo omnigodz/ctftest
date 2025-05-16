@@ -1,0 +1,63 @@
+type salesforce.BuyerGroupRelatedObject {
+  salesforce.Lookup BuyerGroupId {
+    apiName = "BuyerGroupRelatedObject.BuyerGroupId"
+    label = "Buyer Group ID"
+    _required = true
+    relationshipName = "BuyerGroup"
+  }
+  salesforce.Picklist ObjectType {
+    apiName = "BuyerGroupRelatedObject.ObjectType"
+    label = "Object Type"
+    _required = true
+    restricted = true
+  }
+  salesforce.LongTextArea ObjectValues {
+    apiName = "BuyerGroupRelatedObject.ObjectValues"
+    label = "Object Values"
+    length = 2000
+  }
+  serviceid Id {
+    apiName = "BuyerGroupRelatedObject.Id"
+    label = "Buyer Group Related Object ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BuyerGroupRelatedObject.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "BuyerGroupRelatedObject.Name"
+    label = "Buyer Group Related Object Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BuyerGroupRelatedObject.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BuyerGroupRelatedObject.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BuyerGroupRelatedObject.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BuyerGroupRelatedObject.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BuyerGroupRelatedObject.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

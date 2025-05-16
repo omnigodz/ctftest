@@ -1,0 +1,66 @@
+type salesforce.SalesTransactionItemShape {
+  salesforce.Unknown ListPrice {
+    apiName = "SalesTransactionItemShape.ListPrice"
+    _hidden_value = true
+  }
+  salesforce.Unknown ListPriceTotal {
+    apiName = "SalesTransactionItemShape.ListPriceTotal"
+    _hidden_value = true
+  }
+  salesforce.Unknown NetUnitPrice {
+    apiName = "SalesTransactionItemShape.NetUnitPrice"
+    _hidden_value = true
+  }
+  salesforce.Lookup PricebookEntryId {
+    apiName = "SalesTransactionItemShape.PricebookEntryId"
+    _hidden_value = true
+  }
+  salesforce.Lookup ProductId {
+    apiName = "SalesTransactionItemShape.ProductId"
+    _hidden_value = true
+  }
+  salesforce.Unknown Quantity {
+    apiName = "SalesTransactionItemShape.Quantity"
+    _hidden_value = true
+  }
+  salesforce.Unknown SalesItemType {
+    apiName = "SalesTransactionItemShape.SalesItemType"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail SalesTransactionShapeId {
+    apiName = "SalesTransactionItemShape.SalesTransactionShapeId"
+    _hidden_value = true
+  }
+  salesforce.Unknown StartingPriceTotal {
+    apiName = "SalesTransactionItemShape.StartingPriceTotal"
+    _hidden_value = true
+  }
+  salesforce.Unknown StartingUnitPrice {
+    apiName = "SalesTransactionItemShape.StartingUnitPrice"
+    _hidden_value = true
+  }
+  salesforce.Unknown StartingUnitPriceSource {
+    apiName = "SalesTransactionItemShape.StartingUnitPriceSource"
+    _hidden_value = true
+  }
+  salesforce.Unknown StockKeepingUnit {
+    apiName = "SalesTransactionItemShape.StockKeepingUnit"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentAmount {
+    apiName = "SalesTransactionItemShape.TotalAdjustmentAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentDistAmount {
+    apiName = "SalesTransactionItemShape.TotalAdjustmentDistAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalLineAmount {
+    apiName = "SalesTransactionItemShape.TotalLineAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalPrice {
+    apiName = "SalesTransactionItemShape.TotalPrice"
+    _hidden_value = true
+  }
+}

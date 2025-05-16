@@ -1,0 +1,84 @@
+salesforce.Layout OrderItemAdjustmentLineSummary_Order_Product_Adjustment_Line_Item_Summary_Layout@bssssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderItemAdjustmentLineSummaryInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.OrderItemSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.OrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.OriginalOrderItemAdjustmentLineItemId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.OrderAdjustmentGroupSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.Amount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.TotalTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.TotalAmtWithTax
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemAdjustmentLineSummary.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Type",
+        "Amount",
+        "Rate",
+        "TaxEffectiveDate",
+        "Description",
+      ]
+      relatedList = "OrderItemTaxLineItemSummaries"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderItemAdjustmentLineSummary-Order Product Adjustment Line Item Summary Layout"
+  _parent = [
+    salesforce.OrderItemAdjustmentLineSummary,
+  ]
+  _alias = "OrderItemAdjustmentLineSummary-Order Product Adjustment Line Item Summary Layout"
+}

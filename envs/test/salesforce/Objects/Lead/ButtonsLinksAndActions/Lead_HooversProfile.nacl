@@ -1,0 +1,23 @@
+salesforce.WebLink Lead_HooversProfile {
+  fullName = "Lead.HooversProfile"
+  availability = "online"
+  displayType = "link"
+  encodingKey = "UTF-8"
+  hasMenubar = true
+  hasScrollbars = true
+  hasToolbar = true
+  height = 600
+  isResizable = true
+  linkType = "url"
+  masterLabel = "Hoovers Profile"
+  openType = "newWindow"
+  position = "none"
+  protected = false
+  showsLocation = true
+  showsStatus = true
+  url = "http://search.hoovers.com/cgi-bin/hol_search?which=company&query_string={!Lead_Company}"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.HooversProfile"
+}

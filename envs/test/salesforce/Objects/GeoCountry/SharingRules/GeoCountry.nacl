@@ -1,0 +1,7 @@
+salesforce.SharingRules GeoCountry {
+  fullName = "GeoCountry"
+  _parent = [
+    salesforce.GeoCountry,
+  ]
+  _alias = "GeoCountry"
+}

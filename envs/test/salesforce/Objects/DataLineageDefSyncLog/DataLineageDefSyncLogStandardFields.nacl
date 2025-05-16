@@ -1,0 +1,42 @@
+type salesforce.DataLineageDefSyncLog {
+  salesforce.Unknown DevName {
+    apiName = "DataLineageDefSyncLog.DevName"
+    _hidden_value = true
+  }
+  salesforce.Unknown LastFailureReason {
+    apiName = "DataLineageDefSyncLog.LastFailureReason"
+    _hidden_value = true
+  }
+  salesforce.Unknown LineageKey {
+    apiName = "DataLineageDefSyncLog.LineageKey"
+    _hidden_value = true
+  }
+  salesforce.Unknown Name {
+    apiName = "DataLineageDefSyncLog.Name"
+    _hidden_value = true
+  }
+  salesforce.Unknown ObjectType {
+    apiName = "DataLineageDefSyncLog.ObjectType"
+    _hidden_value = true
+  }
+  salesforce.Unknown OperationTime {
+    apiName = "DataLineageDefSyncLog.OperationTime"
+    _hidden_value = true
+  }
+  salesforce.Unknown OperationType {
+    apiName = "DataLineageDefSyncLog.OperationType"
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DataLineageDefSyncLog.OwnerId"
+    _hidden_value = true
+  }
+  salesforce.Unknown Payload {
+    apiName = "DataLineageDefSyncLog.Payload"
+    _hidden_value = true
+  }
+  salesforce.Unknown SyncStatus {
+    apiName = "DataLineageDefSyncLog.SyncStatus"
+    _hidden_value = true
+  }
+}

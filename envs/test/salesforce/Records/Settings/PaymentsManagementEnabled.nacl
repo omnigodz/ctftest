@@ -1,0 +1,5 @@
+salesforce.PaymentsManagementEnabledSettings {
+  paymentsManagementEnabled = true
+  fullName = "PaymentsManagementEnabled"
+  _alias = "PaymentsManagementEnabled"
+}

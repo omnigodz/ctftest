@@ -1,0 +1,7 @@
+salesforce.RemoteSiteSetting AdyenCheckoutTestAPI {
+  fullName = "AdyenCheckoutTestAPI"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://checkout-test.adyen.com"
+  _alias = "AdyenCheckoutTestAPI"
+}

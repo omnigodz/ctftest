@@ -1,0 +1,74 @@
+type salesforce.OrderSummaryRoutingSchedule {
+  salesforce.MasterDetail OrderSummaryId {
+    apiName = "OrderSummaryRoutingSchedule.OrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "OrderSummary"
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "OrderSummaryRoutingSchedule.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Picklist Reason {
+    apiName = "OrderSummaryRoutingSchedule.Reason"
+    label = "Reason"
+    restricted = false
+  }
+  salesforce.Picklist ScheduleStatus {
+    apiName = "OrderSummaryRoutingSchedule.ScheduleStatus"
+    label = "Status"
+    _required = true
+    restricted = true
+  }
+  salesforce.DateTime ScheduledDatetime {
+    apiName = "OrderSummaryRoutingSchedule.ScheduledDatetime"
+    label = "Scheduled Date Time"
+    _required = true
+  }
+  serviceid Id {
+    apiName = "OrderSummaryRoutingSchedule.Id"
+    label = "Order Summary Routing Schedule ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderSummaryRoutingSchedule.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "OrderSummaryRoutingSchedule.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderSummaryRoutingSchedule.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderSummaryRoutingSchedule.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderSummaryRoutingSchedule.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderSummaryRoutingSchedule.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderSummaryRoutingSchedule.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

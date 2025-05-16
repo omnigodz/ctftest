@@ -1,0 +1,62 @@
+salesforce.Layout PricebookEntry_Commerce_Price_Book_Entry_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Fields"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.Product2Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PricebookEntry.field.IsActive
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.Pricebook2Id
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.UnitPrice
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.PricebookEntry.field.ActivePriceAdjustmentQuantity
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  multilineLayoutFields = [
+    "Product2Id",
+    "Pricebook2Id",
+    "IsActive",
+    "UnitPrice",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PricebookEntry-Commerce Price Book Entry Layout"
+  _parent = [
+    salesforce.PricebookEntry,
+  ]
+  _alias = "PricebookEntry-Commerce Price Book Entry Layout"
+}

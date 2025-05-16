@@ -1,0 +1,115 @@
+salesforce.LightningPage Payments_Home_Default {
+  description = "The out-of-the-box Payments home page for your org"
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "cacheAge"
+                value = "1440"
+              },
+              {
+                name = "reportName"
+                value = "sfdc_payments_capture_daily_report"
+              },
+              {
+                name = "showRefreshButton"
+                value = "true"
+              },
+            ]
+            componentName = "flexipage:reportChart"
+            identifier = "flexipage_reportChart1"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "cacheAge"
+                value = "1440"
+              },
+              {
+                name = "reportName"
+                value = "sfdc_payments_capture_monthly_groupby_merchant_report"
+              },
+              {
+                name = "showRefreshButton"
+                value = "true"
+              },
+            ]
+            componentName = "flexipage:reportChart"
+            identifier = "flexipage_reportChart3"
+          }
+        },
+      ]
+      name = "left"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "cacheAge"
+                value = "1440"
+              },
+              {
+                name = "reportName"
+                value = "sfdc_payments_auth_daily_report"
+              },
+              {
+                name = "showRefreshButton"
+                value = "true"
+              },
+            ]
+            componentName = "flexipage:reportChart"
+            identifier = "flexipage_reportChart2"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "cacheAge"
+                value = "1440"
+              },
+              {
+                name = "label"
+              },
+              {
+                name = "reportName"
+                value = "sfdc_payments_auth_monthly_groupby_merchant_report"
+              },
+              {
+                name = "showRefreshButton"
+                value = "true"
+              },
+            ]
+            componentName = "flexipage:reportChart"
+            identifier = "flexipage_reportChart4"
+          }
+        },
+      ]
+      name = "middle"
+      type = "Region"
+    },
+    {
+      name = "top"
+      type = "Region"
+    },
+    {
+      name = "right"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Payments Home Default"
+  template = {
+    name = "home:desktopTemplateHeaderThreeColumns"
+  }
+  type = "HomePage"
+  fullName = "Payments_Home_Default"
+  _alias = "Payments_Home_Default"
+}

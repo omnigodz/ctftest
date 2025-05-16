@@ -1,0 +1,6 @@
+salesforce.EinsteinGptSettings {
+  enableEinsteinGptGlobalLangSupport = false
+  enableEinsteinGptPlatform = false
+  fullName = "EinsteinGpt"
+  _alias = "EinsteinGpt"
+}

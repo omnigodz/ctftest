@@ -1,0 +1,87 @@
+salesforce.Layout OrderItemSummaryRelationship_Order_Product_Summary_Relationship_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderItemSummaryRelationshipInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummaryRelationship.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryRelationship.field.MainOrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryRelationship.field.MainOrderItemSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryRelationship.field.MainOrderItemSummaryRole
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummaryRelationship.field.ProductRelatedComponentId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummaryRelationship.field.ProductRelationshipTypeId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummaryRelationship.field.OrderItemRelationshipId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryRelationship.field.AssociatedOrderItemSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummaryRelationship.field.AssociatedOrderItemSummaryRole
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummaryRelationship.field.AssociatedOrderItemSumPricing
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummaryRelationship.field.AssociatedQuanScaleMethod
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummaryRelationship.field.AssociatedOrderItemInventory
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderItemSummaryRelationship-Order Product Summary Relationship Layout"
+  _parent = [
+    salesforce.OrderItemSummaryRelationship,
+  ]
+  _alias = "OrderItemSummaryRelationship-Order Product Summary Relationship Layout"
+}

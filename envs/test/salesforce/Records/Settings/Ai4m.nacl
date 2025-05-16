@@ -1,0 +1,6 @@
+salesforce.Ai4mSettings {
+  enableUmaGlobalModel = false
+  enableUmaSto = false
+  fullName = "Ai4m"
+  _alias = "Ai4m"
+}

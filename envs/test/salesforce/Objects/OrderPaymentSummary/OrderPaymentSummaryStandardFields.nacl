@@ -1,0 +1,173 @@
+type salesforce.OrderPaymentSummary {
+  salesforce.Currency AuthorizationAmount {
+    apiName = "OrderPaymentSummary.AuthorizationAmount"
+    label = "Authorized"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency AuthorizationReversalAmount {
+    apiName = "OrderPaymentSummary.AuthorizationReversalAmount"
+    label = "Authorization Reversed"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Summary AvailableToCaptureAmount {
+    apiName = "OrderPaymentSummary.AvailableToCaptureAmount"
+    label = "Available to Capture"
+    _hidden_value = true
+  }
+  salesforce.Summary AvailableToRefundAmount {
+    apiName = "OrderPaymentSummary.AvailableToRefundAmount"
+    label = "Available to Refund"
+    _hidden_value = true
+  }
+  salesforce.Currency BalanceAmount {
+    apiName = "OrderPaymentSummary.BalanceAmount"
+    label = "Balance"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency CapturedAmount {
+    apiName = "OrderPaymentSummary.CapturedAmount"
+    label = "Captured"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Text FullName {
+    apiName = "OrderPaymentSummary.FullName"
+    label = "Full Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup LastPaymentGatewayLogId {
+    apiName = "OrderPaymentSummary.LastPaymentGatewayLogId"
+    label = "Payment Gateway Log ID"
+    relationshipName = "LastPaymentGatewayLog"
+    _hidden_value = true
+  }
+  salesforce.Text LastPaymentGatewayMessage {
+    apiName = "OrderPaymentSummary.LastPaymentGatewayMessage"
+    label = "Last Payment Gateway Message"
+    length = 1000
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Method {
+    apiName = "OrderPaymentSummary.Method"
+    label = "Method"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.MasterDetail OrderSummaryId {
+    apiName = "OrderPaymentSummary.OrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "OrderSummary"
+  }
+  salesforce.Lookup PaymentMethodId {
+    apiName = "OrderPaymentSummary.PaymentMethodId"
+    label = "Payment Method ID"
+    relationshipName = "PaymentMethod"
+    _hidden_value = true
+  }
+  salesforce.Currency PendingAuthorizationAmount {
+    apiName = "OrderPaymentSummary.PendingAuthorizationAmount"
+    label = "Pending Authorization"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency PendingCaptureAmount {
+    apiName = "OrderPaymentSummary.PendingCaptureAmount"
+    label = "Pending Capture"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency PendingRefundAmount {
+    apiName = "OrderPaymentSummary.PendingRefundAmount"
+    label = "Pending Refund"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency PendingReverseAuthAmount {
+    apiName = "OrderPaymentSummary.PendingReverseAuthAmount"
+    label = "Pending Authorization Reversal"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency RefundedAmount {
+    apiName = "OrderPaymentSummary.RefundedAmount"
+    label = "Refunded"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Summary ReservedBalanceTotalAmount {
+    apiName = "OrderPaymentSummary.ReservedBalanceTotalAmount"
+    label = "Total Reserved Balance"
+    _hidden_value = true
+  }
+  salesforce.Text Type {
+    apiName = "OrderPaymentSummary.Type"
+    label = "Type"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "OrderPaymentSummary.Id"
+    label = "Order Payment Summary ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "OrderPaymentSummary.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderPaymentSummary.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderPaymentSummary.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderPaymentSummary.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderPaymentSummary.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderPaymentSummary.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderPaymentSummary.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

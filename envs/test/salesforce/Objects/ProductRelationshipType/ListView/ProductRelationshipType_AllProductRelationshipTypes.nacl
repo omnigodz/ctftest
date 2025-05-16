@@ -1,0 +1,14 @@
+salesforce.ListView ProductRelationshipType_AllProductRelationshipTypes {
+  fullName = "ProductRelationshipType.AllProductRelationshipTypes"
+  columns = [
+    salesforce.ProductRelationshipType.field.Name,
+    salesforce.ProductRelationshipType.field.MainProductRoleCat,
+    salesforce.ProductRelationshipType.field.AssociatedProductRoleCat,
+  ]
+  filterScope = "Everything"
+  label = "All product relationship types"
+  _parent = [
+    salesforce.ProductRelationshipType,
+  ]
+  _alias = "All product relationship types"
+}

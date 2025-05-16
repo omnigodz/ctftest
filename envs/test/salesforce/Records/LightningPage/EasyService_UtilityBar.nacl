@@ -1,0 +1,24 @@
+salesforce.LightningPage EasyService_UtilityBar {
+  description = "The default utility bar for the Service application."
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_todo_list:unifiedToDoListAuraWrapper"
+            identifier = "runtime_sales_todo_list_unifiedToDoListAuraWrapper"
+          }
+        },
+      ]
+      name = "utilityItems"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Service App Utility Bar"
+  template = {
+    name = "one:utilityBarTemplateDesktop"
+  }
+  type = "UtilityBar"
+  fullName = "EasyService_UtilityBar"
+  _alias = "EasyService_UtilityBar"
+}

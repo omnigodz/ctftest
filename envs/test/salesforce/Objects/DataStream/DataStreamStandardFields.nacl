@@ -1,0 +1,188 @@
+type salesforce.DataStream {
+  salesforce.Picklist DataStreamStatus {
+    apiName = "DataStream.DataStreamStatus"
+    label = "Data Stream Status"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist ImportRunStatus {
+    apiName = "DataStream.ImportRunStatus"
+    label = "Last Run Status"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRefreshDeliveryHourAutomatic {
+    apiName = "DataStream.IsRefreshDeliveryHourAutomatic"
+    label = "Is Refresh Delivery Hour Automatic"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Text LastDataChangeStatusErrorCode {
+    apiName = "DataStream.LastDataChangeStatusErrorCode"
+    label = "Last Data Change Status Error"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Unknown LastNumberOfRowsAddedCount {
+    apiName = "DataStream.LastNumberOfRowsAddedCount"
+    label = "Last # of Records Added"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastRefreshDate {
+    apiName = "DataStream.LastRefreshDate"
+    label = "Last Refreshed"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "DataStream.Name"
+    label = "Data Stream Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Number RefreshDayOfMonth {
+    apiName = "DataStream.RefreshDayOfMonth"
+    label = "Refresh Day of Month"
+    scale = 0
+    precision = 9
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Number RefreshDayOfWeek {
+    apiName = "DataStream.RefreshDayOfWeek"
+    label = "Refresh Day of Week"
+    scale = 0
+    precision = 9
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Picklist RefreshFrequency {
+    apiName = "DataStream.RefreshFrequency"
+    label = "Frequency"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist RefreshHours {
+    apiName = "DataStream.RefreshHours"
+    label = "Refresh Hours"
+    restricted = false
+    visibleLines = 0
+    _hidden_value = true
+  }
+  salesforce.Picklist RefreshMode {
+    apiName = "DataStream.RefreshMode"
+    label = "Refresh Mode"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Unknown RefreshStartDate {
+    apiName = "DataStream.RefreshStartDate"
+    _hidden_value = true
+  }
+  salesforce.Picklist StreamType {
+    apiName = "DataStream.StreamType"
+    label = "Stream Type"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalNumberOfRowsAdded {
+    apiName = "DataStream.TotalNumberOfRowsAdded"
+    label = "Total Records"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalRowsProcessed {
+    apiName = "DataStream.TotalRowsProcessed"
+    label = "Last Processed Records"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "DataStream.Id"
+    label = "Data Stream ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DataStream.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DataStream.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DataStream.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DataStream.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DataStream.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DataStream.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Text Description {
+    apiName = "DataStream.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Text ExternalRecordIdentifier {
+    apiName = "DataStream.ExternalRecordIdentifier"
+    label = "External Record Identifier"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.DateTime LastDataChangeStatusDateTime {
+    apiName = "DataStream.LastDataChangeStatusDateTime"
+    label = "Last Data Change Status at"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsNewFieldsAvailable {
+    apiName = "DataStream.IsNewFieldsAvailable"
+    label = "Is New Fields Available"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Text ExternalStreamErrorCode {
+    apiName = "DataStream.ExternalStreamErrorCode"
+    label = "External Stream Error Code"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Text ProblemRecordsDataLakeObject {
+    apiName = "DataStream.ProblemRecordsDataLakeObject"
+    label = "Problem Records Data Lake Object Name"
+    length = 40
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+}

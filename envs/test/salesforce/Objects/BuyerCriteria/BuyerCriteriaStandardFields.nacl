@@ -1,0 +1,78 @@
+type salesforce.BuyerCriteria {
+  salesforce.Picklist CriteriaKey {
+    apiName = "BuyerCriteria.CriteriaKey"
+    label = "Criteria Key"
+    _required = true
+    restricted = true
+  }
+  salesforce.Picklist CriteriaKeyType {
+    apiName = "BuyerCriteria.CriteriaKeyType"
+    label = "Criteria Key Type"
+    _required = true
+    restricted = true
+  }
+  salesforce.Text CriteriaValue {
+    apiName = "BuyerCriteria.CriteriaValue"
+    label = "Criteria Value"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Description {
+    apiName = "BuyerCriteria.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "BuyerCriteria.Id"
+    label = "Buyer Criteria ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "BuyerCriteria.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BuyerCriteria.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "BuyerCriteria.Name"
+    label = "Buyer Criteria Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BuyerCriteria.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BuyerCriteria.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BuyerCriteria.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BuyerCriteria.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BuyerCriteria.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

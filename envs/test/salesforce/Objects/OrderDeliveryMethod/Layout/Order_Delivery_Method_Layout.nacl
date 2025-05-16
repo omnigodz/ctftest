@@ -1,0 +1,100 @@
+salesforce.Layout OrderDeliveryMethod_Order_Delivery_Method_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Order Delivery Method Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderDeliveryMethod.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryMethod.field.ReferenceNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryMethod.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryMethod.field.Carrier
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryMethod.field.ClassOfService
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryMethod.field.ProductId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryMethod.field.IsActive
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryMethod.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryMethod.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryMethod.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryMethod.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderDeliveryMethod-Order Delivery Method Layout"
+  _parent = [
+    salesforce.OrderDeliveryMethod,
+  ]
+  _alias = "OrderDeliveryMethod-Order Delivery Method Layout"
+}

@@ -1,0 +1,7 @@
+salesforce.RemoteSiteSetting AdyenOAuthTestAPI {
+  fullName = "AdyenOAuthTestAPI"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://oauth-test.adyen.com"
+  _alias = "AdyenOAuthTestAPI"
+}

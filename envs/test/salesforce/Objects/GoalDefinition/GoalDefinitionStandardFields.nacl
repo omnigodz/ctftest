@@ -1,0 +1,84 @@
+type salesforce.GoalDefinition {
+  salesforce.Picklist Category {
+    apiName = "GoalDefinition.Category"
+    _hidden_value = true
+  }
+  salesforce.Unknown Description {
+    apiName = "GoalDefinition.Description"
+    _hidden_value = true
+  }
+  salesforce.Unknown IsCustomGoalNameRequired {
+    apiName = "GoalDefinition.IsCustomGoalNameRequired"
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "GoalDefinition.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "GoalDefinition.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentGoalId {
+    apiName = "GoalDefinition.ParentGoalId"
+    label = "Parent Goal ID"
+    relationshipName = "ParentGoal"
+  }
+  salesforce.Unknown Status {
+    apiName = "GoalDefinition.Status"
+    _hidden_value = true
+  }
+  salesforce.Unknown Type {
+    apiName = "GoalDefinition.Type"
+    _hidden_value = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "GoalDefinition.UsageType"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "GoalDefinition.Id"
+    label = "Goal Definition ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GoalDefinition.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GoalDefinition.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GoalDefinition.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GoalDefinition.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GoalDefinition.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GoalDefinition.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

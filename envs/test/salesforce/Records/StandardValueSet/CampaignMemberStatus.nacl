@@ -1,0 +1,5 @@
+salesforce.StandardValueSet CampaignMemberStatus {
+  fullName = "CampaignMemberStatus"
+  sorted = true
+  _alias = "CampaignMemberStatus"
+}

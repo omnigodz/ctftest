@@ -1,0 +1,6 @@
+salesforce.MapsAndLocationSettings {
+  enableAddressAutoComplete = false
+  enableMapsAndLocation = true
+  fullName = "MapsAndLocation"
+  _alias = "MapsAndLocation"
+}

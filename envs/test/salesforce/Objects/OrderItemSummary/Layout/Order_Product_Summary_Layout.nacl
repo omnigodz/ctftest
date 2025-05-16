@@ -1,0 +1,272 @@
+salesforce.Layout OrderItemSummary_Order_Product_Summary_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderItemSummaryInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.LineNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.OrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.OrderDeliveryGroupSummaryId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.Description
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.Type
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.OriginalOrderItemId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.Product2Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.ProductCode
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Totals"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.UnitPrice
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.TotalLineAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalLineAdjustmentAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.AdjustedLineAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAdjustmentDistAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAdjustmentAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalPrice
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.ListPrice
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalLineTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalLineAdjustmentTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAdjustedLineTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAdjustmentDistTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAdjustmentTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalTaxAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "TotalsWithTax"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderItemSummary.field.GrossUnitPrice
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalLineAmountWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalLineAdjustmentAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.AdjustedLineAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAdjustmentDistAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAdjustmentAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderItemSummary.field.TotalAmtWithTax
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Quantities"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.QuantityOrdered
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.Quantity
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.QuantityAllocated
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.QuantityFulfilled
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.QuantityCanceled
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.QuantityReturned
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderItemSummary.field.QuantityReturnInitiated
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Type",
+        "Amount",
+        "Rate",
+        "TaxEffectiveDate",
+        "Description",
+      ]
+      relatedList = "OrderItemTaxLineItemSummaries"
+    },
+    {
+      fields = [
+        "Name",
+        "Amount",
+        "TotalTaxAmount",
+        "TotalAmtWithTax",
+        "Description",
+      ]
+      relatedList = "OrderItemAdjustmentLineSummaries"
+    },
+    {
+      fields = [
+        "Shipment",
+        "Name",
+        "TrackingNumber",
+        "TrackingUrl",
+        "ExpectedDeliveryDate",
+        "Quantity",
+      ]
+      relatedList = "ShipmentItems"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderItemSummary-Order Product Summary Layout"
+  _parent = [
+    salesforce.OrderItemSummary,
+  ]
+  _alias = "OrderItemSummary-Order Product Summary Layout"
+}

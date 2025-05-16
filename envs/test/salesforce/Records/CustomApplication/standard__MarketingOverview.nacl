@@ -1,0 +1,18 @@
+salesforce.CustomApplication standard__MarketingOverview {
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Marketing App Overview"
+  navType = "Standard"
+  tabs = [
+    "standard-MarketingAppOverview",
+  ]
+  uiType = "Lightning"
+  fullName = "standard__MarketingOverview"
+  _alias = "Marketing App Overview (standard)"
+}

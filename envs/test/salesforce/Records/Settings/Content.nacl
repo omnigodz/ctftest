@@ -1,0 +1,26 @@
+salesforce.ContentSettings {
+  enableCMSC2CConnections = false
+  enableChatterFileLink = true
+  enableContent = true
+  enableContentAutoAssign = false
+  enableContentDistForPortalUsers = true
+  enableContentDistPwOptionsBit1 = true
+  enableContentDistPwOptionsBit2 = true
+  enableContentDistribution = true
+  enableContentSupportMultiLanguage = false
+  enableContentWorkspaceAccess = true
+  enableDeleteFileInContentPacks = false
+  enableFileIngestToDataCloud = true
+  enableFileShareSetByRecord = true
+  enableFilesUsrShareNetRestricted = false
+  enableJPGPreviews = false
+  enableLWCFileUpload = true
+  enableLibraryManagedFiles = false
+  enableSiteGuestUserToUploadFiles = false
+  enableUploadFilesOnAttachments = true
+  setValidContentTypeForAtchDocDownload = true
+  skipContentAssetTriggers = true
+  skipContentAssetTriggersOnDeploy = true
+  fullName = "Content"
+  _alias = "Content"
+}

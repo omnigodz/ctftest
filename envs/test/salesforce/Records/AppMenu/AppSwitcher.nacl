@@ -1,0 +1,74 @@
+salesforce.AppMenu AppSwitcher {
+  fullName = "AppSwitcher"
+  appMenuItems = [
+    {
+      name = salesforce.CustomApplication.instance.standard__EasyHome
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__EasyContacts
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__EasyAccounts
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__EasySales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__EasyService
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__MarketingOverview
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__CommerceStarter
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__GenerativeCanvas
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__OnlineSales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sales
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__AllTabSet
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Marketing
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Platform
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Sites
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Service
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__FlowsApp
+      type = "CustomApplication"
+    },
+    {
+      name = salesforce.CustomApplication.instance.standard__Content
+      type = "CustomApplication"
+    },
+  ]
+  _alias = "AppSwitcher"
+}

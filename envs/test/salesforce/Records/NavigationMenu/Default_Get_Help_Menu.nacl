@@ -1,0 +1,44 @@
+salesforce.NavigationMenu Default_Get_Help_Menu {
+  fullName = "Default_Get_Help_Menu"
+  container = "MyStore"
+  containerType = "Network"
+  label = "Default Get Help Menu"
+  navigationMenuItem = [
+    {
+      label = "Order Status"
+      position = 1
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+    {
+      label = "Shipping & Delivery"
+      position = 2
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+    {
+      label = "FAQ"
+      position = 3
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+    {
+      label = "Contact Us"
+      position = 4
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+    {
+      label = "Accessibility"
+      position = 5
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+  ]
+  _alias = "Default Get Help Menu"
+}

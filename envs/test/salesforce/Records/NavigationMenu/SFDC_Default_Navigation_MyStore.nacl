@@ -1,0 +1,16 @@
+salesforce.NavigationMenu SFDC_Default_Navigation_MyStore {
+  fullName = "SFDC_Default_Navigation_MyStore"
+  container = "MyStore"
+  containerType = "Network"
+  label = "Default Navigation"
+  navigationMenuItem = [
+    {
+      label = "Storefront Categories"
+      position = 1
+      publiclyAvailable = true
+      target = "StorefrontCategories"
+      type = "DataSourceDriven"
+    },
+  ]
+  _alias = "Default Navigation"
+}

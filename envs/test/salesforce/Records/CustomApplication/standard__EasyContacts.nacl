@@ -1,0 +1,23 @@
+salesforce.CustomApplication standard__EasyContacts {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Contacts"
+  navType = "Standard"
+  tabs = [
+    "standard-Contact",
+  ]
+  uiType = "Lightning"
+  utilityBar = "EasyContacts_UtilityBar"
+  fullName = "standard__EasyContacts"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.EasyContacts_UtilityBar
+    },
+  ]
+  _alias = "Contacts (standard)"
+}

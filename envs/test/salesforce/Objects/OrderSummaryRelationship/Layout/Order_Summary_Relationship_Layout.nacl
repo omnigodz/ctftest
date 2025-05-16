@@ -1,0 +1,67 @@
+salesforce.Layout OrderSummaryRelationship_Order_Summary_Relationship_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderSummaryRelationshipInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummaryRelationship.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderSummaryRelationship.field.MainOrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderSummaryRelationship.field.AssociatedRelationshipType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummaryRelationship.field.MainAttachedToId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderSummaryRelationship.field.RootOrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderSummaryRelationship.field.AssociatedOrderSummaryId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummaryRelationship.field.AssociatedOrderSummaryStatus
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderSummaryRelationship-Order Summary Relationship Layout"
+  _parent = [
+    salesforce.OrderSummaryRelationship,
+  ]
+  _alias = "OrderSummaryRelationship-Order Summary Relationship Layout"
+}

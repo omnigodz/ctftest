@@ -1,0 +1,137 @@
+type salesforce.OrderItemAdjustmentLineItem {
+  salesforce.Picklist AdjustmentAmountScope {
+    apiName = "OrderItemAdjustmentLineItem.AdjustmentAmountScope"
+    label = "Adjustment Amount Scope"
+    restricted = true
+  }
+  salesforce.Lookup AdjustmentBasisReferenceId {
+    apiName = "OrderItemAdjustmentLineItem.AdjustmentBasisReferenceId"
+    label = "Adjustment Basis Reference ID"
+    relationshipName = "AdjustmentBasisReference"
+  }
+  salesforce.Lookup AdjustmentCauseId {
+    apiName = "OrderItemAdjustmentLineItem.AdjustmentCauseId"
+    label = "Adjustment Cause ID"
+    relationshipName = "AdjustmentCause"
+  }
+  salesforce.Picklist AdjustmentSource {
+    apiName = "OrderItemAdjustmentLineItem.AdjustmentSource"
+    label = "Adjustment Source"
+    restricted = true
+  }
+  salesforce.Picklist AdjustmentType {
+    apiName = "OrderItemAdjustmentLineItem.AdjustmentType"
+    label = "Adjustment Type"
+    restricted = true
+  }
+  salesforce.Number AdjustmentValue {
+    apiName = "OrderItemAdjustmentLineItem.AdjustmentValue"
+    label = "Adjustment Value"
+    scale = 0
+    precision = 18
+    unique = false
+  }
+  salesforce.Currency Amount {
+    apiName = "OrderItemAdjustmentLineItem.Amount"
+    label = "Amount"
+    _required = true
+    scale = 2
+    precision = 18
+  }
+  salesforce.LongTextArea Description {
+    apiName = "OrderItemAdjustmentLineItem.Description"
+    label = "Description"
+    length = 2000
+  }
+  salesforce.Text Name {
+    apiName = "OrderItemAdjustmentLineItem.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OrderAdjustmentGroupId {
+    apiName = "OrderItemAdjustmentLineItem.OrderAdjustmentGroupId"
+    label = "Order Adjustment Group ID"
+    relationshipName = "OrderAdjustmentGroup"
+  }
+  salesforce.MasterDetail OrderItemId {
+    apiName = "OrderItemAdjustmentLineItem.OrderItemId"
+    label = "Order Product ID"
+    _required = true
+    relationshipName = "OrderItem"
+  }
+  salesforce.Number Priority {
+    apiName = "OrderItemAdjustmentLineItem.Priority"
+    label = "Priority"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  salesforce.Lookup RelatedAdjustmentLineItemId {
+    apiName = "OrderItemAdjustmentLineItem.RelatedAdjustmentLineItemId"
+    label = "Order Product Adjustment Line Item ID"
+    relationshipName = "RelatedAdjustmentLineItem"
+    _hidden_value = true
+  }
+  salesforce.Currency TotalAmtWithTax {
+    apiName = "OrderItemAdjustmentLineItem.TotalAmtWithTax"
+    label = "Total Amount with Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency TotalTaxAmount {
+    apiName = "OrderItemAdjustmentLineItem.TotalTaxAmount"
+    label = "Total Tax"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "OrderItemAdjustmentLineItem.Id"
+    label = "Order Product Adjustment Line Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItemAdjustmentLineItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItemAdjustmentLineItem.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItemAdjustmentLineItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItemAdjustmentLineItem.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItemAdjustmentLineItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItemAdjustmentLineItem.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderId {
+    apiName = "OrderItemAdjustmentLineItem.OrderId"
+    label = "Order ID"
+    relationshipName = "Order"
+    _hidden_value = true
+  }
+}

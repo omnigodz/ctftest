@@ -1,0 +1,112 @@
+type salesforce.ProductRelatedComponent {
+  salesforce.Lookup ChildProductId {
+    apiName = "ProductRelatedComponent.ChildProductId"
+    label = "Product ID"
+    relationshipName = "ChildProduct"
+  }
+  salesforce.Picklist ChildProductRole {
+    apiName = "ProductRelatedComponent.ChildProductRole"
+    label = "Child Product Role"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox DoesBundlePriceIncludeChild {
+    apiName = "ProductRelatedComponent.DoesBundlePriceIncludeChild"
+    label = "Price includes component"
+  }
+  salesforce.Unknown IsComponentRequired {
+    apiName = "ProductRelatedComponent.IsComponentRequired"
+    _hidden_value = true
+  }
+  salesforce.Unknown IsDefaultComponent {
+    apiName = "ProductRelatedComponent.IsDefaultComponent"
+    _hidden_value = true
+  }
+  salesforce.Unknown IsQuantityEditable {
+    apiName = "ProductRelatedComponent.IsQuantityEditable"
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentProductId {
+    apiName = "ProductRelatedComponent.ParentProductId"
+    label = "Product ID"
+    _required = true
+    relationshipName = "ParentProduct"
+  }
+  salesforce.Picklist ParentProductRole {
+    apiName = "ProductRelatedComponent.ParentProductRole"
+    label = "Parent Product Role"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ProductRelationshipTypeId {
+    apiName = "ProductRelatedComponent.ProductRelationshipTypeId"
+    label = "Product Relationship Type ID"
+    _required = true
+    relationshipName = "ProductRelationshipType"
+  }
+  salesforce.Number Quantity {
+    apiName = "ProductRelatedComponent.Quantity"
+    label = "Quantity"
+    scale = 2
+    precision = 18
+    unique = false
+  }
+  salesforce.Picklist QuantityScaleMethod {
+    apiName = "ProductRelatedComponent.QuantityScaleMethod"
+    label = "Quantity Scaling Method"
+    restricted = true
+  }
+  salesforce.Number Sequence {
+    apiName = "ProductRelatedComponent.Sequence"
+    label = "Sequence"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  serviceid Id {
+    apiName = "ProductRelatedComponent.Id"
+    label = "Product Related Component ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductRelatedComponent.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ProductRelatedComponent.Name"
+    label = "Product Related Component Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductRelatedComponent.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductRelatedComponent.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductRelatedComponent.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductRelatedComponent.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductRelatedComponent.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

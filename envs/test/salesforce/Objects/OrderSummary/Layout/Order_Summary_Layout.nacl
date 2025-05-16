@@ -1,0 +1,303 @@
+salesforce.Layout OrderSummary_Order_Summary_Layout@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderSummaryInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.OriginalOrderId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.OrderedDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.SalesChannelId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.OrderLifeCycleType
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.BusinessModel
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.OrderNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderSummary.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.OwnerId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.SalesStoreId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.TaxLocaleType
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "BillingInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.BillingAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.BillingEmailAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.BillingPhoneNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderSummary.field.BillToContactId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Totals"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjustedProductAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalProductAdjDistAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalDeliveryAdjDistAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjDistAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjustedDeliveryAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjustedProductTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalProductAdjDistTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalDeliveryAdjDistTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjDistTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjustedDeliveryTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalTaxAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "TotalsWithTax"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjProductAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalProductAdjDistAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalDeliveryAdjDistAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjDistAmountWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.TotalAdjDeliveryAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderSummary.field.GrandTotalAmount
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "ItemCount",
+        "GrandTotalAmount",
+        "Status",
+        "Type",
+        "FulfilledFromLocation",
+      ]
+      relatedList = "FulfillmentOrders"
+    },
+    {
+      fields = [
+        "Name",
+        "Status",
+        "Quantity",
+        "UnitPrice",
+        "LineAdjustAmount",
+        "TotalTaxAmount",
+        "AdjLineAmtWithTax",
+        "MainOrderItemSummary",
+      ]
+      relatedList = "OrderItemSummaries"
+    },
+    {
+      fields = [
+        "DeliverToName",
+        "DeliverToStreet",
+        "DeliverToCity",
+        "DeliverToState",
+        "DeliverToPostalCode",
+        "OrderDeliveryMethodDesc",
+      ]
+      relatedList = "OrderDeliveryGroupSummary"
+    },
+    {
+      fields = [
+        "Name",
+        "FullName",
+        "AuthorizationAmount",
+        "CapturedAmount",
+        "RefundedAmount",
+      ]
+      relatedList = "OrderPaymentSummaries"
+    },
+    {
+      fields = [
+        "Name",
+        "Type",
+        "TotalAmount",
+        "Description",
+      ]
+      relatedList = "OrderAdjustmentGroupSummaries"
+    },
+    {
+      fields = [
+        "Name",
+        "InvoiceDate",
+        "TotalAmountWithTax",
+        "Status",
+        "ReferenceEntity",
+      ]
+      relatedList = "Invoices"
+    },
+    {
+      fields = [
+        "Name",
+        "CreditDate",
+        "TotalAmountWithTax",
+        "Status",
+        "ReferenceEntity",
+      ]
+      relatedList = "CreditMemos"
+    },
+    {
+      fields = [
+        "Name",
+        "TrackingNumber",
+        "TrackingUrl",
+        "Status",
+      ]
+      relatedList = "Shipments"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderSummary-Order Summary Layout"
+  _parent = [
+    salesforce.OrderSummary,
+  ]
+  _alias = "OrderSummary-Order Summary Layout"
+}

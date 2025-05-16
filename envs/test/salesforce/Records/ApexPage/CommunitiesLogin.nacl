@@ -1,0 +1,10 @@
+salesforce.ApexPage CommunitiesLogin {
+  apiVersion = 63
+  availableInTouch = false
+  confirmationTokenRequired = false
+  description = "Default experiences login page"
+  label = "CommunitiesLogin"
+  fullName = "CommunitiesLogin"
+  content = file("salesforce/Records/ApexPage/CommunitiesLogin.page")
+  _alias = "CommunitiesLogin"
+}

@@ -1,0 +1,18 @@
+salesforce.ListView Knowledge__kav_All_Articles {
+  fullName = "Knowledge__kav.All_Articles"
+  columns = [
+    "ARTICLE_NUMBER",
+    "TITLE",
+    "VALIDATION_STATUS_ENUM",
+    "PUBLISH_STATUS",
+    "LAST_UPDATE",
+    "LANGUAGE",
+    "LAST_PUBLISHED_DATE",
+  ]
+  filterScope = "Everything"
+  label = "All Articles"
+  _parent = [
+    salesforce.Knowledge__kav,
+  ]
+  _alias = "All Articles"
+}

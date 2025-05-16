@@ -1,0 +1,167 @@
+salesforce.Layout OrderDeliveryGroupSummary_Order_Delivery_Group_Summary_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderDeliveryGroupSummaryInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderDeliveryGroupSummary.field.OrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderDeliveryGroupSummary.field.OriginalOrderDeliveryGroupId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderDeliveryGroupSummary.field.OrderDeliveryMethodId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.EmailAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.PhoneNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderDeliveryGroupSummary.field.DeliverToName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.DeliverToAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.GiftMessage
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.IsGift
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.PromisedDeliveryDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.DesiredDeliveryDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.DeliveryInstructions
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderDeliveryGroupSummaryTotals"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalLineAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalAdjustmentAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalLineTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalAdjustmentTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalTaxAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "TotalsWithTax"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalLineAmtWithTax
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroupSummary.field.TotalAdjustmentAmtWithTax
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroupSummary.field.GrandTotalAmount
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Status",
+        "Quantity",
+        "UnitPrice",
+        "LineAdjustAmount",
+        "TotalTaxAmount",
+        "AdjLineAmtWithTax",
+      ]
+      relatedList = "OrderItemSummary"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderDeliveryGroupSummary-Order Delivery Group Summary Layout"
+  _parent = [
+    salesforce.OrderDeliveryGroupSummary,
+  ]
+  _alias = "OrderDeliveryGroupSummary-Order Delivery Group Summary Layout"
+}

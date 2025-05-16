@@ -1,0 +1,220 @@
+salesforce.Layout Contact_Contact_Layout@bs {
+  excludeButtons = [
+    "ChangeTargetAssignee",
+    "Submit",
+    "XClean",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "About"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Contact.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Contact.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Title
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.ReportsToId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Get in Touch"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.Email
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Contact.field.MailingAddress
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "History"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Contact.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Contact.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = salesforce.QuickAction.instance.NewOpportunity
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 4
+      },
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 5
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 6
+      },
+    ]
+  }
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.MobileSmartActions"
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Contact.field.AccountId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHAT_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      fields = [
+        "OPPORTUNITY.NAME",
+        "OPPORTUNITY.STAGE_NAME",
+        "OPPORTUNITY.AMOUNT",
+        "OPPORTUNITY.CLOSE_DATE",
+      ]
+      relatedList = "RelatedOpportunityList"
+    },
+    {
+      fields = [
+        "CASES.CASE_NUMBER",
+        "CASES.SUBJECT",
+        "CASES.PRIORITY",
+        "CASES.CREATED_DATE",
+        "CASES.STATUS",
+        "OWNER_NAME",
+      ]
+      relatedList = "RelatedCaseList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  relatedObjects = [
+    "AccountId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Contact-Contact Layout"
+  _parent = [
+    salesforce.Contact,
+  ]
+  _alias = "Contact-Contact Layout"
+}

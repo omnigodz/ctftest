@@ -1,0 +1,37 @@
+salesforce.NavigationMenu Default_My_Account_Menu {
+  fullName = "Default_My_Account_Menu"
+  container = "MyStore"
+  containerType = "Network"
+  label = "Default My Account Menu"
+  navigationMenuItem = [
+    {
+      label = "My Account"
+      position = 1
+      publiclyAvailable = true
+      target = "/myprofile"
+      type = "InternalLink"
+    },
+    {
+      label = "Order History"
+      position = 2
+      publiclyAvailable = true
+      target = "/OrderSummary/OrderSummary/Default"
+      type = "InternalLink"
+    },
+    {
+      label = "My List"
+      position = 3
+      publiclyAvailable = true
+      target = "/mylists"
+      type = "InternalLink"
+    },
+    {
+      label = "Addresses"
+      position = 4
+      publiclyAvailable = true
+      target = "/addresses"
+      type = "InternalLink"
+    },
+  ]
+  _alias = "Default My Account Menu"
+}

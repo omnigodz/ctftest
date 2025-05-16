@@ -1,0 +1,7 @@
+salesforce.SharingRules BuyerCriteria {
+  fullName = "BuyerCriteria"
+  _parent = [
+    salesforce.BuyerCriteria,
+  ]
+  _alias = "BuyerCriteria"
+}

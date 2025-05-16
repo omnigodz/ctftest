@@ -1,0 +1,7 @@
+salesforce.SharingRules GoalAssignmentRecommendation {
+  fullName = "GoalAssignmentRecommendation"
+  _parent = [
+    salesforce.GoalAssignmentRecommendation,
+  ]
+  _alias = "GoalAssignmentRecommendation"
+}

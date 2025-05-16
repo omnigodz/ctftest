@@ -1,0 +1,195 @@
+salesforce.LightningPage Account_Record_Page {
+  flexiPageRegions = [
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "collapsed"
+                value = "true"
+              },
+              {
+                name = "enableActionsConfiguration"
+                value = "false"
+              },
+              {
+                name = "enableActionsInNative"
+                value = "false"
+              },
+              {
+                name = "hideChatterActions"
+                value = "false"
+              },
+              {
+                name = "numVisibleActions"
+                value = "3"
+              },
+            ]
+            componentName = "force:highlightsPanel"
+            identifier = "force_highlightsPanel"
+          }
+        },
+      ]
+      name = "header"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "force:detailPanel"
+            identifier = "force_detailPanel"
+          }
+        },
+      ]
+      name = "leftsidebar"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentName = "runtime_sales_activities:activityPanel"
+            identifier = "runtime_sales_activities_activityPanel"
+          }
+        },
+      ]
+      name = "main"
+      type = "Region"
+    },
+    {
+      itemInstances = [
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Account.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "Contacts"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+              {
+                name = "rowsToDisplay"
+                value = "10"
+              },
+              {
+                name = "showActionBar"
+                value = "true"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+            identifier = "force_relatedListSingleContainer"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Account.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "Opportunities"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+              {
+                name = "rowsToDisplay"
+                value = "10"
+              },
+              {
+                name = "showActionBar"
+                value = "true"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+            identifier = "force_relatedListSingleContainer2"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Account.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "Cases"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+              {
+                name = "rowsToDisplay"
+                value = "10"
+              },
+              {
+                name = "showActionBar"
+                value = "true"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+            identifier = "force_relatedListSingleContainer3"
+          }
+        },
+        {
+          componentInstance = {
+            componentInstanceProperties = [
+              {
+                name = "parentFieldApiName"
+                value = "Account.Id"
+              },
+              {
+                name = "relatedListApiName"
+                value = "AttachedContentDocuments"
+              },
+              {
+                name = "relatedListComponentOverride"
+                value = "NONE"
+              },
+              {
+                name = "rowsToDisplay"
+                value = "10"
+              },
+              {
+                name = "showActionBar"
+                value = "true"
+              },
+            ]
+            componentName = "force:relatedListSingleContainer"
+            identifier = "force_relatedListSingleContainer4"
+          }
+        },
+      ]
+      name = "rightsidebar"
+      type = "Region"
+    },
+  ]
+  masterLabel = "Account Record Page"
+  sobjectType = "Account"
+  template = {
+    name = "flexipage:recordHomeThreeColHeaderTemplateDesktop"
+    properties = {
+      name = "enablePageActionConfig"
+      value = "false"
+    }
+  }
+  type = "RecordPage"
+  fullName = "Account_Record_Page"
+  _parent = [
+    salesforce.Account,
+  ]
+  _alias = "Account_Record_Page"
+}

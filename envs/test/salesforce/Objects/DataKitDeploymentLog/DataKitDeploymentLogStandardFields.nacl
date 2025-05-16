@@ -1,0 +1,167 @@
+type salesforce.DataKitDeploymentLog {
+  salesforce.Text BundleName {
+    apiName = "DataKitDeploymentLog.BundleName"
+    label = "Bundle Name"
+    length = 40
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Text ComponentName {
+    apiName = "DataKitDeploymentLog.ComponentName"
+    label = "Component Name"
+    length = 40
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Lookup ComponentTemplateId {
+    apiName = "DataKitDeploymentLog.ComponentTemplateId"
+    label = "Component Template ID"
+    relationshipName = "ComponentTemplate"
+    _hidden_value = true
+  }
+  salesforce.Picklist ComponentType {
+    apiName = "DataKitDeploymentLog.ComponentType"
+    label = "Component Type"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist DataPackageKitDefinition {
+    apiName = "DataKitDeploymentLog.DataPackageKitDefinition"
+    label = "Data Package Kit Definition ID"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Text DataSpaceName {
+    apiName = "DataKitDeploymentLog.DataSpaceName"
+    label = "Data Space Name"
+    length = 40
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Text DeployJob {
+    apiName = "DataKitDeploymentLog.DeployJob"
+    label = "Deploy Job"
+    length = 40
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Picklist DeploymentStatus {
+    apiName = "DataKitDeploymentLog.DeploymentStatus"
+    label = "Deployment Status"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "DataKitDeploymentLog.Name"
+    label = "Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Lookup PublisherOrgComponentId {
+    apiName = "DataKitDeploymentLog.PublisherOrgComponentId"
+    label = "Publisher Org Component ID"
+    relationshipName = "PublisherOrgComponent"
+    _hidden_value = true
+  }
+  salesforce.Lookup SubscriberOrgComponentId {
+    apiName = "DataKitDeploymentLog.SubscriberOrgComponentId"
+    label = "Subscriber Org Component ID"
+    relationshipName = "SubscriberOrgComponent"
+    _hidden_value = true
+  }
+  salesforce.Number TemplateVersion {
+    apiName = "DataKitDeploymentLog.TemplateVersion"
+    label = "Template Version"
+    scale = 0
+    precision = 9
+    unique = false
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "DataKitDeploymentLog.Id"
+    label = "Data Kit Deployment Log ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "DataKitDeploymentLog.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "DataKitDeploymentLog.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "DataKitDeploymentLog.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "DataKitDeploymentLog.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "DataKitDeploymentLog.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "DataKitDeploymentLog.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "DataKitDeploymentLog.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Text DataKitName {
+    apiName = "DataKitDeploymentLog.DataKitName"
+    label = "Data Kit Name"
+    length = 40
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.LongTextArea DeploymentError {
+    apiName = "DataKitDeploymentLog.DeploymentError"
+    label = "Deployment Error"
+    length = 128000
+    _hidden_value = true
+  }
+  salesforce.Text FlowInterviewIdentifier {
+    apiName = "DataKitDeploymentLog.FlowInterviewIdentifier"
+    label = "Flow Interview Identifier"
+    length = 80
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Text FileBasedComponentTemplate {
+    apiName = "DataKitDeploymentLog.FileBasedComponentTemplate"
+    label = "Component Template Name"
+    length = 40
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Picklist DeploymentAction {
+    apiName = "DataKitDeploymentLog.DeploymentAction"
+    label = "Deployment Action"
+    restricted = true
+    _hidden_value = true
+  }
+}

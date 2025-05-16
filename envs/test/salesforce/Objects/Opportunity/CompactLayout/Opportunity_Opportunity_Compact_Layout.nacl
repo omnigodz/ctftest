@@ -1,0 +1,15 @@
+salesforce.CompactLayout Opportunity_Opportunity_Compact_Layout {
+  fullName = "Opportunity.Opportunity_Compact_Layout"
+  fields = [
+    "Name",
+    "AccountId",
+    "Amount",
+    "CloseDate",
+    "OwnerId",
+  ]
+  label = "Opportunity Compact Layout"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity Compact Layout"
+}

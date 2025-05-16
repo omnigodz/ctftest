@@ -1,0 +1,71 @@
+type salesforce.TaxPolicy {
+  salesforce.Lookup DefaultTaxTreatmentId {
+    apiName = "TaxPolicy.DefaultTaxTreatmentId"
+    label = "Tax Treatment ID"
+    relationshipName = "DefaultTaxTreatment"
+  }
+  salesforce.LongTextArea Description {
+    apiName = "TaxPolicy.Description"
+    label = "Description"
+    length = 1000
+  }
+  salesforce.Text Name {
+    apiName = "TaxPolicy.Name"
+    label = "Tax Policy Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist Status {
+    apiName = "TaxPolicy.Status"
+    label = "Status"
+    _required = true
+    restricted = true
+  }
+  salesforce.Picklist TreatmentSelection {
+    apiName = "TaxPolicy.TreatmentSelection"
+    label = "Treatment Selection"
+    _required = true
+    restricted = true
+  }
+  serviceid Id {
+    apiName = "TaxPolicy.Id"
+    label = "Tax Policy ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TaxPolicy.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TaxPolicy.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TaxPolicy.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "TaxPolicy.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "TaxPolicy.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TaxPolicy.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

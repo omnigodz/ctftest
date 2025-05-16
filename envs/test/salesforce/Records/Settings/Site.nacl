@@ -1,0 +1,5 @@
+salesforce.SiteSettings {
+  enableProxyLoginICHeader = true
+  fullName = "Site"
+  _alias = "Site"
+}

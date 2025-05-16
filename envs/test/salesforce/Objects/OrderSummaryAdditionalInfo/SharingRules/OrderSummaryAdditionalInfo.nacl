@@ -1,0 +1,7 @@
+salesforce.SharingRules OrderSummaryAdditionalInfo {
+  fullName = "OrderSummaryAdditionalInfo"
+  _parent = [
+    salesforce.OrderSummaryAdditionalInfo,
+  ]
+  _alias = "OrderSummaryAdditionalInfo"
+}

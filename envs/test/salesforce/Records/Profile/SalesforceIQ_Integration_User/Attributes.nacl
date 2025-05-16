@@ -1,0 +1,6 @@
+salesforce.Profile SalesforceIQ_Integration_User@s {
+  custom = false
+  userLicense = "SalesforceIQ Integration User"
+  fullName = "SalesforceIQ Integration User"
+  _alias = "SalesforceIQ Integration User"
+}

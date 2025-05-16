@@ -1,0 +1,7 @@
+salesforce.SharingRules GoalDefinition {
+  fullName = "GoalDefinition"
+  _parent = [
+    salesforce.GoalDefinition,
+  ]
+  _alias = "GoalDefinition"
+}

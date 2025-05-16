@@ -1,0 +1,12 @@
+salesforce.ListView BuyerGroupRelatedObject_AllBuyerGroupRelatedObjects {
+  fullName = "BuyerGroupRelatedObject.AllBuyerGroupRelatedObjects"
+  columns = [
+    salesforce.BuyerGroupRelatedObject.field.Name,
+  ]
+  filterScope = "Everything"
+  label = "All buyer group related objects"
+  _parent = [
+    salesforce.BuyerGroupRelatedObject,
+  ]
+  _alias = "All buyer group related objects"
+}

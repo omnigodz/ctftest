@@ -1,0 +1,95 @@
+type salesforce.OrderItemSummaryChange {
+  salesforce.Lookup ChangeOrderItemId {
+    apiName = "OrderItemSummaryChange.ChangeOrderItemId"
+    label = "Order Product ID"
+    _required = true
+    relationshipName = "ChangeOrderItem"
+    _hidden_value = true
+  }
+  salesforce.Picklist ChangeType {
+    apiName = "OrderItemSummaryChange.ChangeType"
+    label = "Change Type"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsPreFulfillment {
+    apiName = "OrderItemSummaryChange.IsPreFulfillment"
+    label = "Is PreFulfillment"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.MasterDetail OrderItemSummaryId {
+    apiName = "OrderItemSummaryChange.OrderItemSummaryId"
+    label = "Order Product Summary ID"
+    _required = true
+    relationshipName = "OrderItemSummary"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderSummaryId {
+    apiName = "OrderItemSummaryChange.OrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "OrderSummary"
+    _hidden_value = true
+  }
+  salesforce.Picklist Reason {
+    apiName = "OrderItemSummaryChange.Reason"
+    label = "Reason"
+    _required = true
+    restricted = false
+    _hidden_value = true
+  }
+  salesforce.Text ReasonText {
+    apiName = "OrderItemSummaryChange.ReasonText"
+    label = "Reason Text"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "OrderItemSummaryChange.Id"
+    label = "Order Item Summary Change ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItemSummaryChange.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber OrderItemSummaryChangeNumber {
+    apiName = "OrderItemSummaryChange.OrderItemSummaryChangeNumber"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItemSummaryChange.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItemSummaryChange.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItemSummaryChange.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItemSummaryChange.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItemSummaryChange.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

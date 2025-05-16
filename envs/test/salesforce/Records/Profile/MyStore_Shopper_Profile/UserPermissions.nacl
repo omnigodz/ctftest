@@ -1,0 +1,8 @@
+salesforce.Profile MyStore_Shopper_Profile@s {
+  userPermissions = {
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+  }
+}

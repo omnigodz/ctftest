@@ -1,0 +1,81 @@
+type salesforce.CommerceEntitlementPolicy {
+  salesforce.Unknown CanAddToCart {
+    apiName = "CommerceEntitlementPolicy.CanAddToCart"
+    _hidden_value = true
+  }
+  salesforce.Checkbox CanViewPrice {
+    apiName = "CommerceEntitlementPolicy.CanViewPrice"
+    label = "View prices in catalog"
+    defaultValue = false
+  }
+  salesforce.Checkbox CanViewProduct {
+    apiName = "CommerceEntitlementPolicy.CanViewProduct"
+    label = "View products"
+    defaultValue = false
+  }
+  salesforce.Text Description {
+    apiName = "CommerceEntitlementPolicy.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "CommerceEntitlementPolicy.IsActive"
+    label = "Active"
+    defaultValue = false
+  }
+  salesforce.Text Name {
+    apiName = "CommerceEntitlementPolicy.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "CommerceEntitlementPolicy.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "CommerceEntitlementPolicy.Id"
+    label = "Entitlement Policy ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "CommerceEntitlementPolicy.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "CommerceEntitlementPolicy.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "CommerceEntitlementPolicy.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "CommerceEntitlementPolicy.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "CommerceEntitlementPolicy.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "CommerceEntitlementPolicy.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,78 @@
+type salesforce.SalesChannel {
+  salesforce.LongTextArea Description {
+    apiName = "SalesChannel.Description"
+    label = "Description"
+    length = 2000
+  }
+  salesforce.Text ExternalChannelNumber {
+    apiName = "SalesChannel.ExternalChannelNumber"
+    label = "External Channel Number"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text SalesChannelName {
+    apiName = "SalesChannel.SalesChannelName"
+    label = "Sales Channel Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Picklist Type {
+    apiName = "SalesChannel.Type"
+    label = "Type"
+    restricted = false
+  }
+  serviceid Id {
+    apiName = "SalesChannel.Id"
+    label = "Sales Channel ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "SalesChannel.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "SalesChannel.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "SalesChannel.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "SalesChannel.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "SalesChannel.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "SalesChannel.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "SalesChannel.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Picklist TypeCategory {
+    apiName = "SalesChannel.TypeCategory"
+    label = "Type Category"
+    restricted = true
+    _hidden_value = true
+  }
+}

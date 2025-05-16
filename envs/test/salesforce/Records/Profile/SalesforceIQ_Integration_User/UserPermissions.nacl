@@ -1,0 +1,60 @@
+salesforce.Profile SalesforceIQ_Integration_User@s {
+  userPermissions = {
+    AllowViewEditConvertedLeads = {
+      enabled = true
+      name = "AllowViewEditConvertedLeads"
+    }
+    ApexRestServices = {
+      enabled = true
+      name = "ApexRestServices"
+    }
+    ApiEnabled = {
+      enabled = true
+      name = "ApiEnabled"
+    }
+    PasswordNeverExpires = {
+      enabled = true
+      name = "PasswordNeverExpires"
+    }
+    RunReports = {
+      enabled = true
+      name = "RunReports"
+    }
+    ShowCompanyNameAsUserBadge = {
+      enabled = true
+      name = "ShowCompanyNameAsUserBadge"
+    }
+    UseWebLink = {
+      enabled = true
+      name = "UseWebLink"
+    }
+    ViewAllData = {
+      enabled = true
+      name = "ViewAllData"
+    }
+    ViewDeveloperName = {
+      enabled = true
+      name = "ViewDeveloperName"
+    }
+    ViewPublicDashboards = {
+      enabled = true
+      name = "ViewPublicDashboards"
+    }
+    ViewPublicReports = {
+      enabled = true
+      name = "ViewPublicReports"
+    }
+    ViewRoles = {
+      enabled = true
+      name = "ViewRoles"
+    }
+    ViewSetup = {
+      enabled = true
+      name = "ViewSetup"
+    }
+    ViewUserPII = {
+      enabled = true
+      name = "ViewUserPII"
+    }
+  }
+}

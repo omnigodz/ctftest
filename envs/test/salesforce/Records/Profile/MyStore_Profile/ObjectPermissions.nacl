@@ -1,0 +1,85 @@
+salesforce.Profile MyStore_Profile@s {
+  objectPermissions = {
+    ElectronicMediaGroup = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ElectronicMediaGroup"
+      viewAllRecords = false
+    }
+    Location = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Location"
+      viewAllRecords = false
+    }
+    OrderDeliveryMethod = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "OrderDeliveryMethod"
+      viewAllRecords = false
+    }
+    Product2 = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Product2"
+      viewAllRecords = false
+    }
+    ProductCatalog = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ProductCatalog"
+      viewAllRecords = false
+    }
+    ProductCategory = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ProductCategory"
+      viewAllRecords = false
+    }
+    ProductCategoryProduct = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "ProductCategoryProduct"
+      viewAllRecords = false
+    }
+    WebStore = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "WebStore"
+      viewAllRecords = false
+    }
+    WebStoreCatalog = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "WebStoreCatalog"
+      viewAllRecords = false
+    }
+  }
+}

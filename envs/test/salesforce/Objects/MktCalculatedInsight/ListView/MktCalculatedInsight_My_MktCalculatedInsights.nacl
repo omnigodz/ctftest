@@ -1,0 +1,9 @@
+salesforce.ListView MktCalculatedInsight_My_MktCalculatedInsights {
+  fullName = "MktCalculatedInsight.My_MktCalculatedInsights"
+  filterScope = "Mine"
+  label = "My Calculated Insights"
+  _parent = [
+    salesforce.MktCalculatedInsight,
+  ]
+  _alias = "My Calculated Insights"
+}

@@ -1,0 +1,15 @@
+salesforce.NetworkBranding cbMyStore {
+  network = "MyStore"
+  primaryColor = "#1797C0"
+  primaryComplementColor = "#FFFFFF"
+  quaternaryColor = "#B1BAC1"
+  quaternaryComplementColor = "#222222"
+  secondaryColor = "#51606E"
+  tertiaryColor = "#DDE4E9"
+  tertiaryComplementColor = "#222222"
+  zeronaryColor = "#51606E"
+  zeronaryComplementColor = "#FFFFFF"
+  fullName = "cbMyStore"
+  content = file("salesforce/Records/NetworkBranding/cbMyStore.networkBranding")
+  _alias = "cbMyStore"
+}

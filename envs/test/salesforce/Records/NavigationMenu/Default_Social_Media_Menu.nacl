@@ -1,0 +1,37 @@
+salesforce.NavigationMenu Default_Social_Media_Menu {
+  fullName = "Default_Social_Media_Menu"
+  container = "MyStore"
+  containerType = "Network"
+  label = "Default Social Media Menu"
+  navigationMenuItem = [
+    {
+      label = "X"
+      position = 1
+      publiclyAvailable = true
+      target = "https://twitter.com/"
+      type = "ExternalLink"
+    },
+    {
+      label = "Facebook"
+      position = 2
+      publiclyAvailable = true
+      target = "https://www.facebook.com/"
+      type = "ExternalLink"
+    },
+    {
+      label = "Youtube"
+      position = 3
+      publiclyAvailable = true
+      target = "https://www.youtube.com/"
+      type = "ExternalLink"
+    },
+    {
+      label = "Instagram"
+      position = 4
+      publiclyAvailable = true
+      target = "https://www.instagram.com/"
+      type = "ExternalLink"
+    },
+  ]
+  _alias = "Default Social Media Menu"
+}

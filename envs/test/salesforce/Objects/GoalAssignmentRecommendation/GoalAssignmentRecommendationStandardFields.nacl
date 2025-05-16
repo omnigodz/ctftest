@@ -1,0 +1,184 @@
+type salesforce.GoalAssignmentRecommendation {
+  salesforce.Text AcceptanceLabel {
+    apiName = "GoalAssignmentRecommendation.AcceptanceLabel"
+    label = "AcceptanceLabel"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Action {
+    apiName = "GoalAssignmentRecommendation.Action"
+    label = "Action"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.LongTextArea ActionInfo {
+    apiName = "GoalAssignmentRecommendation.ActionInfo"
+    label = "ActionInfo"
+    length = 32000
+  }
+  salesforce.Text ActionType {
+    apiName = "GoalAssignmentRecommendation.ActionType"
+    label = "ActionType"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup ChannelId {
+    apiName = "GoalAssignmentRecommendation.ChannelId"
+    label = "Channel ID"
+    relationshipName = "Channel"
+  }
+  salesforce.Text Description {
+    apiName = "GoalAssignmentRecommendation.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Domain {
+    apiName = "GoalAssignmentRecommendation.Domain"
+    label = "Domain"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text ExternalName {
+    apiName = "GoalAssignmentRecommendation.ExternalName"
+    label = "ExternalName"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.LongTextArea ExternalState {
+    apiName = "GoalAssignmentRecommendation.ExternalState"
+    label = "ExternalState"
+    length = 131072
+  }
+  salesforce.Lookup GoalAssignmentId {
+    apiName = "GoalAssignmentRecommendation.GoalAssignmentId"
+    label = "Goal Assignment ID"
+    relationshipName = "GoalAssignment"
+  }
+  salesforce.Text Grouping {
+    apiName = "GoalAssignmentRecommendation.Grouping"
+    label = "Grouping"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text IconName {
+    apiName = "GoalAssignmentRecommendation.IconName"
+    label = "IconName"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup ImageId {
+    apiName = "GoalAssignmentRecommendation.ImageId"
+    label = "Asset File ID"
+    relationshipName = "Image"
+  }
+  salesforce.Text Name {
+    apiName = "GoalAssignmentRecommendation.Name"
+    label = "Goal Assignment Recommendation Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.LongTextArea Output {
+    apiName = "GoalAssignmentRecommendation.Output"
+    label = "Output"
+    length = 32000
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "GoalAssignmentRecommendation.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Lookup ParentRecommendationId {
+    apiName = "GoalAssignmentRecommendation.ParentRecommendationId"
+    label = "Goal Assignment Recommendation ID"
+    relationshipName = "ParentRecommendation"
+  }
+  salesforce.Text RejectionLabel {
+    apiName = "GoalAssignmentRecommendation.RejectionLabel"
+    label = "RejectionLabel"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Number Score {
+    apiName = "GoalAssignmentRecommendation.Score"
+    label = "Score"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  salesforce.Text SecondaryState {
+    apiName = "GoalAssignmentRecommendation.SecondaryState"
+    label = "SecondaryState"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text State {
+    apiName = "GoalAssignmentRecommendation.State"
+    label = "State"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text TertiaryState {
+    apiName = "GoalAssignmentRecommendation.TertiaryState"
+    label = "TertiaryState"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "GoalAssignmentRecommendation.Id"
+    label = "Goal Assignment Recommendation ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GoalAssignmentRecommendation.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GoalAssignmentRecommendation.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GoalAssignmentRecommendation.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GoalAssignmentRecommendation.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GoalAssignmentRecommendation.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GoalAssignmentRecommendation.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

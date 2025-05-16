@@ -1,0 +1,109 @@
+type salesforce.VideoCallRecording {
+  serviceid Id {
+    apiName = "VideoCallRecording.Id"
+    label = "Video Call Recording ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "VideoCallRecording.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "VideoCallRecording.Name"
+    label = "Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "VideoCallRecording.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "VideoCallRecording.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "VideoCallRecording.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "VideoCallRecording.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "VideoCallRecording.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Lookup VideoCallRecordId {
+    apiName = "VideoCallRecording.VideoCallRecordId"
+    label = "Video Call ID"
+    _required = true
+    relationshipName = "VideoCallRecord"
+    _hidden_value = true
+  }
+  salesforce.Text ExternalRecordingKey {
+    apiName = "VideoCallRecording.ExternalRecordingKey"
+    label = "External Recording Key"
+    length = 255
+    unique = true
+    caseSensitive = true
+    _hidden_value = true
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "VideoCallRecording.StartDateTime"
+    label = "Video Call Recording Started"
+    _hidden_value = true
+  }
+  salesforce.DateTime EndDateTime {
+    apiName = "VideoCallRecording.EndDateTime"
+    label = "Video Call Recording Ended"
+    _hidden_value = true
+  }
+  salesforce.Number DurationInSeconds {
+    apiName = "VideoCallRecording.DurationInSeconds"
+    label = "Recording Duration"
+    scale = 0
+    precision = 8
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Unknown FileSizeInByte {
+    apiName = "VideoCallRecording.FileSizeInByte"
+    label = "File Size In Bytes"
+    _hidden_value = true
+  }
+  salesforce.Text FileType {
+    apiName = "VideoCallRecording.FileType"
+    label = "File Type"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.DateTime ExpirationDateTime {
+    apiName = "VideoCallRecording.ExpirationDateTime"
+    label = "Expiration Date Time"
+    _hidden_value = true
+  }
+  salesforce.Text ExternalRecordingKeyLong {
+    apiName = "VideoCallRecording.ExternalRecordingKeyLong"
+    label = "External Recording Key for Long values"
+    length = 1000
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+}

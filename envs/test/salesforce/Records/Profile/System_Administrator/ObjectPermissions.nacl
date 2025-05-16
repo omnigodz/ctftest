@@ -1,0 +1,1138 @@
+salesforce.Profile Admin {
+  objectPermissions = {
+    Account = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Account"
+      viewAllRecords = true
+    }
+    AccountBrand = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AccountBrand"
+      viewAllRecords = true
+    }
+    Address = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Address"
+      viewAllRecords = true
+    }
+    AlternativePaymentMethod = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AlternativePaymentMethod"
+      viewAllRecords = true
+    }
+    Asset = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Asset"
+      viewAllRecords = true
+    }
+    AsyncOperationTracker = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AsyncOperationTracker"
+      viewAllRecords = true
+    }
+    AuthorizationForm = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AuthorizationForm"
+      viewAllRecords = true
+    }
+    AuthorizationFormConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AuthorizationFormConsent"
+      viewAllRecords = true
+    }
+    AuthorizationFormDataUse = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AuthorizationFormDataUse"
+      viewAllRecords = true
+    }
+    AuthorizationFormText = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "AuthorizationFormText"
+      viewAllRecords = true
+    }
+    BusinessBrand = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "BusinessBrand"
+      viewAllRecords = true
+    }
+    BuyerAccount = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "BuyerAccount"
+      viewAllRecords = true
+    }
+    BuyerCriteria = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "BuyerCriteria"
+      viewAllRecords = true
+    }
+    BuyerGroup = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "BuyerGroup"
+      viewAllRecords = true
+    }
+    BuyerGroupPricebook = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "BuyerGroupPricebook"
+      viewAllRecords = true
+    }
+    BuyerGroupRelatedObject = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "BuyerGroupRelatedObject"
+      viewAllRecords = true
+    }
+    CalculatedInsightRangeBound = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CalculatedInsightRangeBound"
+      viewAllRecords = true
+    }
+    Campaign = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Campaign"
+      viewAllRecords = true
+    }
+    CardPaymentMethod = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CardPaymentMethod"
+      viewAllRecords = true
+    }
+    Case = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Case"
+      viewAllRecords = true
+    }
+    CommSubscription = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CommSubscription"
+      viewAllRecords = true
+    }
+    CommSubscriptionChannelType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CommSubscriptionChannelType"
+      viewAllRecords = true
+    }
+    CommSubscriptionConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CommSubscriptionConsent"
+      viewAllRecords = true
+    }
+    CommSubscriptionTiming = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CommSubscriptionTiming"
+      viewAllRecords = true
+    }
+    CommerceConfigRelatedRecord = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CommerceConfigRelatedRecord"
+      viewAllRecords = true
+    }
+    CommerceEntitlementPolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CommerceEntitlementPolicy"
+      viewAllRecords = true
+    }
+    Contact = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Contact"
+      viewAllRecords = true
+    }
+    ContactPointAddress = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ContactPointAddress"
+      viewAllRecords = true
+    }
+    ContactPointConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ContactPointConsent"
+      viewAllRecords = true
+    }
+    ContactPointEmail = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ContactPointEmail"
+      viewAllRecords = true
+    }
+    ContactPointPhone = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ContactPointPhone"
+      viewAllRecords = true
+    }
+    ContactPointTypeConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ContactPointTypeConsent"
+      viewAllRecords = true
+    }
+    ContactRequest = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ContactRequest"
+      viewAllRecords = true
+    }
+    Coupon = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Coupon"
+      viewAllRecords = true
+    }
+    CreditMemo = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CreditMemo"
+      viewAllRecords = true
+    }
+    CreditMemoInvApplication = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "CreditMemoInvApplication"
+      viewAllRecords = true
+    }
+    Customer = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Customer"
+      viewAllRecords = true
+    }
+    DataAction = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataAction"
+      viewAllRecords = true
+    }
+    DataActionJobSummary = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataActionJobSummary"
+      viewAllRecords = true
+    }
+    DataActionTarget = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataActionTarget"
+      viewAllRecords = true
+    }
+    DataKitDeploymentLog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataKitDeploymentLog"
+      viewAllRecords = true
+    }
+    DataLakeObjectInstance = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataLakeObjectInstance"
+      viewAllRecords = true
+    }
+    DataLineageDefSyncLog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataLineageDefSyncLog"
+      viewAllRecords = true
+    }
+    DataLineageNodeDefSyncLog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataLineageNodeDefSyncLog"
+      viewAllRecords = true
+    }
+    DataModelRelationConstraint = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataModelRelationConstraint"
+      viewAllRecords = true
+    }
+    DataPackageKit = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataPackageKit"
+      viewAllRecords = true
+    }
+    DataQueryWorkspace = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataQueryWorkspace"
+      viewAllRecords = true
+    }
+    DataSourceBundle = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataSourceBundle"
+      viewAllRecords = true
+    }
+    DataStream = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataStream"
+      viewAllRecords = true
+    }
+    DataUseLegalBasis = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataUseLegalBasis"
+      viewAllRecords = true
+    }
+    DataUsePurpose = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DataUsePurpose"
+      viewAllRecords = true
+    }
+    DigitalWallet = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DigitalWallet"
+      viewAllRecords = true
+    }
+    DuplicateRecordSet = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "DuplicateRecordSet"
+      viewAllRecords = true
+    }
+    ElectronicMediaGroup = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ElectronicMediaGroup"
+      viewAllRecords = true
+    }
+    EngagementChannelType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "EngagementChannelType"
+      viewAllRecords = true
+    }
+    ExtDataShare = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ExtDataShare"
+      viewAllRecords = true
+    }
+    ExtDataShareTarget = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ExtDataShareTarget"
+      viewAllRecords = true
+    }
+    FulfillmentOrder = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "FulfillmentOrder"
+      viewAllRecords = true
+    }
+    GeoCountry = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "GeoCountry"
+      viewAllRecords = true
+    }
+    GoalAssignment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "GoalAssignment"
+      viewAllRecords = true
+    }
+    GoalAssignmentRecommendation = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "GoalAssignmentRecommendation"
+      viewAllRecords = true
+    }
+    GoalDefinition = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "GoalDefinition"
+      viewAllRecords = true
+    }
+    IdentityResolution = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "IdentityResolution"
+      viewAllRecords = true
+    }
+    Image = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Image"
+      viewAllRecords = true
+    }
+    Individual = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Individual"
+      viewAllRecords = true
+    }
+    Invoice = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Invoice"
+      viewAllRecords = true
+    }
+    Knowledge__kav = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Knowledge__kav"
+      viewAllRecords = true
+    }
+    Lead = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Lead"
+      viewAllRecords = true
+    }
+    LegalEntity = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "LegalEntity"
+      viewAllRecords = true
+    }
+    Location = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Location"
+      viewAllRecords = true
+    }
+    MarketSegment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "MarketSegment"
+      viewAllRecords = true
+    }
+    MarketSegmentField = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "MarketSegmentField"
+      viewAllRecords = true
+    }
+    MktCalculatedInsight = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "MktCalculatedInsight"
+      viewAllRecords = true
+    }
+    MktDataTransform = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "MktDataTransform"
+      viewAllRecords = true
+    }
+    MktMLModel = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "MktMLModel"
+      viewAllRecords = true
+    }
+    MktMLPredictionJob = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "MktMLPredictionJob"
+      viewAllRecords = true
+    }
+    Opportunity = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Opportunity"
+      viewAllRecords = true
+    }
+    Order = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Order"
+      viewAllRecords = true
+    }
+    OrderDeliveryMethod = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "OrderDeliveryMethod"
+      viewAllRecords = true
+    }
+    OrderSummary = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "OrderSummary"
+      viewAllRecords = true
+    }
+    OrderSummaryRoutingSchedule = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "OrderSummaryRoutingSchedule"
+      viewAllRecords = true
+    }
+    PartyConsent = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PartyConsent"
+      viewAllRecords = true
+    }
+    Payment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Payment"
+      viewAllRecords = true
+    }
+    PaymentAuthAdjustment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PaymentAuthAdjustment"
+      viewAllRecords = true
+    }
+    PaymentAuthorization = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PaymentAuthorization"
+      viewAllRecords = true
+    }
+    PaymentGateway = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PaymentGateway"
+      viewAllRecords = true
+    }
+    PaymentGroup = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PaymentGroup"
+      viewAllRecords = true
+    }
+    PaymentLineInvoice = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PaymentLineInvoice"
+      viewAllRecords = true
+    }
+    PriceAdjustmentSchedule = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PriceAdjustmentSchedule"
+      viewAllRecords = true
+    }
+    PriceAdjustmentTier = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PriceAdjustmentTier"
+      viewAllRecords = true
+    }
+    Pricebook2 = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Pricebook2"
+      viewAllRecords = true
+    }
+    Product2 = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Product2"
+      viewAllRecords = true
+    }
+    ProductCatalog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ProductCatalog"
+      viewAllRecords = true
+    }
+    ProductCategory = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ProductCategory"
+      viewAllRecords = true
+    }
+    ProductCategoryProduct = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ProductCategoryProduct"
+      viewAllRecords = true
+    }
+    ProductRelationshipType = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ProductRelationshipType"
+      viewAllRecords = true
+    }
+    Promotion = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Promotion"
+      viewAllRecords = true
+    }
+    PromotionLineItemRule = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PromotionLineItemRule"
+      viewAllRecords = true
+    }
+    PromotionMarketSegment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PromotionMarketSegment"
+      viewAllRecords = true
+    }
+    PromotionQualifier = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PromotionQualifier"
+      viewAllRecords = true
+    }
+    PromotionSegment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PromotionSegment"
+      viewAllRecords = true
+    }
+    PromotionTarget = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PromotionTarget"
+      viewAllRecords = true
+    }
+    PromotionTier = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "PromotionTier"
+      viewAllRecords = true
+    }
+    QuickText = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "QuickText"
+      viewAllRecords = true
+    }
+    Refund = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Refund"
+      viewAllRecords = true
+    }
+    RefundLinePayment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "RefundLinePayment"
+      viewAllRecords = true
+    }
+    SalesChannel = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "SalesChannel"
+      viewAllRecords = true
+    }
+    SalesTransactionItemShape = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "SalesTransactionItemShape"
+      viewAllRecords = true
+    }
+    SalesTransactionShape = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "SalesTransactionShape"
+      viewAllRecords = true
+    }
+    Seller = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Seller"
+      viewAllRecords = true
+    }
+    Shipment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Shipment"
+      viewAllRecords = true
+    }
+    ShippingCarrier = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ShippingCarrier"
+      viewAllRecords = true
+    }
+    ShippingCarrierMethod = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ShippingCarrierMethod"
+      viewAllRecords = true
+    }
+    ShippingConfigurationSet = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "ShippingConfigurationSet"
+      viewAllRecords = true
+    }
+    TaxEngine = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "TaxEngine"
+      viewAllRecords = true
+    }
+    TaxGeoConfig = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "TaxGeoConfig"
+      viewAllRecords = true
+    }
+    TaxPolicy = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "TaxPolicy"
+      viewAllRecords = true
+    }
+    TaxRate = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "TaxRate"
+      viewAllRecords = true
+    }
+    TaxTreatment = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "TaxTreatment"
+      viewAllRecords = true
+    }
+    UserExternalCredential = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "UserExternalCredential"
+      viewAllRecords = true
+    }
+    WebCart = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "WebCart"
+      viewAllRecords = true
+    }
+    WebStore = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "WebStore"
+      viewAllRecords = true
+    }
+    WebStoreBuyerGroup = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "WebStoreBuyerGroup"
+      viewAllRecords = true
+    }
+    WebStoreCatalog = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "WebStoreCatalog"
+      viewAllRecords = true
+    }
+    WebStorePricebook = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "WebStorePricebook"
+      viewAllRecords = true
+    }
+    Wishlist = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = true
+      object = "Wishlist"
+      viewAllRecords = true
+    }
+  }
+}

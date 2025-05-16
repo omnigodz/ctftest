@@ -1,0 +1,7 @@
+salesforce.SharingRules TaxRate {
+  fullName = "TaxRate"
+  _parent = [
+    salesforce.TaxRate,
+  ]
+  _alias = "TaxRate"
+}

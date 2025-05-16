@@ -1,0 +1,71 @@
+type salesforce.ProductMedia {
+  salesforce.Lookup ElectronicMediaGroupId {
+    apiName = "ProductMedia.ElectronicMediaGroupId"
+    label = "Electronic Media Group ID"
+    _required = true
+    relationshipName = "ElectronicMediaGroup"
+  }
+  salesforce.Lookup ElectronicMediaId {
+    apiName = "ProductMedia.ElectronicMediaId"
+    label = "ElectronicMedia ID"
+    _required = true
+    relationshipName = "ElectronicMedia"
+  }
+  salesforce.Lookup ProductId {
+    apiName = "ProductMedia.ProductId"
+    label = "Product ID"
+    _required = true
+    relationshipName = "Product"
+  }
+  salesforce.Number SortOrder {
+    apiName = "ProductMedia.SortOrder"
+    label = "Sort Order"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  serviceid Id {
+    apiName = "ProductMedia.Id"
+    label = "Product Media ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ProductMedia.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "ProductMedia.Name"
+    label = "Product Media Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ProductMedia.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ProductMedia.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ProductMedia.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ProductMedia.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ProductMedia.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

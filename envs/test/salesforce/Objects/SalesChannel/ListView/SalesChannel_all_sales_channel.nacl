@@ -1,0 +1,9 @@
+salesforce.ListView SalesChannel_all_sales_channel {
+  fullName = "SalesChannel.all_sales_channel"
+  filterScope = "Everything"
+  label = "All Sales Channel"
+  _parent = [
+    salesforce.SalesChannel,
+  ]
+  _alias = "All Sales Channel"
+}

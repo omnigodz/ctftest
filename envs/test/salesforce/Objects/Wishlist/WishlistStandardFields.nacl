@@ -1,0 +1,73 @@
+type salesforce.Wishlist {
+  salesforce.Lookup AccountId {
+    apiName = "Wishlist.AccountId"
+    label = "Account ID"
+    _required = true
+    relationshipName = "Account"
+  }
+  salesforce.Text Name {
+    apiName = "Wishlist.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Wishlist.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Lookup WebStoreId {
+    apiName = "Wishlist.WebStoreId"
+    label = "Store ID"
+    _required = true
+    relationshipName = "WebStore"
+  }
+  salesforce.Summary WishlistProductCount {
+    apiName = "Wishlist.WishlistProductCount"
+    label = "Unique Products in the Wishlist"
+    precision = 9
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "Wishlist.Id"
+    label = "Wishlist ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Wishlist.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Wishlist.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Wishlist.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Wishlist.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Wishlist.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Wishlist.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

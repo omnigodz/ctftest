@@ -1,0 +1,88 @@
+salesforce.Layout OrderPaymentSummaryReference_Order_Payment_Summary_Reference_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderPaymentSummaryReferenceInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderPaymentSummaryReference.field.Method
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderPaymentSummaryReference.field.OrderPaymentSummaryId
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderPaymentSummaryReference.field.OrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderPaymentSummaryReference.field.Type
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderPaymentSummaryReferenceAmounts"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderPaymentSummaryReference.field.AuthorizationAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderPaymentSummaryReference.field.RefundedAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderPaymentSummaryReference.field.CapturedAmount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderPaymentSummaryReference.field.ReservedBalanceAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderPaymentSummaryReference-Order Payment Summary Reference Layout"
+  _parent = [
+    salesforce.OrderPaymentSummaryReference,
+  ]
+  _alias = "OrderPaymentSummaryReference-Order Payment Summary Reference Layout"
+}

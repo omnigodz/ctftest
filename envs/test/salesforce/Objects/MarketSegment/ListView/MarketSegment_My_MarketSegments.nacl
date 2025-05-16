@@ -1,0 +1,9 @@
+salesforce.ListView MarketSegment_My_MarketSegments {
+  fullName = "MarketSegment.My_MarketSegments"
+  filterScope = "Mine"
+  label = "My Segments"
+  _parent = [
+    salesforce.MarketSegment,
+  ]
+  _alias = "My Segments"
+}

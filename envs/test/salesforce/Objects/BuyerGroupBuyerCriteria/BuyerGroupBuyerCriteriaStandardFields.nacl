@@ -1,0 +1,58 @@
+type salesforce.BuyerGroupBuyerCriteria {
+  salesforce.Lookup BuyerCriteriaId {
+    apiName = "BuyerGroupBuyerCriteria.BuyerCriteriaId"
+    label = "Buyer Criteria ID"
+    _required = true
+    relationshipName = "BuyerCriteria"
+  }
+  salesforce.MasterDetail BuyerGroupId {
+    apiName = "BuyerGroupBuyerCriteria.BuyerGroupId"
+    label = "Buyer Group ID"
+    _required = true
+    relationshipName = "BuyerGroup"
+  }
+  serviceid Id {
+    apiName = "BuyerGroupBuyerCriteria.Id"
+    label = "Buyer Group Buyer Criteria ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BuyerGroupBuyerCriteria.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "BuyerGroupBuyerCriteria.Name"
+    label = "Buyer Group Buyer Criteria Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BuyerGroupBuyerCriteria.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BuyerGroupBuyerCriteria.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BuyerGroupBuyerCriteria.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BuyerGroupBuyerCriteria.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BuyerGroupBuyerCriteria.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

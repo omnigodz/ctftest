@@ -1,0 +1,30 @@
+salesforce.NavigationMenu Default_User_Profile_Menu {
+  fullName = "Default_User_Profile_Menu"
+  container = "MyStore"
+  containerType = "Network"
+  label = "Default User Profile Menu"
+  navigationMenuItem = [
+    {
+      label = "My Account"
+      position = 1
+      publiclyAvailable = false
+      target = "/myprofile"
+      type = "InternalLink"
+    },
+    {
+      label = "Orders"
+      position = 2
+      publiclyAvailable = false
+      target = "/OrderSummary/OrderSummary/Default"
+      type = "InternalLink"
+    },
+    {
+      label = "My List"
+      position = 3
+      publiclyAvailable = false
+      target = "/mylists"
+      type = "InternalLink"
+    },
+  ]
+  _alias = "Default User Profile Menu"
+}

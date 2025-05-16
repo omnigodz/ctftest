@@ -1,0 +1,11 @@
+salesforce.OrderSettings {
+  enableEnhancedCommerceOrders = true
+  enableNegativeQuantity = false
+  enableOptionalPricebook = true
+  enableOrderEvents = false
+  enableOrderWithMultiplePriceBooks = false
+  enableOrders = true
+  enableZeroQuantity = false
+  fullName = "Order"
+  _alias = "Order"
+}

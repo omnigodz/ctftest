@@ -1,0 +1,31 @@
+salesforce.Profile MyStore_Shopper_Profile@s {
+  objectPermissions = {
+    Account = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Account"
+      viewAllRecords = false
+    }
+    Contact = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "Contact"
+      viewAllRecords = false
+    }
+    UserExternalCredential = {
+      allowCreate = true
+      allowDelete = true
+      allowEdit = true
+      allowRead = true
+      modifyAllRecords = false
+      object = "UserExternalCredential"
+      viewAllRecords = false
+    }
+  }
+}

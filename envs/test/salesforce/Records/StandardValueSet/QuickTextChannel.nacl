@@ -1,0 +1,27 @@
+salesforce.StandardValueSet QuickTextChannel {
+  fullName = "QuickTextChannel"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Email"
+      default = true
+      label = "Email"
+    },
+    {
+      fullName = "Event"
+      default = false
+      label = "Event"
+    },
+    {
+      fullName = "Task"
+      default = false
+      label = "Task"
+    },
+    {
+      fullName = "Knowledge"
+      default = false
+      label = "Knowledge"
+    },
+  ]
+  _alias = "QuickTextChannel"
+}

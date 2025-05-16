@@ -1,0 +1,94 @@
+type salesforce.OrderPaymentSummaryReference {
+  salesforce.Currency AuthorizationAmount {
+    apiName = "OrderPaymentSummaryReference.AuthorizationAmount"
+    label = "Authorized"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency CapturedAmount {
+    apiName = "OrderPaymentSummaryReference.CapturedAmount"
+    label = "Captured"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Text Method {
+    apiName = "OrderPaymentSummaryReference.Method"
+    label = "Method"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.MasterDetail OrderPaymentSummaryId {
+    apiName = "OrderPaymentSummaryReference.OrderPaymentSummaryId"
+    label = "Order Payment Summary ID"
+    _required = true
+    relationshipName = "OrderPaymentSummary"
+  }
+  salesforce.MasterDetail OrderSummaryId {
+    apiName = "OrderPaymentSummaryReference.OrderSummaryId"
+    label = "Order Summary ID"
+    _required = true
+    relationshipName = "OrderSummary"
+  }
+  salesforce.Currency RefundedAmount {
+    apiName = "OrderPaymentSummaryReference.RefundedAmount"
+    label = "Refunded"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Currency ReservedBalanceAmount {
+    apiName = "OrderPaymentSummaryReference.ReservedBalanceAmount"
+    label = "Reserved Balance"
+    scale = 2
+    precision = 18
+  }
+  salesforce.Picklist Type {
+    apiName = "OrderPaymentSummaryReference.Type"
+    label = "Type"
+    _required = true
+    restricted = true
+  }
+  serviceid Id {
+    apiName = "OrderPaymentSummaryReference.Id"
+    label = "Order Payment Summary Reference ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderPaymentSummaryReference.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderPaymentSummaryReference.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderPaymentSummaryReference.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderPaymentSummaryReference.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderPaymentSummaryReference.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderPaymentSummaryReference.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

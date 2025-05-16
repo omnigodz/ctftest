@@ -1,0 +1,247 @@
+type salesforce.OrderItem {
+  salesforce.Unknown AdjustedLineAmount {
+    apiName = "OrderItem.AdjustedLineAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown AdjustedLineAmtWithTax {
+    apiName = "OrderItem.AdjustedLineAmtWithTax"
+    _hidden_value = true
+  }
+  salesforce.Text Description {
+    apiName = "OrderItem.Description"
+    label = "Line Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Unknown EarliestEstimatedDeliveryDate {
+    apiName = "OrderItem.EarliestEstimatedDeliveryDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown EarliestEstimatedDeliveryTime {
+    apiName = "OrderItem.EarliestEstimatedDeliveryTime"
+    _hidden_value = true
+  }
+  salesforce.Date EndDate {
+    apiName = "OrderItem.EndDate"
+    label = "End Date"
+  }
+  salesforce.Unknown EstimatedDeliveryReference {
+    apiName = "OrderItem.EstimatedDeliveryReference"
+    _hidden_value = true
+  }
+  salesforce.Unknown EstimatedDeliveryTimeZone {
+    apiName = "OrderItem.EstimatedDeliveryTimeZone"
+    _hidden_value = true
+  }
+  salesforce.Unknown GrossUnitPrice {
+    apiName = "OrderItem.GrossUnitPrice"
+    _hidden_value = true
+  }
+  salesforce.Unknown LatestEstimatedDeliveryDate {
+    apiName = "OrderItem.LatestEstimatedDeliveryDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown LatestEstimatedDeliveryTime {
+    apiName = "OrderItem.LatestEstimatedDeliveryTime"
+    _hidden_value = true
+  }
+  salesforce.Unknown LineNumber {
+    apiName = "OrderItem.LineNumber"
+    _hidden_value = true
+  }
+  salesforce.Currency ListPrice {
+    apiName = "OrderItem.ListPrice"
+    label = "List Price"
+    scale = 2
+    precision = 18
+  }
+  salesforce.Lookup OrderDeliveryGroupId {
+    apiName = "OrderItem.OrderDeliveryGroupId"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderId {
+    apiName = "OrderItem.OrderId"
+    label = "Order ID"
+    _required = true
+    relationshipName = "Order"
+  }
+  salesforce.Lookup ParentOrderItemId {
+    apiName = "OrderItem.ParentOrderItemId"
+    _hidden_value = true
+  }
+  salesforce.Lookup Product2Id {
+    apiName = "OrderItem.Product2Id"
+    label = "Product ID"
+    relationshipName = "Product2"
+  }
+  salesforce.Unknown ProductCode {
+    apiName = "OrderItem.ProductCode"
+    _hidden_value = true
+  }
+  salesforce.Number Quantity {
+    apiName = "OrderItem.Quantity"
+    label = "Quantity"
+    _required = true
+    scale = 2
+    precision = 18
+    unique = false
+  }
+  salesforce.Unknown ReferencePrice {
+    apiName = "OrderItem.ReferencePrice"
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedOrderItemId {
+    apiName = "OrderItem.RelatedOrderItemId"
+    label = "Order Product ID"
+    relationshipName = "RelatedOrderItem"
+    _hidden_value = true
+  }
+  salesforce.Unknown RoundedLineAmount {
+    apiName = "OrderItem.RoundedLineAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown RoundedLineAmtWithTax {
+    apiName = "OrderItem.RoundedLineAmtWithTax"
+    _hidden_value = true
+  }
+  salesforce.Date ServiceDate {
+    apiName = "OrderItem.ServiceDate"
+    label = "Start Date"
+  }
+  salesforce.Unknown SubscriptionTerm {
+    apiName = "OrderItem.SubscriptionTerm"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustedLineTaxAmount {
+    apiName = "OrderItem.TotalAdjustedLineTaxAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentAmount {
+    apiName = "OrderItem.TotalAdjustmentAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentAmtWithTax {
+    apiName = "OrderItem.TotalAdjustmentAmtWithTax"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentDistAmount {
+    apiName = "OrderItem.TotalAdjustmentDistAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentDistAmtWithTax {
+    apiName = "OrderItem.TotalAdjustmentDistAmtWithTax"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentDistTaxAmount {
+    apiName = "OrderItem.TotalAdjustmentDistTaxAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAdjustmentTaxAmount {
+    apiName = "OrderItem.TotalAdjustmentTaxAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalAmtWithTax {
+    apiName = "OrderItem.TotalAmtWithTax"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalLineAdjustmentAmount {
+    apiName = "OrderItem.TotalLineAdjustmentAmount"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalLineAdjustmentAmtWithTax {
+    apiName = "OrderItem.TotalLineAdjustmentAmtWithTax"
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalLineAdjustmentTaxAmount {
+    apiName = "OrderItem.TotalLineAdjustmentTaxAmount"
+    _hidden_value = true
+  }
+  salesforce.Currency TotalLineAmount {
+    apiName = "OrderItem.TotalLineAmount"
+    label = "Product Subtotal"
+    scale = 2
+    precision = 18
+  }
+  salesforce.Unknown TotalLineTaxAmount {
+    apiName = "OrderItem.TotalLineTaxAmount"
+    _hidden_value = true
+  }
+  salesforce.Currency TotalPrice {
+    apiName = "OrderItem.TotalPrice"
+    label = "Total Price"
+    scale = 2
+    precision = 18
+    _hidden_value = true
+  }
+  salesforce.Unknown TotalTaxAmount {
+    apiName = "OrderItem.TotalTaxAmount"
+    _hidden_value = true
+  }
+  salesforce.Picklist TypeCode {
+    apiName = "OrderItem.TypeCode"
+    label = "Type Code"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Currency UnitPrice {
+    apiName = "OrderItem.UnitPrice"
+    label = "Unit Price"
+    scale = 2
+    precision = 18
+  }
+  serviceid Id {
+    apiName = "OrderItem.Id"
+    label = "Order Product ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Lookup PricebookEntryId {
+    apiName = "OrderItem.PricebookEntryId"
+    label = "Price Book Entry ID"
+    relationshipName = "PricebookEntry"
+  }
+  salesforce.Picklist Type {
+    apiName = "OrderItem.Type"
+    label = "Type"
+    restricted = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItem.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItem.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItem.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.AutoNumber OrderItemNumber {
+    apiName = "OrderItem.OrderItemNumber"
+    label = "Order Product Number"
+    _hidden_value = true
+  }
+}

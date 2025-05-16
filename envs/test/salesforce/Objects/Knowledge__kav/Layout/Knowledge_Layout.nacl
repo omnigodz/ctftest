@@ -1,0 +1,147 @@
+salesforce.Layout Knowledge__kav_Knowledge_Layout@uubs {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              field = salesforce.Knowledge__kav.field.Title
+            },
+            {
+              field = salesforce.Knowledge__kav.field.UrlName
+            },
+            {
+              field = salesforce.Knowledge__kav.field.ArticleBody__c
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Visibility"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              field = salesforce.Knowledge__kav.field.IsVisibleInApp
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              field = salesforce.Knowledge__kav.field.IsVisibleInCsp
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Details"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              field = salesforce.Knowledge__kav.field.ArticleCreatedDate
+            },
+            {
+              field = salesforce.Knowledge__kav.field.LastModifiedDate
+            },
+            {
+              field = salesforce.Knowledge__kav.field.ArticleArchivedDate
+            },
+            {
+              field = salesforce.Knowledge__kav.field.ArticleTotalViewCount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              field = salesforce.Knowledge__kav.field.CreatedById
+            },
+            {
+              field = salesforce.Knowledge__kav.field.LastModifiedById
+            },
+            {
+              field = salesforce.Knowledge__kav.field.ArchivedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = "EditDraftKnowledgeArticleVersion"
+        actionType = "StandardButton"
+        sortOrder = 0
+      },
+      {
+        actionName = "PublishKnowledgeArticleVersion"
+        actionType = "StandardButton"
+        sortOrder = 1
+      },
+      {
+        actionName = "DeleteArchiveKnowledgeArticleVersion"
+        actionType = "StandardButton"
+        sortOrder = 2
+      },
+      {
+        actionName = "DeleteDraftKnowledgeArticleVersion"
+        actionType = "StandardButton"
+        sortOrder = 3
+      },
+      {
+        actionName = "ArchiveKnowledgeArticleVersion"
+        actionType = "StandardButton"
+        sortOrder = 4
+      },
+      {
+        actionName = "RestoreKnowledgeArticleVersion"
+        actionType = "StandardButton"
+        sortOrder = 5
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "CASES.SUBJECT",
+        "CASES.CASE_NUMBER",
+        "CASES.CREATED_DATE",
+      ]
+      relatedList = "KnowledgeArticleCaseRelatedList"
+    },
+    {
+      relatedList = "KnowledgeArticleVersionFilesRelatedList"
+    },
+  ]
+  fullName = "Knowledge__kav-Knowledge Layout"
+  _parent = [
+    salesforce.Knowledge__kav,
+  ]
+  _alias = "Knowledge__kav-Knowledge Layout"
+}

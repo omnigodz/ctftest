@@ -1,0 +1,96 @@
+salesforce.WaveAnalyticAssetCollection Service {
+  fullName = "Service"
+  collectionType = "static"
+  color = "#ff538a"
+  folder = "Service"
+  items = [
+    {
+      asset = "My_Service_Dashboard"
+      assetType = "LightningDashboard"
+      sortOrder = 500
+    },
+    {
+      asset = "Service_KPIs_Dashboard"
+      assetType = "LightningDashboard"
+      sortOrder = 499
+    },
+    {
+      asset = "Open_Cases_by_Priority"
+      assetType = "Report"
+      sortOrder = 498
+    },
+    {
+      asset = "My_Open_Cases"
+      assetType = "Report"
+      sortOrder = 497
+    },
+    {
+      asset = "My_Open_Cases_by_Priority"
+      assetType = "Report"
+      sortOrder = 496
+    },
+    {
+      asset = "Open_Cases"
+      assetType = "Report"
+      sortOrder = 495
+    },
+    {
+      asset = "Closed_Cases_by_Close_Date"
+      assetType = "Report"
+      sortOrder = 494
+    },
+    {
+      asset = "My_Cases_Closed_MTD"
+      assetType = "Report"
+      sortOrder = 492
+    },
+    {
+      asset = "Closed_Cases_by_Owner"
+      assetType = "Report"
+      sortOrder = 493
+    },
+    {
+      asset = "My_Closed_Cases_by_Close_Date"
+      assetType = "Report"
+      sortOrder = 491
+    },
+    {
+      asset = "Cases_Closed_MTD_by_Owner"
+      assetType = "Report"
+      sortOrder = 490
+    },
+    {
+      asset = "Cases_with_Articles"
+      assetType = "Report"
+      sortOrder = 489
+    },
+    {
+      asset = "Closed_Cases"
+      assetType = "Report"
+      sortOrder = 488
+    },
+    {
+      asset = "Article_Votes"
+      assetType = "Report"
+      sortOrder = 487
+    },
+    {
+      asset = "Cases_Closed_MTD"
+      assetType = "Report"
+      sortOrder = 486
+    },
+    {
+      asset = "Article_Views"
+      assetType = "Report"
+      sortOrder = 485
+    },
+  ]
+  label = "Service"
+  masterLabel = "Service"
+  shares = {
+    accessLevel = "Manage"
+    sharedTo = "AllInternalUsers"
+    sharedToType = "Organization"
+  }
+  _alias = "Service"
+}

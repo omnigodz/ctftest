@@ -1,0 +1,7 @@
+salesforce.RemoteSiteSetting PaypalProductionAPI {
+  fullName = "PaypalProductionAPI"
+  disableProtocolSecurity = false
+  isActive = true
+  url = "https://api-m.paypal.com"
+  _alias = "PaypalProductionAPI"
+}

@@ -1,0 +1,8 @@
+salesforce.Profile External_Apps_Login_User@s {
+  userPermissions = {
+    SelectFilesFromSalesforce = {
+      enabled = true
+      name = "SelectFilesFromSalesforce"
+    }
+  }
+}

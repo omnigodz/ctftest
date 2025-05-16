@@ -1,0 +1,37 @@
+type salesforce.ElectronicMediaUse {
+  salesforce.Lookup ElectronicMediaGroupId {
+    apiName = "ElectronicMediaUse.ElectronicMediaGroupId"
+    label = "Electronic Media Group ID"
+    relationshipName = "ElectronicMediaGroup"
+    _hidden_value = true
+  }
+  salesforce.Lookup ElectronicMediaId {
+    apiName = "ElectronicMediaUse.ElectronicMediaId"
+    label = "ElectronicMedia ID"
+    _required = true
+    relationshipName = "ElectronicMedia"
+    _hidden_value = true
+  }
+  salesforce.Number SortOrder {
+    apiName = "ElectronicMediaUse.SortOrder"
+    label = "Sort Order"
+    scale = 0
+    precision = 9
+    unique = false
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ElectronicMediaUse.Id"
+    label = "Electronic Media Use ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Text ImplementorType {
+    apiName = "ElectronicMediaUse.ImplementorType"
+    label = "Implementor Type"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+}

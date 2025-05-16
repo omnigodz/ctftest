@@ -1,0 +1,23 @@
+salesforce.CustomApplication standard__EasyHome {
+  formFactors = [
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  label = "Home"
+  navType = "Standard"
+  tabs = [
+    "standard-home",
+  ]
+  uiType = "Lightning"
+  utilityBar = "EasyHome_UtilityBar"
+  fullName = "standard__EasyHome"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.EasyHome_UtilityBar
+    },
+  ]
+  _alias = "Home (standard)"
+}

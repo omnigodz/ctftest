@@ -1,0 +1,9 @@
+salesforce.ListView OrderSummary_all_order_summaries {
+  fullName = "OrderSummary.all_order_summaries"
+  filterScope = "Everything"
+  label = "All Order Summaries"
+  _parent = [
+    salesforce.OrderSummary,
+  ]
+  _alias = "All Order Summaries"
+}

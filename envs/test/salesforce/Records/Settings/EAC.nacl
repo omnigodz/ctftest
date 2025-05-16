@@ -1,0 +1,25 @@
+salesforce.EACSettings {
+  addRcCompToFlexiPages = false
+  autoContactCreationPref = false
+  autoPopulateGoogleMeetLinks = false
+  automatedEmailFilter = false
+  dSThresholdNotification = false
+  enableActivityAnalyticsPref = false
+  enableActivityCapture = true
+  enableActivityMetrics = false
+  enableActivitySyncEngine = true
+  enableEACForEveryonePref = true
+  enableEnforceEacSharingPref = false
+  enableInboxActivitySharing = true
+  enableInsightsInTimeline = true
+  enableInsightsInTimelineEacStd = false
+  enableUnifiedActivitiesPref = false
+  provisionProductivityFeatures = false
+  s2XSvcAccEmail = false
+  salesforceEventsOnlyPref = true
+  sensitiveEmailFilter = false
+  showEACCalendarPref = false
+  syncInternalEvents = true
+  fullName = "EAC"
+  _alias = "EAC"
+}

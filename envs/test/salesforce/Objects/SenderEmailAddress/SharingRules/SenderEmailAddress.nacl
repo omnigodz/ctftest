@@ -1,0 +1,7 @@
+salesforce.SharingRules SenderEmailAddress {
+  fullName = "SenderEmailAddress"
+  _parent = [
+    salesforce.SenderEmailAddress,
+  ]
+  _alias = "SenderEmailAddress"
+}

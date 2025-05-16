@@ -1,0 +1,80 @@
+type salesforce.ElectronicMediaGroup {
+  salesforce.Text DeveloperName {
+    apiName = "ElectronicMediaGroup.DeveloperName"
+    label = "Developer Name"
+    _required = true
+    length = 120
+    unique = true
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "ElectronicMediaGroup.Name"
+    label = "Electronic Media Group Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Picklist UsageType {
+    apiName = "ElectronicMediaGroup.UsageType"
+    label = "Usage Type"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "ElectronicMediaGroup.Id"
+    label = "Electronic Media Group ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ElectronicMediaGroup.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "ElectronicMediaGroup.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "ElectronicMediaGroup.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "ElectronicMediaGroup.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "ElectronicMediaGroup.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "ElectronicMediaGroup.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "ElectronicMediaGroup.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Text Description {
+    apiName = "ElectronicMediaGroup.Description"
+    label = "Description"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+}

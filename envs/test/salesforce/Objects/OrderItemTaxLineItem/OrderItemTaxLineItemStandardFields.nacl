@@ -1,0 +1,115 @@
+type salesforce.OrderItemTaxLineItem {
+  salesforce.Currency Amount {
+    apiName = "OrderItemTaxLineItem.Amount"
+    label = "Amount"
+    _required = true
+    scale = 2
+    precision = 18
+  }
+  salesforce.Text CalculationReferenceNumber {
+    apiName = "OrderItemTaxLineItem.CalculationReferenceNumber"
+    label = "Calculation Reference Number"
+    length = 80
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.LongTextArea Description {
+    apiName = "OrderItemTaxLineItem.Description"
+    label = "Description"
+    length = 2000
+  }
+  salesforce.Text Name {
+    apiName = "OrderItemTaxLineItem.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OrderItemAdjustmentLineItemId {
+    apiName = "OrderItemTaxLineItem.OrderItemAdjustmentLineItemId"
+    label = "Order Product Adjustment Line Item ID"
+    relationshipName = "OrderItemAdjustmentLineItem"
+  }
+  salesforce.MasterDetail OrderItemId {
+    apiName = "OrderItemTaxLineItem.OrderItemId"
+    label = "Order Product ID"
+    _required = true
+    relationshipName = "OrderItem"
+  }
+  salesforce.Percent Rate {
+    apiName = "OrderItemTaxLineItem.Rate"
+    label = "Rate"
+    scale = 2
+    precision = 5
+  }
+  salesforce.Text ReferenceNumber {
+    apiName = "OrderItemTaxLineItem.ReferenceNumber"
+    label = "Reference Number"
+    length = 80
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup RelatedTaxLineItemId {
+    apiName = "OrderItemTaxLineItem.RelatedTaxLineItemId"
+    label = "Order Product Tax Line Item ID"
+    relationshipName = "RelatedTaxLineItem"
+    _hidden_value = true
+  }
+  salesforce.Date TaxEffectiveDate {
+    apiName = "OrderItemTaxLineItem.TaxEffectiveDate"
+    label = "Tax Effective Date"
+    _required = true
+  }
+  salesforce.Picklist Type {
+    apiName = "OrderItemTaxLineItem.Type"
+    label = "Type"
+    _required = true
+    restricted = true
+  }
+  serviceid Id {
+    apiName = "OrderItemTaxLineItem.Id"
+    label = "Order Product Tax Line Item ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItemTaxLineItem.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItemTaxLineItem.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItemTaxLineItem.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItemTaxLineItem.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItemTaxLineItem.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItemTaxLineItem.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderId {
+    apiName = "OrderItemTaxLineItem.OrderId"
+    label = "Order ID"
+    relationshipName = "Order"
+    _hidden_value = true
+  }
+}

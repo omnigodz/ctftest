@@ -1,0 +1,7 @@
+salesforce.SharingRules CalculatedInsightRangeBound {
+  fullName = "CalculatedInsightRangeBound"
+  _parent = [
+    salesforce.CalculatedInsightRangeBound,
+  ]
+  _alias = "CalculatedInsightRangeBound"
+}

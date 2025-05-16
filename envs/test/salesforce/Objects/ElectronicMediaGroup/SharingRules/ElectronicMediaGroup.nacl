@@ -1,0 +1,7 @@
+salesforce.SharingRules ElectronicMediaGroup {
+  fullName = "ElectronicMediaGroup"
+  _parent = [
+    salesforce.ElectronicMediaGroup,
+  ]
+  _alias = "ElectronicMediaGroup"
+}

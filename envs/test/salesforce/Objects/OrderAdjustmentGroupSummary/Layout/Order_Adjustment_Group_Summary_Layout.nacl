@@ -1,0 +1,79 @@
+salesforce.Layout OrderAdjustmentGroupSummary_Order_Adjustment_Group_Summary_Layout@bssss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = true
+      label = "OrderAdjustmentGroupSummaryInformation"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderAdjustmentGroupSummary.field.OrderSummaryId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderAdjustmentGroupSummary.field.OriginalOrderAdjGroupId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroupSummary.field.Name
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroupSummary.field.TotalAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroupSummary.field.TotalTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroupSummary.field.GrandTotalAmount
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderAdjustmentGroupSummary.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderAdjustmentGroupSummary.field.Description
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "Name",
+        "Amount",
+        "TotalTaxAmount",
+        "TotalAmtWithTax",
+        "Description",
+      ]
+      relatedList = "OrderItemAdjustmentLineSummaries"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderAdjustmentGroupSummary-Order Adjustment Group Summary Layout"
+  _parent = [
+    salesforce.OrderAdjustmentGroupSummary,
+  ]
+  _alias = "OrderAdjustmentGroupSummary-Order Adjustment Group Summary Layout"
+}

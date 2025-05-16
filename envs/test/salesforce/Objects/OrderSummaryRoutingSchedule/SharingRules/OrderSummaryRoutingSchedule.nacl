@@ -1,0 +1,7 @@
+salesforce.SharingRules OrderSummaryRoutingSchedule {
+  fullName = "OrderSummaryRoutingSchedule"
+  _parent = [
+    salesforce.OrderSummaryRoutingSchedule,
+  ]
+  _alias = "OrderSummaryRoutingSchedule"
+}

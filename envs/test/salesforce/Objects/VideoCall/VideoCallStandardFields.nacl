@@ -1,0 +1,179 @@
+type salesforce.VideoCall {
+  salesforce.LongTextArea Description {
+    apiName = "VideoCall.Description"
+    label = "Description"
+    length = 32000
+    _hidden_value = true
+  }
+  salesforce.Number DurationInSeconds {
+    apiName = "VideoCall.DurationInSeconds"
+    label = "Call Duration"
+    scale = 0
+    precision = 8
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.DateTime EndDateTime {
+    apiName = "VideoCall.EndDateTime"
+    label = "Call Ended"
+    _hidden_value = true
+  }
+  salesforce.Lookup EventId {
+    apiName = "VideoCall.EventId"
+    label = "Activity ID"
+    relationshipName = "Event"
+    _hidden_value = true
+  }
+  salesforce.Lookup HostId {
+    apiName = "VideoCall.HostId"
+    label = "User ID"
+    relationshipName = "Host"
+    _hidden_value = true
+  }
+  salesforce.Number IntelligenceScore {
+    apiName = "VideoCall.IntelligenceScore"
+    label = "Intelligence Score"
+    scale = 0
+    precision = 8
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsCallCoachingIncluded {
+    apiName = "VideoCall.IsCallCoachingIncluded"
+    label = "Is Call Coaching Included"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDiarizationOptIn {
+    apiName = "VideoCall.IsDiarizationOptIn"
+    label = "Is Diarization Opted In"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsRecorded {
+    apiName = "VideoCall.IsRecorded"
+    label = "Is Recorded"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Picklist MeetingType {
+    apiName = "VideoCall.MeetingType"
+    label = "Meeting Type"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Text Name {
+    apiName = "VideoCall.Name"
+    label = "Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "VideoCall.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Lookup RelatedRecordId {
+    apiName = "VideoCall.RelatedRecordId"
+    label = "Related Record ID"
+    relationshipName = "RelatedRecord"
+  }
+  salesforce.DateTime StartDateTime {
+    apiName = "VideoCall.StartDateTime"
+    label = "Call Started"
+    _hidden_value = true
+  }
+  salesforce.Text TranscribedLanguage {
+    apiName = "VideoCall.TranscribedLanguage"
+    label = "Language"
+    length = 10
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Unknown UsageType {
+    apiName = "VideoCall.UsageType"
+    _hidden_value = true
+  }
+  salesforce.Text VendorMeetingKey {
+    apiName = "VideoCall.VendorMeetingKey"
+    label = "Vendor Meeting Key"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text VendorMeetingUuid {
+    apiName = "VideoCall.VendorMeetingUuid"
+    label = "Vendor Meeting Uuid"
+    length = 255
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+  salesforce.Picklist VendorName {
+    apiName = "VideoCall.VendorName"
+    label = "Provider"
+    restricted = true
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "VideoCall.Id"
+    label = "Video Call ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "VideoCall.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "VideoCall.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "VideoCall.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "VideoCall.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "VideoCall.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "VideoCall.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Text ExternalId {
+    apiName = "VideoCall.ExternalId"
+    label = "External Id"
+    length = 255
+    unique = true
+    caseSensitive = true
+    _hidden_value = true
+  }
+  salesforce.Lookup ConsentedUserId {
+    apiName = "VideoCall.ConsentedUserId"
+    label = "User ID"
+    relationshipName = "ConsentedUser"
+  }
+  salesforce.DateTime AcceptanceTimeStamp {
+    apiName = "VideoCall.AcceptanceTimeStamp"
+    label = "Acceptance TimeStamp"
+  }
+}

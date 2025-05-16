@@ -1,0 +1,271 @@
+salesforce.Layout Lead_Lead_Layout@bs {
+  excludeButtons = [
+    "DataDotComClean",
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "About"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Lead.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Lead.field.Company
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Title
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Website
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Description
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Lead.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Get in Touch"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Phone
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Email
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Address
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Segment"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.NumberOfEmployees
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.AnnualRevenue
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.LeadSource
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Lead.field.Industry
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "History"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Lead.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Lead.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Useful Links"
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = "ChangeTargetAssignee"
+        actionType = "StandardButton"
+        sortOrder = 4
+      },
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 5
+      },
+      {
+        actionName = "Convert"
+        actionType = "StandardButton"
+        sortOrder = 6
+      },
+      {
+        actionName = "FindDup"
+        actionType = "StandardButton"
+        sortOrder = 7
+      },
+      {
+        actionName = "XClean"
+        actionType = "StandardButton"
+        sortOrder = 8
+      },
+      {
+        actionName = "CreateSurveyInvitation"
+        actionType = "StandardButton"
+        sortOrder = 9
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 10
+      },
+      {
+        actionName = "ChangeRecordType"
+        actionType = "StandardButton"
+        sortOrder = 11
+      },
+      {
+        actionName = "StartOutboundConversation"
+        actionType = "StandardButton"
+        sortOrder = 12
+      },
+      {
+        actionName = "ChangeOwnerOne"
+        actionType = "StandardButton"
+        sortOrder = 13
+      },
+      {
+        actionName = "CallHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 14
+      },
+      {
+        actionName = "SmsHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 15
+      },
+      {
+        actionName = "EmailHighlightAction"
+        actionType = "ProductivityAction"
+        sortOrder = 16
+      },
+    ]
+  }
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.ContentNote"
+      },
+      {
+        quickActionName = "FeedItem.MobileSmartActions"
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+  ]
+  runAssignmentRulesDefault = false
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = true
+  showSubmitAndAttachButton = false
+  fullName = "Lead-Lead Layout"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead-Lead Layout"
+}

@@ -1,0 +1,98 @@
+salesforce.Layout OrderAdjustmentGroup_Order_Adjustment_Group_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Order Adjustment Group Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.OrderAdjustmentGroup.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderAdjustmentGroup.field.OrderId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderAdjustmentGroup.field.Type
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderAdjustmentGroup.field.Description
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroup.field.TotalAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroup.field.TotalTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroup.field.GrandTotalAmount
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroup.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroup.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroup.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderAdjustmentGroup.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderAdjustmentGroup-Order Adjustment Group Layout"
+  _parent = [
+    salesforce.OrderAdjustmentGroup,
+  ]
+  _alias = "OrderAdjustmentGroup-Order Adjustment Group Layout"
+}

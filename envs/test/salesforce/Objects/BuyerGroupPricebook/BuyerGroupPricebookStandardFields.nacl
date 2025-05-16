@@ -1,0 +1,70 @@
+type salesforce.BuyerGroupPricebook {
+  salesforce.MasterDetail BuyerGroupId {
+    apiName = "BuyerGroupPricebook.BuyerGroupId"
+    label = "Buyer Group ID"
+    _required = true
+    relationshipName = "BuyerGroup"
+  }
+  salesforce.Checkbox IsActive {
+    apiName = "BuyerGroupPricebook.IsActive"
+    label = "Is Active"
+    defaultValue = false
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "BuyerGroupPricebook.Pricebook2Id"
+    label = "Price Book ID"
+    _required = true
+    relationshipName = "Pricebook2"
+  }
+  salesforce.Number Priority {
+    apiName = "BuyerGroupPricebook.Priority"
+    label = "Priority"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  serviceid Id {
+    apiName = "BuyerGroupPricebook.Id"
+    label = "Buyer Group Price Book ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "BuyerGroupPricebook.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "BuyerGroupPricebook.Name"
+    label = "Buyer Group Price Book Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "BuyerGroupPricebook.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "BuyerGroupPricebook.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "BuyerGroupPricebook.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "BuyerGroupPricebook.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "BuyerGroupPricebook.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

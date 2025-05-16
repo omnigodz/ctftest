@@ -1,0 +1,23 @@
+salesforce.WebLink Lead_YahooMaps {
+  fullName = "Lead.YahooMaps"
+  availability = "online"
+  displayType = "link"
+  encodingKey = "UTF-8"
+  hasMenubar = true
+  hasScrollbars = true
+  hasToolbar = true
+  height = 600
+  isResizable = true
+  linkType = "url"
+  masterLabel = "Yahoo Maps"
+  openType = "newWindow"
+  position = "none"
+  protected = false
+  showsLocation = true
+  showsStatus = true
+  url = "http://maps.yahoo.com/py/maps.py?cn={!Lead_Country}&csz={!Lead_City}+{!Lead_State}+{!Lead_PostalCode}+&addr={!Lead_Address}"
+  _parent = [
+    salesforce.Lead,
+  ]
+  _alias = "Lead.YahooMaps"
+}

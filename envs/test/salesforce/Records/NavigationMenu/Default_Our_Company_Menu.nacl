@@ -1,0 +1,37 @@
+salesforce.NavigationMenu Default_Our_Company_Menu {
+  fullName = "Default_Our_Company_Menu"
+  container = "MyStore"
+  containerType = "Network"
+  label = "Default Our Company Menu"
+  navigationMenuItem = [
+    {
+      label = "About us"
+      position = 1
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+    {
+      label = "Our Stores"
+      position = 2
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+    {
+      label = "Our Blog"
+      position = 3
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+    {
+      label = "Careers"
+      position = 4
+      publiclyAvailable = true
+      target = "/"
+      type = "InternalLink"
+    },
+  ]
+  _alias = "Default Our Company Menu"
+}

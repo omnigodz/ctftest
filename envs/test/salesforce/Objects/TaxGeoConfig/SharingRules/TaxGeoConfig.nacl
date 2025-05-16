@@ -1,0 +1,7 @@
+salesforce.SharingRules TaxGeoConfig {
+  fullName = "TaxGeoConfig"
+  _parent = [
+    salesforce.TaxGeoConfig,
+  ]
+  _alias = "TaxGeoConfig"
+}

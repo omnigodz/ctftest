@@ -1,0 +1,203 @@
+type salesforce.Account {
+  salesforce.Unknown AccountNumber {
+    apiName = "Account.AccountNumber"
+    _hidden_value = true
+  }
+  salesforce.Picklist AccountSource {
+    apiName = "Account.AccountSource"
+    label = "Account Source"
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.LeadSource
+  }
+  salesforce.Currency AnnualRevenue {
+    apiName = "Account.AnnualRevenue"
+    label = "Annual Revenue"
+    scale = 0
+    precision = 18
+  }
+  salesforce.Address BillingAddress {
+    apiName = "Account.BillingAddress"
+    label = "Billing Address"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "Account.Description"
+    securityClassification = "Confidential"
+    label = "Account Description"
+    length = 32000
+  }
+  salesforce.Phone Fax {
+    apiName = "Account.Fax"
+    label = "Account Fax"
+  }
+  salesforce.Picklist Industry {
+    apiName = "Account.Industry"
+    label = "Industry"
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.Industry
+  }
+  salesforce.Checkbox IsBuyer {
+    apiName = "Account.IsBuyer"
+    label = "Buyer Account"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsCustomerPortal {
+    apiName = "Account.IsCustomerPortal"
+    label = "Customer Portal Account"
+    defaultValue = false
+  }
+  salesforce.Checkbox IsPartner {
+    apiName = "Account.IsPartner"
+    label = "Partner Account"
+    defaultValue = false
+  }
+  salesforce.Text Jigsaw {
+    apiName = "Account.Jigsaw"
+    label = "Data.com Key"
+    length = 20
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Name {
+    apiName = "Account.Name"
+    label = "Account Name"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Number NumberOfEmployees {
+    apiName = "Account.NumberOfEmployees"
+    label = "Employees"
+    scale = 0
+    precision = 8
+    unique = false
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Account.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Picklist Ownership {
+    apiName = "Account.Ownership"
+    _hidden_value = true
+  }
+  salesforce.Hierarchy ParentId {
+    apiName = "Account.ParentId"
+    label = "Parent Account ID"
+    relationshipName = "Parent"
+  }
+  salesforce.Phone Phone {
+    apiName = "Account.Phone"
+    securityClassification = "Confidential"
+    label = "Account Phone"
+  }
+  salesforce.Picklist Rating {
+    apiName = "Account.Rating"
+    securityClassification = "Confidential"
+    _hidden_value = true
+  }
+  salesforce.Address ShippingAddress {
+    apiName = "Account.ShippingAddress"
+    label = "Shipping Address"
+    _hidden_value = true
+  }
+  salesforce.Unknown Sic {
+    apiName = "Account.Sic"
+    _hidden_value = true
+  }
+  salesforce.Text SicDesc {
+    apiName = "Account.SicDesc"
+    label = "SIC Description"
+    length = 80
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Unknown Site {
+    apiName = "Account.Site"
+    _hidden_value = true
+  }
+  salesforce.Unknown TickerSymbol {
+    apiName = "Account.TickerSymbol"
+    _hidden_value = true
+  }
+  salesforce.Unknown Tier {
+    apiName = "Account.Tier"
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Account.Type"
+    label = "Account Type"
+    restricted = false
+    valueSetName = salesforce.StandardValueSet.instance.AccountType
+  }
+  salesforce.Url Website {
+    apiName = "Account.Website"
+    label = "Website"
+  }
+  serviceid Id {
+    apiName = "Account.Id"
+    label = "Account ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "Account.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.Lookup MasterRecordId {
+    apiName = "Account.MasterRecordId"
+    label = "Master Record ID"
+    relationshipName = "MasterRecord"
+    _hidden_value = true
+  }
+  salesforce.Url PhotoUrl {
+    apiName = "Account.PhotoUrl"
+    label = "Photo URL"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "Account.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "Account.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "Account.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "Account.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "Account.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Date LastActivityDate {
+    apiName = "Account.LastActivityDate"
+    label = "Last Activity"
+    _hidden_value = true
+  }
+  salesforce.Text JigsawCompanyId {
+    apiName = "Account.JigsawCompanyId"
+    label = "Jigsaw Company ID"
+    length = 20
+    unique = false
+    caseSensitive = false
+    _hidden_value = true
+  }
+}

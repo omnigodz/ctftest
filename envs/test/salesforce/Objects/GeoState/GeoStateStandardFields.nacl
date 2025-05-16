@@ -1,0 +1,66 @@
+type salesforce.GeoState {
+  salesforce.TextArea Description {
+    apiName = "GeoState.Description"
+    label = "Description"
+  }
+  salesforce.MasterDetail GeoCountryId {
+    apiName = "GeoState.GeoCountryId"
+    label = "Geo Country ID"
+    _required = true
+    relationshipName = "GeoCountry"
+  }
+  salesforce.Text IsoCode {
+    apiName = "GeoState.IsoCode"
+    label = "Iso Code"
+    _required = true
+    length = 3
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Text Name {
+    apiName = "GeoState.Name"
+    label = "Name"
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  serviceid Id {
+    apiName = "GeoState.Id"
+    label = "Geo State ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "GeoState.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "GeoState.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "GeoState.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "GeoState.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "GeoState.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "GeoState.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

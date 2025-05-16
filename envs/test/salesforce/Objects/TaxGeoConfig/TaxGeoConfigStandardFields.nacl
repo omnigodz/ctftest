@@ -1,0 +1,64 @@
+type salesforce.TaxGeoConfig {
+  salesforce.Lookup GeoCountryId {
+    apiName = "TaxGeoConfig.GeoCountryId"
+    label = "Geo Country ID"
+    _required = true
+    relationshipName = "GeoCountry"
+  }
+  salesforce.Picklist RoundingStrategyType {
+    apiName = "TaxGeoConfig.RoundingStrategyType"
+    label = "Rounding Strategy Type"
+    _required = true
+    restricted = true
+  }
+  serviceid Id {
+    apiName = "TaxGeoConfig.Id"
+    label = "Tax Geo Configuration ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "TaxGeoConfig.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "TaxGeoConfig.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "TaxGeoConfig.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "TaxGeoConfig.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "TaxGeoConfig.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "TaxGeoConfig.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "TaxGeoConfig.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "TaxGeoConfig.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

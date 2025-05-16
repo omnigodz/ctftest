@@ -1,0 +1,163 @@
+salesforce.Layout OrderDeliveryGroup_Order_Delivery_Group_Layout@bsss {
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Order Delivery Group Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.OrderDeliveryGroupNumber
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderDeliveryGroup.field.OrderId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.OrderDeliveryGroup.field.DeliverToName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.DeliverToAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.EmailAddress
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.PhoneNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.PromisedDeliveryDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.DesiredDeliveryDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.OrderDeliveryMethodId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.IsGift
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.OrderDeliveryGroup.field.GiftMessage
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Financial Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.TotalLineAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.TotalAdjustmentAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.TotalAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.GrandTotalAmount
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.TotalLineTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.TotalAdjustmentTaxAmount
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.TotalTaxAmount
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.CreatedDate
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.LastModifiedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.OrderDeliveryGroup.field.LastModifiedDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "OrderDeliveryGroup-Order Delivery Group Layout"
+  _parent = [
+    salesforce.OrderDeliveryGroup,
+  ]
+  _alias = "OrderDeliveryGroup-Order Delivery Group Layout"
+}

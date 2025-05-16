@@ -1,0 +1,7 @@
+salesforce.CampaignSettings {
+  aiAttributionTimeframe = 6
+  enableCampaignHistoryTrackEnabled = false
+  enableCampaignMemberTWCF = true
+  fullName = "Campaign"
+  _alias = "Campaign"
+}

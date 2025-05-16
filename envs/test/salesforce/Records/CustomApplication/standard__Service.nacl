@@ -1,0 +1,18 @@
+salesforce.CustomApplication standard__Service {
+  defaultLandingTab = "standard-home"
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  isOmniPinnedViewEnabled = false
+  tabs = [
+    "standard-Case",
+    "standard-Contact",
+    "standard-Account",
+    "standard-Document",
+    "standard-report",
+    "standard-Dashboard",
+    salesforce.CustomTab.instance.Knowledge__kav,
+  ]
+  fullName = "standard__Service"
+  _alias = "standard__Service"
+}

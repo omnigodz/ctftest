@@ -1,0 +1,14 @@
+salesforce.CompactLayout Knowledge__kav_Knowledge_Easy_Compact_Layout {
+  fullName = "Knowledge__kav.Knowledge_Easy_Compact_Layout"
+  fields = [
+    "ArticleNumber",
+    "VersionNumber",
+    "PublishStatus",
+    "LastModifiedDate",
+  ]
+  label = "Knowledge Easy Compact Layout"
+  _parent = [
+    salesforce.Knowledge__kav,
+  ]
+  _alias = "Knowledge Easy Compact Layout"
+}

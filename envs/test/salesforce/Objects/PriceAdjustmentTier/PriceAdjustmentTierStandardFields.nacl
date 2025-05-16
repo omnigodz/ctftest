@@ -1,0 +1,81 @@
+type salesforce.PriceAdjustmentTier {
+  salesforce.Number LowerBound {
+    apiName = "PriceAdjustmentTier.LowerBound"
+    label = "Lower Bound"
+    _required = true
+    scale = 0
+    precision = 18
+    unique = false
+  }
+  salesforce.MasterDetail PriceAdjustmentScheduleId {
+    apiName = "PriceAdjustmentTier.PriceAdjustmentScheduleId"
+    label = "Price Adjustment Schedule ID"
+    _required = true
+    relationshipName = "PriceAdjustmentSchedule"
+  }
+  salesforce.Picklist TierType {
+    apiName = "PriceAdjustmentTier.TierType"
+    label = "Tier Type"
+    _required = true
+    restricted = true
+  }
+  salesforce.Number TierValue {
+    apiName = "PriceAdjustmentTier.TierValue"
+    label = "Tier Value"
+    _required = true
+    scale = 6
+    precision = 18
+    unique = false
+  }
+  salesforce.Number UpperBound {
+    apiName = "PriceAdjustmentTier.UpperBound"
+    label = "Upper Bound"
+    scale = 0
+    precision = 18
+    unique = false
+  }
+  serviceid Id {
+    apiName = "PriceAdjustmentTier.Id"
+    label = "Price Adjustment Tier ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "PriceAdjustmentTier.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "PriceAdjustmentTier.Name"
+    label = "Price Adjustment Tier Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "PriceAdjustmentTier.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "PriceAdjustmentTier.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "PriceAdjustmentTier.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "PriceAdjustmentTier.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "PriceAdjustmentTier.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

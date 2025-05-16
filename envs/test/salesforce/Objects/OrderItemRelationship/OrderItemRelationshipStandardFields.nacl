@@ -1,0 +1,95 @@
+type salesforce.OrderItemRelationship {
+  salesforce.Lookup AssociatedOrderItemId {
+    apiName = "OrderItemRelationship.AssociatedOrderItemId"
+    label = "Associated Order Product ID"
+    relationshipName = "AssociatedOrderItem"
+  }
+  salesforce.Picklist AssociatedOrderItemInventory {
+    apiName = "OrderItemRelationship.AssociatedOrderItemInventory"
+    label = "Associated Order Product Inventory"
+    restricted = true
+  }
+  salesforce.Unknown AssociatedOrderItemPricing {
+    apiName = "OrderItemRelationship.AssociatedOrderItemPricing"
+    _hidden_value = true
+  }
+  salesforce.Unknown AssociatedOrderItemRole {
+    apiName = "OrderItemRelationship.AssociatedOrderItemRole"
+    _hidden_value = true
+  }
+  salesforce.Unknown AssociatedQuantScaleMethod {
+    apiName = "OrderItemRelationship.AssociatedQuantScaleMethod"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail MainOrderItemId {
+    apiName = "OrderItemRelationship.MainOrderItemId"
+    label = "Main Order Product ID"
+    _required = true
+    relationshipName = "MainOrderItem"
+  }
+  salesforce.Unknown MainOrderItemRole {
+    apiName = "OrderItemRelationship.MainOrderItemRole"
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "OrderItemRelationship.Name"
+    label = "Name"
+    _hidden_value = true
+  }
+  salesforce.Lookup OrderId {
+    apiName = "OrderItemRelationship.OrderId"
+    label = "Order ID"
+    relationshipName = "Order"
+    _hidden_value = true
+  }
+  salesforce.Lookup ProductRelatedComponentId {
+    apiName = "OrderItemRelationship.ProductRelatedComponentId"
+    label = "Product Related Component ID"
+    relationshipName = "ProductRelatedComponent"
+  }
+  salesforce.Lookup ProductRelationshipTypeId {
+    apiName = "OrderItemRelationship.ProductRelationshipTypeId"
+    label = "Product Relationship Type ID"
+    _required = true
+    relationshipName = "ProductRelationshipType"
+  }
+  serviceid Id {
+    apiName = "OrderItemRelationship.Id"
+    label = "Order Product Relationship ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderItemRelationship.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderItemRelationship.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderItemRelationship.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderItemRelationship.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderItemRelationship.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderItemRelationship.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

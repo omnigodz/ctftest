@@ -1,0 +1,63 @@
+type salesforce.WebStoreSearchProdSettings {
+  serviceid Id {
+    apiName = "WebStoreSearchProdSettings.Id"
+    label = "Store Search Product Settings ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WebStoreSearchProdSettings.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "WebStoreSearchProdSettings.Name"
+    label = "Store Search Product Settings"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WebStoreSearchProdSettings.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WebStoreSearchProdSettings.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WebStoreSearchProdSettings.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WebStoreSearchProdSettings.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WebStoreSearchProdSettings.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Lookup WebStoreId {
+    apiName = "WebStoreSearchProdSettings.WebStoreId"
+    label = "Store ID"
+    _required = true
+    relationshipName = "WebStore"
+  }
+  salesforce.Lookup ProductId {
+    apiName = "WebStoreSearchProdSettings.ProductId"
+    label = "Product ID"
+    _required = true
+    relationshipName = "Product"
+  }
+  salesforce.Checkbox IsExcludedFromSearch {
+    apiName = "WebStoreSearchProdSettings.IsExcludedFromSearch"
+    label = "Is Excluded From Search"
+    defaultValue = false
+  }
+}

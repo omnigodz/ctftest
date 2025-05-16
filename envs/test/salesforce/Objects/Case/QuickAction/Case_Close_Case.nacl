@@ -1,0 +1,34 @@
+salesforce.QuickAction Case_Close_Case@vu {
+  fullName = "Case.Close_Case"
+  description = "Let service agents close a case from the publisher."
+  fieldOverrides = [
+    {
+      field = salesforce.Case.field.Status
+      literalValue = "Closed"
+    },
+  ]
+  label = "Close Case"
+  optionsCreateFeedItem = false
+  quickActionLayout = {
+    layoutSectionStyle = "TwoColumnsLeftToRight"
+    quickActionLayoutColumns = [
+      {
+        quickActionLayoutItems = [
+          {
+            emptySpace = false
+            field = salesforce.Case.field.Comments
+            uiBehavior = "Edit"
+          },
+        ]
+      },
+      {
+      },
+    ]
+  }
+  successMessage = "Case closed."
+  type = "Update"
+  _parent = [
+    salesforce.Case,
+  ]
+  _alias = "Close Case"
+}

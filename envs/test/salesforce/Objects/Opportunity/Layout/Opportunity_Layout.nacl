@@ -1,0 +1,240 @@
+salesforce.Layout Opportunity_Opportunity_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "About"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.Name
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.AccountId
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.CloseDate
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Amount
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Description
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.OwnerId
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "Status"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.StageName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.Probability
+            },
+            {
+              behavior = "Required"
+              field = salesforce.Opportunity.field.ForecastCategoryName
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Opportunity.field.NextStep
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = true
+      detailHeading = true
+      editHeading = true
+      label = "History"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Opportunity.field.CreatedById
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Opportunity.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "OneColumn"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  platformActionList = {
+    actionListContext = "Record"
+    platformActionListItems = [
+      {
+        actionName = salesforce.QuickAction.instance.SendEmail
+        actionType = "QuickAction"
+        sortOrder = 0
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewEvent
+        actionType = "QuickAction"
+        sortOrder = 1
+      },
+      {
+        actionName = salesforce.QuickAction.instance.NewTask
+        actionType = "QuickAction"
+        sortOrder = 2
+      },
+      {
+        actionName = salesforce.QuickAction.instance.LogACall
+        actionType = "QuickAction"
+        sortOrder = 3
+      },
+      {
+        actionName = "Edit"
+        actionType = "StandardButton"
+        sortOrder = 4
+      },
+      {
+        actionName = "Delete"
+        actionType = "StandardButton"
+        sortOrder = 5
+      },
+    ]
+  }
+  quickActionList = {
+    quickActionListItems = [
+      {
+        quickActionName = "FeedItem.MobileSmartActions"
+      },
+    ]
+  }
+  relatedContent = {
+    relatedContentItems = [
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Opportunity.field.AccountId
+        }
+      },
+      {
+        layoutItem = {
+          behavior = "Readonly"
+          field = salesforce.Opportunity.field.OwnerId
+        }
+      },
+    ]
+  }
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+    {
+      fields = [
+        "ContactName",
+        "Role",
+        "ContactTitle",
+        "IsPrimary",
+        "ContactPhone",
+        "ContactEmail",
+        "ContactAccountName",
+      ]
+      relatedList = "RelatedContactRoleList"
+    },
+    {
+      fields = [
+        "ACCOUNT.NAME",
+        "PARTNER.ROLE",
+        "PARTNER.PRIMARY",
+      ]
+      relatedList = "RelatedPartnerList"
+    },
+    {
+      relatedList = "RelatedCompetitorList"
+    },
+    {
+      fields = [
+        "Product2",
+        "Quantity",
+        "UnitPrice",
+        "ServiceDate",
+        "Description",
+        "ListPrice",
+      ]
+      relatedList = "RelatedLineItemList"
+    },
+    {
+      relatedList = "RelatedNoteList"
+    },
+    {
+      relatedList = "RelatedFileList"
+    },
+    {
+      relatedList = "RelatedOpportunityHistoryList"
+    },
+  ]
+  relatedObjects = [
+    "AccountId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showInteractionLogPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "Opportunity-Opportunity Layout"
+  _parent = [
+    salesforce.Opportunity,
+  ]
+  _alias = "Opportunity-Opportunity Layout"
+}

@@ -1,0 +1,371 @@
+type salesforce.OrderSummary {
+  salesforce.Lookup AccountId {
+    apiName = "OrderSummary.AccountId"
+    label = "Account ID"
+    relationshipName = "Account"
+    _hidden_value = true
+  }
+  salesforce.Number ActiveProcessExceptionCount {
+    apiName = "OrderSummary.ActiveProcessExceptionCount"
+    label = "Active Process Exception Count"
+    scale = 0
+    precision = 9
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.Lookup BillToContactId {
+    apiName = "OrderSummary.BillToContactId"
+    label = "Contact ID"
+    relationshipName = "BillToContact"
+  }
+  salesforce.Email BillingEmailAddress {
+    apiName = "OrderSummary.BillingEmailAddress"
+    label = "Billing Email Address"
+    unique = false
+  }
+  salesforce.Phone BillingPhoneNumber {
+    apiName = "OrderSummary.BillingPhoneNumber"
+    label = "Billing Phone Number"
+  }
+  salesforce.Picklist BusinessModel {
+    apiName = "OrderSummary.BusinessModel"
+    label = "Business Model"
+    restricted = true
+  }
+  salesforce.Lookup ChangeOrderId {
+    apiName = "OrderSummary.ChangeOrderId"
+    label = "Change Order ID"
+    relationshipName = "ChangeOrder"
+    _hidden_value = true
+  }
+  salesforce.LongTextArea Description {
+    apiName = "OrderSummary.Description"
+    label = "Description"
+    length = 1175
+  }
+  salesforce.Text ExternalReferenceIdentifier {
+    apiName = "OrderSummary.ExternalReferenceIdentifier"
+    label = "External Reference Identifier"
+    length = 80
+    unique = true
+    caseSensitive = true
+  }
+  salesforce.Summary GrandTotalAmount {
+    apiName = "OrderSummary.GrandTotalAmount"
+    label = "Total"
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsSuspended {
+    apiName = "OrderSummary.IsSuspended"
+    label = "Suspended"
+    defaultValue = false
+  }
+  salesforce.Unknown OperationInProgress {
+    apiName = "OrderSummary.OperationInProgress"
+    _hidden_value = true
+  }
+  salesforce.Picklist OrderLifeCycleType {
+    apiName = "OrderSummary.OrderLifeCycleType"
+    label = "Order Life Cycle Type"
+    _required = true
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Text OrderNumber {
+    apiName = "OrderSummary.OrderNumber"
+    label = "Order Summary Number"
+    _required = true
+    length = 255
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Number OrderProductLineCount {
+    apiName = "OrderSummary.OrderProductLineCount"
+    label = "Order Product Line Count"
+    scale = 0
+    precision = 9
+    unique = false
+    _hidden_value = true
+  }
+  salesforce.DateTime OrderedDate {
+    apiName = "OrderSummary.OrderedDate"
+    label = "Ordered Date"
+    _hidden_value = true
+  }
+  salesforce.MasterDetail OriginalOrderId {
+    apiName = "OrderSummary.OriginalOrderId"
+    label = "Original Order ID"
+    _required = true
+    relationshipName = "OriginalOrder"
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "OrderSummary.OwnerId"
+    label = "Owner ID"
+    relationshipName = "Owner"
+    _hidden_value = true
+  }
+  salesforce.DateTime PoDate {
+    apiName = "OrderSummary.PoDate"
+    label = "PO Date"
+  }
+  salesforce.Text PoNumber {
+    apiName = "OrderSummary.PoNumber"
+    label = "PO Number"
+    length = 80
+    unique = false
+    caseSensitive = false
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "OrderSummary.Pricebook2Id"
+    label = "Price Book ID"
+    relationshipName = "Pricebook2"
+    _hidden_value = true
+  }
+  salesforce.Number RoutingAttempts {
+    apiName = "OrderSummary.RoutingAttempts"
+    label = "Routing Attempts"
+    scale = 0
+    precision = 9
+    unique = false
+  }
+  salesforce.Lookup SalesChannelId {
+    apiName = "OrderSummary.SalesChannelId"
+    label = "Sales Channel ID"
+    relationshipName = "SalesChannel"
+    _hidden_value = true
+  }
+  salesforce.Lookup SalesStoreId {
+    apiName = "OrderSummary.SalesStoreId"
+    label = "Sales Store ID"
+    relationshipName = "SalesStore"
+    _hidden_value = true
+  }
+  salesforce.Lookup SourceOrderSummaryId {
+    apiName = "OrderSummary.SourceOrderSummaryId"
+    label = "Order Summary ID"
+    relationshipName = "SourceOrderSummary"
+    _hidden_value = true
+  }
+  salesforce.Picklist SourceProcess {
+    apiName = "OrderSummary.SourceProcess"
+    label = "Source Process"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Status {
+    apiName = "OrderSummary.Status"
+    label = "Status"
+    restricted = false
+  }
+  salesforce.Picklist TaxLocaleType {
+    apiName = "OrderSummary.TaxLocaleType"
+    label = "Tax Locale Type"
+    restricted = true
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjDeliveryAmtWithTax {
+    apiName = "OrderSummary.TotalAdjDeliveryAmtWithTax"
+    label = "Shipping with Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjDistAmount {
+    apiName = "OrderSummary.TotalAdjDistAmount"
+    label = "Order Adjustments"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjDistAmountWithTax {
+    apiName = "OrderSummary.TotalAdjDistAmountWithTax"
+    label = "Order Adjustments with Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjDistTaxAmount {
+    apiName = "OrderSummary.TotalAdjDistTaxAmount"
+    label = "Order Adjustments Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjFeeAmtWithTax {
+    apiName = "OrderSummary.TotalAdjFeeAmtWithTax"
+    label = "Fees with Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjProductAmtWithTax {
+    apiName = "OrderSummary.TotalAdjProductAmtWithTax"
+    label = "Subtotal with Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjustedDeliveryAmount {
+    apiName = "OrderSummary.TotalAdjustedDeliveryAmount"
+    label = "Shipping"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjustedDeliveryTaxAmount {
+    apiName = "OrderSummary.TotalAdjustedDeliveryTaxAmount"
+    label = "Shipping Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjustedFeeAmount {
+    apiName = "OrderSummary.TotalAdjustedFeeAmount"
+    label = "Fees"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjustedFeeTaxAmount {
+    apiName = "OrderSummary.TotalAdjustedFeeTaxAmount"
+    label = "Fees Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjustedProductAmount {
+    apiName = "OrderSummary.TotalAdjustedProductAmount"
+    label = "Subtotal"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAdjustedProductTaxAmount {
+    apiName = "OrderSummary.TotalAdjustedProductTaxAmount"
+    label = "Subtotal Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalAmount {
+    apiName = "OrderSummary.TotalAmount"
+    label = "Pretax Subtotal"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalDeliveryAdjDistAmount {
+    apiName = "OrderSummary.TotalDeliveryAdjDistAmount"
+    label = "Order Shipping Adjustments"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalDeliveryAdjDistAmtWithTax {
+    apiName = "OrderSummary.TotalDeliveryAdjDistAmtWithTax"
+    label = "Order Shipping Adjustments with Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalDeliveryAdjDistTaxAmount {
+    apiName = "OrderSummary.TotalDeliveryAdjDistTaxAmount"
+    label = "Order Shipping Adjustments Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalDeliveryAmount {
+    apiName = "OrderSummary.TotalDeliveryAmount"
+    label = "Shipping Subtotal"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalDeliveryAmountWithTax {
+    apiName = "OrderSummary.TotalDeliveryAmountWithTax"
+    label = "Shipping Subtotal With Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalDeliveryTaxAmount {
+    apiName = "OrderSummary.TotalDeliveryTaxAmount"
+    label = "Shipping Subtotal Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAdjDistAmount {
+    apiName = "OrderSummary.TotalFeeAdjDistAmount"
+    label = "Order Fee Adjustments"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAdjDistAmtWithTax {
+    apiName = "OrderSummary.TotalFeeAdjDistAmtWithTax"
+    label = "Order Fee Adjustments with Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAdjDistTaxAmount {
+    apiName = "OrderSummary.TotalFeeAdjDistTaxAmount"
+    label = "Order Fee Adjustments Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAmount {
+    apiName = "OrderSummary.TotalFeeAmount"
+    label = "Fee Subtotal"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeAmountWithTax {
+    apiName = "OrderSummary.TotalFeeAmountWithTax"
+    label = "Fee Subtotal With Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalFeeTaxAmount {
+    apiName = "OrderSummary.TotalFeeTaxAmount"
+    label = "Fee Subtotal Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalProductAdjDistAmount {
+    apiName = "OrderSummary.TotalProductAdjDistAmount"
+    label = "Order Product Adjustments"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalProductAdjDistAmtWithTax {
+    apiName = "OrderSummary.TotalProductAdjDistAmtWithTax"
+    label = "Order Product Adjustments with Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalProductAdjDistTaxAmount {
+    apiName = "OrderSummary.TotalProductAdjDistTaxAmount"
+    label = "Order Product Adjustments Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalProductAmount {
+    apiName = "OrderSummary.TotalProductAmount"
+    label = "Product Subtotal"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalProductAmountWithTax {
+    apiName = "OrderSummary.TotalProductAmountWithTax"
+    label = "Product Subtotal With Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalProductTaxAmount {
+    apiName = "OrderSummary.TotalProductTaxAmount"
+    label = "Product Subtotal Tax"
+    _hidden_value = true
+  }
+  salesforce.Summary TotalTaxAmount {
+    apiName = "OrderSummary.TotalTaxAmount"
+    label = "Tax"
+    _hidden_value = true
+  }
+  serviceid Id {
+    apiName = "OrderSummary.Id"
+    label = "Order Summary ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "OrderSummary.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "OrderSummary.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "OrderSummary.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "OrderSummary.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "OrderSummary.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "OrderSummary.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+  salesforce.Address BillingAddress {
+    apiName = "OrderSummary.BillingAddress"
+    label = "Billing Address"
+    _hidden_value = true
+  }
+}

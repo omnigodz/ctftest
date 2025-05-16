@@ -1,0 +1,63 @@
+type salesforce.WebStorePricebook {
+  salesforce.Checkbox IsActive {
+    apiName = "WebStorePricebook.IsActive"
+    label = "Is Active"
+    defaultValue = false
+  }
+  salesforce.Lookup Pricebook2Id {
+    apiName = "WebStorePricebook.Pricebook2Id"
+    label = "Price Book ID"
+    _required = true
+    relationshipName = "Pricebook2"
+  }
+  salesforce.MasterDetail WebStoreId {
+    apiName = "WebStorePricebook.WebStoreId"
+    label = "Store ID"
+    _required = true
+    relationshipName = "WebStore"
+  }
+  serviceid Id {
+    apiName = "WebStorePricebook.Id"
+    label = "Store Price Book ID"
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Checkbox IsDeleted {
+    apiName = "WebStorePricebook.IsDeleted"
+    label = "Deleted"
+    defaultValue = false
+    _hidden_value = true
+  }
+  salesforce.AutoNumber Name {
+    apiName = "WebStorePricebook.Name"
+    label = "Store Price Book Name"
+    _hidden_value = true
+  }
+  salesforce.DateTime CreatedDate {
+    apiName = "WebStorePricebook.CreatedDate"
+    label = "Created Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup CreatedById {
+    apiName = "WebStorePricebook.CreatedById"
+    label = "Created By ID"
+    relationshipName = "CreatedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime LastModifiedDate {
+    apiName = "WebStorePricebook.LastModifiedDate"
+    label = "Last Modified Date"
+    _hidden_value = true
+  }
+  salesforce.Lookup LastModifiedById {
+    apiName = "WebStorePricebook.LastModifiedById"
+    label = "Last Modified By ID"
+    relationshipName = "LastModifiedBy"
+    _hidden_value = true
+  }
+  salesforce.DateTime SystemModstamp {
+    apiName = "WebStorePricebook.SystemModstamp"
+    label = "System Modstamp"
+    _hidden_value = true
+  }
+}

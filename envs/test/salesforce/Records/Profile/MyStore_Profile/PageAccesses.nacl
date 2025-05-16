@@ -1,0 +1,96 @@
+salesforce.Profile MyStore_Profile@s {
+  pageAccesses = {
+    AnswersHome = {
+      apexPage = "AnswersHome"
+      enabled = false
+    }
+    BandwidthExceeded = {
+      apexPage = "BandwidthExceeded"
+      enabled = true
+    }
+    ChangePassword = {
+      apexPage = "ChangePassword"
+      enabled = false
+    }
+    CommunitiesLanding = {
+      apexPage = "CommunitiesLanding"
+      enabled = true
+    }
+    CommunitiesLogin = {
+      apexPage = "CommunitiesLogin"
+      enabled = true
+    }
+    CommunitiesSelfReg = {
+      apexPage = "CommunitiesSelfReg"
+      enabled = true
+    }
+    CommunitiesSelfRegConfirm = {
+      apexPage = "CommunitiesSelfRegConfirm"
+      enabled = true
+    }
+    CommunitiesTemplate = {
+      apexPage = "CommunitiesTemplate"
+      enabled = true
+    }
+    Exception = {
+      apexPage = "Exception"
+      enabled = true
+    }
+    FileNotFound = {
+      apexPage = "FileNotFound"
+      enabled = true
+    }
+    ForgotPassword = {
+      apexPage = "ForgotPassword"
+      enabled = true
+    }
+    ForgotPasswordConfirm = {
+      apexPage = "ForgotPasswordConfirm"
+      enabled = true
+    }
+    IdeasHome = {
+      apexPage = "IdeasHome"
+      enabled = false
+    }
+    InMaintenance = {
+      apexPage = "InMaintenance"
+      enabled = true
+    }
+    MicrobatchSelfReg = {
+      apexPage = "MicrobatchSelfReg"
+      enabled = true
+    }
+    MyProfilePage = {
+      apexPage = "MyProfilePage"
+      enabled = false
+    }
+    SiteLogin = {
+      apexPage = "SiteLogin"
+      enabled = true
+    }
+    SiteRegister = {
+      apexPage = "SiteRegister"
+      enabled = true
+    }
+    SiteRegisterConfirm = {
+      apexPage = "SiteRegisterConfirm"
+      enabled = true
+    }
+    SiteTemplate = {
+      apexPage = "SiteTemplate"
+      enabled = false
+    }
+    StdExceptionTemplate = {
+      apexPage = "StdExceptionTemplate"
+      enabled = false
+    }
+    Unauthorized = {
+      apexPage = "Unauthorized"
+      enabled = false
+    }
+    UnderConstruction = {
+      apexPage = "UnderConstruction"
+      enabled = false
+    }
+  }
+}

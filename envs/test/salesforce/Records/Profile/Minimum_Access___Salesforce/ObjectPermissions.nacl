@@ -1,0 +1,13 @@
+salesforce.Profile Minimum_Access___Salesforce@ssbs {
+  objectPermissions = {
+    QuickText = {
+      allowCreate = false
+      allowDelete = false
+      allowEdit = false
+      allowRead = true
+      modifyAllRecords = false
+      object = "QuickText"
+      viewAllRecords = false
+    }
+  }
+}

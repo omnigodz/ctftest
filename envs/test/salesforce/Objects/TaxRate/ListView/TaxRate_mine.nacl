@@ -1,0 +1,9 @@
+salesforce.ListView TaxRate_mine {
+  fullName = "TaxRate.mine"
+  filterScope = "Mine"
+  label = "My Tax Rates"
+  _parent = [
+    salesforce.TaxRate,
+  ]
+  _alias = "My Tax Rates"
+}

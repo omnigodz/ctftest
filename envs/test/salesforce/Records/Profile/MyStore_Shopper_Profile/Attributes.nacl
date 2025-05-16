@@ -1,0 +1,6 @@
+salesforce.Profile MyStore_Shopper_Profile@s {
+  custom = true
+  userLicense = "External Apps Login"
+  fullName = "MyStore Shopper Profile"
+  _alias = "MyStore Shopper Profile"
+}

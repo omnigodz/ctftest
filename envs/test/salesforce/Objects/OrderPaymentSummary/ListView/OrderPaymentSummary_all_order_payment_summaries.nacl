@@ -1,0 +1,9 @@
+salesforce.ListView OrderPaymentSummary_all_order_payment_summaries {
+  fullName = "OrderPaymentSummary.all_order_payment_summaries"
+  filterScope = "Everything"
+  label = "All Order Payment Summaries"
+  _parent = [
+    salesforce.OrderPaymentSummary,
+  ]
+  _alias = "All Order Payment Summaries"
+}
